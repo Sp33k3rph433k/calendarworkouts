@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="3351691119">
+    <data-source source="LOCAL" name="Rails cwapp: development" uuid="084aa235-9f84-4496-a8af-dc66e8f7ef40">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:cw_dev</jdbc-url>
+      <user-name>sp33k3rph433k</user-name>
+      <user-password>dfeedfd8df99dfcbdfc7dfecdfc5dfd8dfdedfd8dfcfdf8edf8e</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails cwapp: test" uuid="96720f3b-419f-406f-a70a-682128b126d5">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:cw_dev</jdbc-url>
+      <user-name>sp33k3rph433k</user-name>
+      <user-password>dfeedfd8df99dfcbdfc7dfecdfc5dfd8dfdedfd8dfcfdf8edf8e</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails cwapp: production" uuid="d161bbfc-0f58-4768-ad1f-ac8701ea03fb">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:cw_dev</jdbc-url>
+      <user-name>sp33k3rph433k</user-name>
+      <user-password>dfeedfd8df99dfcbdfc7dfecdfc5dfd8dfdedfd8dfcfdf8edf8e</user-password>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+
