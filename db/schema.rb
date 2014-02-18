@@ -11,10 +11,32 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140218042723) do
+ActiveRecord::Schema.define(version: 20140218050155) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "exercises", force: true do |t|
+    t.string   "name"
+    t.string   "youtube_url"
+    t.string   "proper_form_text"
+    t.string   "mini_image_url"
+    t.integer  "workout_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "muscle_groups", force: true do |t|
+    t.string   "name"
+    t.integer  "exercise_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "muscle_groups_workouts", id: false, force: true do |t|
+    t.integer "muscle_group_id"
+    t.integer "workout_id"
+  end
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
@@ -34,5 +56,11 @@ ActiveRecord::Schema.define(version: 20140218042723) do
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
+
+  create_table "workouts", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end
