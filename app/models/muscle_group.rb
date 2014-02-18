@@ -1,3 +1,4 @@
 class MuscleGroup < ActiveRecord::Base
-  belongs_to :exercises
+  has_many :exercises
+  has_many :workouts, through: :exercises
 end

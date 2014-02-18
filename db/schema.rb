@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140218050155) do
+ActiveRecord::Schema.define(version: 20140218050909) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,20 +22,32 @@ ActiveRecord::Schema.define(version: 20140218050155) do
     t.string   "proper_form_text"
     t.string   "mini_image_url"
     t.integer  "workout_id"
+    t.integer  "muscle_group_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "muscle_groups", force: true do |t|
     t.string   "name"
-    t.integer  "exercise_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "muscle_groups_workouts", id: false, force: true do |t|
-    t.integer "muscle_group_id"
-    t.integer "workout_id"
+  create_table "personal_details", force: true do |t|
+    t.string   "gender"
+    t.integer  "weight"
+    t.integer  "neck"
+    t.integer  "shoulders"
+    t.integer  "chest"
+    t.integer  "bicep"
+    t.integer  "waist"
+    t.integer  "hips"
+    t.integer  "thigh"
+    t.integer  "resting_heart_rate"
+    t.integer  "calf"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "users", force: true do |t|
