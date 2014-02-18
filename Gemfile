@@ -4,7 +4,10 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.1'
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+#20140217 gem 'sqlite3'
+gem 'pg'
+gem 'newrelic_rpm'
+gem 'haml-rails'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -34,6 +37,7 @@ end
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
+gem 'devise'
 
 # Use unicorn as the app server
 # gem 'unicorn'
@@ -43,3 +47,7 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+group :development, :test do
+  gem 'rspec-rails', '~> 3.0.0.beta'
+end
