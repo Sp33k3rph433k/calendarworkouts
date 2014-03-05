@@ -1,0 +1,29 @@
+!!!
+%head
+  %meta{ :name => 'charset', :content => 'utf-8' }
+  %meta{ :name => 'keywords', :content => 'Ill come back to this'}
+  %meta{ :name => "description", :content => 'Calendar Workouts was built to help you work out with easy-to-follow workout routines automatically built on your time, goals, and current fitness level!'}
+  %meta{ :name => "viewport", :content => 'width=device-width, initial-scale=1.0'}
+  = stylesheet_link_tag ''
+  = stylesheet_link_tag 'vendor/stylesheets/fonts/glyphicons_pro/glyphicons'
+  = stylesheet_link_tag 'admin/animate'
+  = stylesheet_link_tag 'admin/custom'
+  = stylesheet_link_tag 'admin/customizer'
+  = stylesheet_link_tag 'admin/demo'
+  = stylesheet_link_tag 'admin/pages'
+  = stylesheet_link_tag 'admin/plugins'
+  = stylesheet_link_tag 'admin/responsive'
+  = stylesheet_link_tag 'admin/theme'
+
+
+
+
+%body.dashboard.index-load
+  %header.navbar.navbar-fixed-top
+    .pull-left
+      = link_to "dashboard_user_path", "#"
+      .navbar-logo
+        %img.img-responsive{ :src => image_path("logo.png"), :alt => "logo"}
+
+
+  = yield
