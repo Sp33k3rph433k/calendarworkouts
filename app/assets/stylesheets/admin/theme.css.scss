@@ -369,7 +369,7 @@ ul.dropdown-items > li a:hover {
   overflow: hidden;
 }
 .header-btns .menu-arrow .menu-arrow-up {
-  background: url(../img/form/menu-arrow-up.png) no-repeat top left;
+  background: image_tag("menu-arrow-up.png") no-repeat top left;
   width: 25px;
   height: 14px;
   display: block;
@@ -485,7 +485,7 @@ ul.dropdown-items > li a:hover {
   padding-left: 20px;
   border-left: 1px solid #d2d2d2;
   border-bottom: 1px solid #CCC;
-  background: url(../img/patterns/8.png) repeat top left;
+  background: image_tag("patterneight.png") repeat top left;
 }
 .breadcrumb {
   float: left;
@@ -759,7 +759,7 @@ input.ui-editRangeSlider-inputValue {
 /* Slider Handles */
 .ui-rangeSlider .ui-rangeSlider-handle { background: none }
 .ui-rangeSlider .ui-rangeSlider-handle-inner {
-  background: url(../img/form/slider-knob.png) no-repeat center top;
+  background: image_tag("slider-knob.png") no-repeat center top;
   width: 22px;
   height: 24px;
 }
