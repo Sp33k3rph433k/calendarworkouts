@@ -1,0 +1,8 @@
+---
+content_path: 
+partials: {}
+index_path: index.html
+stylesheet_dir: css
+image_dir: documentation/vendor/highlight/styles
+javascript_dir: documentation/js
+no_sass: false
