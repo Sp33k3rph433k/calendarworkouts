@@ -149,8 +149,8 @@
   margin-right: 2px;
   padding-top: 2px;
   padding-bottom: 2px;
-  background: url(../vendor/plugins/uniform/themes/default/images/grip.png) center center no-repeat, -webkit-linear-gradient(top,  #fcfcfc 0%,#dddddd 100%);
-  background: url(../vendor/plugins/uniform/themes/default/images/grip.png) center center no-repeat, linear-gradient(to bottom,  #fcfcfc 0%,#dddddd 100%);
+  background: image-url('grip.png') center center no-repeat, -webkit-linear-gradient(top,  #fcfcfc 0%,#dddddd 100%);
+  background: image-url('grip.png') center center no-repeat, linear-gradient(to bottom,  #fcfcfc 0%,#dddddd 100%);
 }
 
 /* ---------------------------------------
@@ -318,12 +318,12 @@
 .map .pagination .back-btn {
   float: left;
   border-right: 1px solid #ccc;
-  background: url("../vendor/plugins/gmap/images/arrow_left_12x12.png") no-repeat 50% 50%;
+  background: image-url("arrow_left_12x12.png") no-repeat 50% 50%;
 }
 .map .pagination .fwd-btn {
   float: right;
   border-left: 1px solid #ccc;
-  background: url("../vendor/plugins/gmap/images/arrow_right_12x12.png") no-repeat 50% 50%;
+  background: image-url("arrow_right_12x12.png") no-repeat 50% 50%;
 }
 .map .checker { margin-right: 8px }
 /* Map Styling Helper Classes */
@@ -617,7 +617,7 @@ div.selector span {
   cursor: pointer;
 }
 div.selector, div.selector span, div.checker span, div.radio span, div.uploader, div.uploader span.action, div.button, div.button span {
-  background-image: url("../img/form/sprite.png");
+  background-image: image-url("sprite.png");
   background-repeat: no-repeat;
   -webkit-font-smoothing: antialiased;
 }
@@ -785,16 +785,16 @@ div.radio, div.radio span, div.radio input {
 .highContrastDetect {
   width: 0px;
   height: 0px;
-  background: url("../img/form/bg-input.png") repeat-x 0 0;
+  background: image-url("bg-input.png") repeat-x 0 0;
 }
 /* Input & Textarea */
 input.uniform-input, select.uniform-multiselect, textarea.uniform {
   padding: 3px;
-  background: url("../img/form/bg-input.png") repeat-x 0 0;
+  background: image-url("bg-input.png") repeat-x 0 0;
   outline: 0;
 }
 input.uniform-input, input.uniform-input:focus { background-color: #fff }
-input.uniform-input.active, select.uniform-multiselect.active, textarea.uniform.active { background: url("../img/form/bg-input-focus.png") repeat-x 0 0 }
+input.uniform-input.active, select.uniform-multiselect.active, textarea.uniform.active { background: image-url("bg-input-focus.png") repeat-x 0 0 }
 /* Remove default webkit and possible mozilla .search styles.
  * Keeping this as :active to remove browser styles */
 /* Select */

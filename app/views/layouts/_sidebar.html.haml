@@ -1,0 +1,62 @@
+%aside#sidebar
+  .sidebar-search
+    %form{:role=>"search"}
+      %input.search-bar.form-control{:type=>"text", :placeholder=>"search"}
+      %i.fa.fa-search.field-icon-right
+      %button.btn.btn-default.hidden{:type=>"submit"}
+    .sidebar-toggle
+      %i.fa.fa-bars
+  .sidebar-menu
+    %ul.nav.sidebar-nav
+      %li
+        %a{:href=>"#"}
+          %span.glyphicons.glyphicons-sort
+          %span.sidebar-title
+            Portlets
+      %li.active
+        %a{:href=>"#"}
+          %span.glyphicons.glyphicons-star
+          %span.sidebar-title
+            Dashboard
+      %li
+        %a{:href=>"#", :class=>"accordion-toggle menu-open"}
+          %span.glyphicons.glyphicons-settings
+          %span.sidebar-title
+            Resources
+          %span.caret
+        %ul#resources.nav.sub-nav.menu-open
+          %li
+            %a{:href=>"#"}
+              %span.glyphicons.glyphicons-edit{:style=>"width:15px;"}
+              Theme Customizer
+          %li
+            %a{:href=>"#"}
+              %span.glyphicons.glyphicons-magic
+              Demo Style Switcher
+          %li
+            %a{:href=>"#"}
+              %span.glyphicons.glyphicons-book
+              Documentation
+      %li
+        %a{:href=>"#", :class=>"accordion-toggle"}
+          %span.glyphicons.glyphicons-adjust_alt
+          %span.sidebar-title
+            UI Elements
+          %span.caret
+        %ul#sideOne.nav.sub-nav
+          %li
+            %a{:href=>"#"}
+              %span.glyphicons.glyphicons-macbook
+              Buttons
+          %li
+            %a{:href=>"#"}
+              %span.glyphicons.glyphicons-font
+              Typography
+          %li
+            %a{:href=>"#"}
+              %span.glyphicons.glyphicons-paperclip
+              Elements
+          %li
+            %a{:href=>"#"}
+              %span.glyphicons.glyphicons-stats
+              Charts

@@ -7,18 +7,9 @@
     %meta{ :name => "description", :content => 'Calendar Workouts was built to help you work out with easy-to-follow workout routines automatically built on your time, goals, and current fitness level!'}
     %title= content_for?(:title) ? yield(:title) : 'Cwapp'
     %meta{:name => "description", :content => "#{content_for?(:description) ? yield(:description) : 'Cwapp'}"}
-    = stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true
-    = javascript_include_tag "application", "data-turbolinks-track" => true
-    = stylesheet_link_tag ''
+    = stylesheet_link_tag 'application'
+    = javascript_include_tag 'application'
     = stylesheet_link_tag 'fonts/glyphicons_pro/glyphicons'
-    = stylesheet_link_tag 'admin/animate'
-    = stylesheet_link_tag 'admin/custom'
-    = stylesheet_link_tag 'admin/customizer'
-    = stylesheet_link_tag 'admin/demo'
-    = stylesheet_link_tag 'admin/pages'
-    = stylesheet_link_tag 'admin/plugins'
-    = stylesheet_link_tag 'admin/responsive'
-    = stylesheet_link_tag 'admin/theme'
     = csrf_meta_tags
 
 
@@ -53,102 +44,110 @@
               %a{:href=>"#"}
                 View All Messages
                 %i.fa.fa-caret-right
-      .alerts-menu
-        %button.btn.btn-sm.dropdown-toggle(data-toggle="dropdown"){:type=>"button"}
-          %span.glyphicons.glyphicons-bell
-          %b
-            3
-        %ul.dropdown-menu.checkbox-persist{:role=>"menu"}
-          %li.menu-arrow
-            .menu-arrow-up
-          %li.dropdown-header
-            Recent Alerts
-            %span.pull-right.glyphicons.glyphicons-bell
-          %li
-            %ul.dropdown-items
-              %li
-                .item-icon
-                  %i.fa.fa-facebook{:style=>"color:#0066ad;"}
-                .item-message
-                  %a{:href=>"#"}
-                    Facebook likes reached
-                    %b
-                      8200
-          %li.dropdown-footer
-            %a{:href=>"#"}
-              View All Alerts
-              %i.fa.fa-caret-right
-      .alerts-menu
-        %button.btn.btn-sm.dropdown-toggle(data-toggle="dropdown"){:type=>"button"}
-          %span.glyphicons.glyphicons-tag
-          %b
-            7
-        %ul.dropdown-menu.dropdown-checklist.checkbox-persist{:role=>"menu"}
-          %li.menu-arrow
-            .menu-arrow-up
-          %li.dropdown-header
-            Recent Tasks
-            %span.pull-right.glyphicons.glyphicons-tag
-          %li
-            %ul.dropdown-items
-              %li
-                .item-icon
-                  %i.fa.fa-pencil
-                .item-message.text-slash
-                  %a
-                    Try Clicking Me!
-                .item-label
-                  %span.label.label-danger
-                    Urgent
-                .item-checkbox
-                  %input.checkbox.row-checkbox{:type=>"checkbox"}
-          %li.dropdown-footer
-            %a{:href=>"#"}
-              View All Tasks
-              %i.fa.fa-caret-right
-      .btn-group.user-menu
-        %button.btn.btn-sm.dropdown-toggle(data-toggle="dropdown"){:type=>"button"}
-          %span.glyphicons.glyphicons-user
-          %b
-            Cynthia
-        %button.btn.btn-sm.dropdown-toggle.padding-none(data-toggle="dropdown"){:type=>"button"}
-          = image_tag "header-login.png", :alt=>"user avatar", :width=>"28", :height=>"28"
-        %ul.dropdown-menu.checkbox-persist{:role=>"menu"}
-          %li.menu-arrow
-            .menu-arrow-up
-          %li.dropdown-header
-            Your Account
-            %span.pull-right.glyphicons.glyphicons-user
-          %li
-            %ul.dropdown-items
-              %li
-                .item-icon
-                  %i.fa.fa-envelope-o
-                %a.item-message{:href=>"#"}
-                  Messages
-              %li
-                .item-icon
-                  %i.fa.fa-calendar
-                %a.item-message{:href=>"#"}
-                  Calendar
-              %li.border-bottom-none
-                .item-icon
-                  %i.fa.fa-cog
-                %a.item-message{:href=>"#"}
-                  Settings
-              %li.padding-none
-                .dropdown-lockout
-                  %i.fa.fa-lock
-                  %a{:href=>"#"}
-                    Screen Lock
-                .dropdown-signout
-                  %i.fa.fa-sign-out
-                  %a{:href=>"#"}
-                    Sign Out
+        .alerts-menu
+          %button.btn.btn-sm.dropdown-toggle(data-toggle="dropdown"){:type=>"button"}
+            %span.glyphicons.glyphicons-bell
+            %b
+              3
+          %ul.dropdown-menu.checkbox-persist{:role=>"menu"}
+            %li.menu-arrow
+              .menu-arrow-up
+            %li.dropdown-header
+              Recent Alerts
+              %span.pull-right.glyphicons.glyphicons-bell
+            %li
+              %ul.dropdown-items
+                %li
+                  .item-icon
+                    %i.fa.fa-facebook{:style=>"color:#0066ad;"}
+                  .item-message
+                    %a{:href=>"#"}
+                      Facebook likes reached
+                      %b
+                        8200
+            %li.dropdown-footer
+              %a{:href=>"#"}
+                View All Alerts
+                %i.fa.fa-caret-right
+        .alerts-menu
+          %button.btn.btn-sm.dropdown-toggle(data-toggle="dropdown"){:type=>"button"}
+            %span.glyphicons.glyphicons-tag
+            %b
+              7
+          %ul.dropdown-menu.dropdown-checklist.checkbox-persist{:role=>"menu"}
+            %li.menu-arrow
+              .menu-arrow-up
+            %li.dropdown-header
+              Recent Tasks
+              %span.pull-right.glyphicons.glyphicons-tag
+            %li
+              %ul.dropdown-items
+                %li
+                  .item-icon
+                    %i.fa.fa-pencil
+                  .item-message.text-slash
+                    %a
+                      Try Clicking Me!
+                  .item-label
+                    %span.label.label-danger
+                      Urgent
+                  .item-checkbox
+                    %input.checkbox.row-checkbox{:type=>"checkbox"}
+            %li.dropdown-footer
+              %a{:href=>"#"}
+                View All Tasks
+                %i.fa.fa-caret-right
+        .btn-group.user-menu
+          %button.btn.btn-sm.dropdown-toggle(data-toggle="dropdown"){:type=>"button"}
+            %span.glyphicons.glyphicons-user
+            %b
+              Cynthia
+          %button.btn.btn-sm.dropdown-toggle.padding-none(data-toggle="dropdown"){:type=>"button"}
+            = image_tag "header-login.png", :alt=>"user avatar", :width=>"28", :height=>"28"
+          %ul.dropdown-menu.checkbox-persist{:role=>"menu"}
+            %li.menu-arrow
+              .menu-arrow-up
+            %li.dropdown-header
+              Your Account
+              %span.pull-right.glyphicons.glyphicons-user
+            %li
+              %ul.dropdown-items
+                %li
+                  .item-icon
+                    %i.fa.fa-envelope-o
+                  %a.item-message{:href=>"#"}
+                    Messages
+                %li
+                  .item-icon
+                    %i.fa.fa-calendar
+                  %a.item-message{:href=>"#"}
+                    Calendar
+                %li.border-bottom-none
+                  .item-icon
+                    %i.fa.fa-cog
+                  %a.item-message{:href=>"#"}
+                    Settings
+                %li.padding-none
+                  .dropdown-lockout
+                    %i.fa.fa-lock
+                    %a{:href=>"#"}
+                      Screen Lock
+                  .dropdown-signout
+                    %i.fa.fa-sign-out
+                    %a{:href=>"#"}
+                      Sign Out
   .main
-
-
-
-
-
-  = yield
+    = render :partial => "layouts/sidebar"
+    %section.content
+      .topbar
+        %ol.breadcrumb
+          %li
+            %a{:href=> "#"}
+              %i.fa.fa-home
+          %li
+            %a{:href=>"#"}
+              Home
+          %li.active
+            Dashboard
+      .container
+        = yield

@@ -106,7 +106,7 @@ body.coming-soon-page {
   background: #f6f6f6;
 }
 body.coming-soon-page #main {
-  background:url(../img/patterns/coming-soon-bg.jpg) no-repeat center -60px;
+  background:image-url("coming-soon-bg.jpg") no-repeat center -60px;
 }
 body.coming-soon-page #page-logo {
   width: 250px;
@@ -132,7 +132,7 @@ body.coming-soon-page .panel-body {
    SCREENLOCK.HTML
 --------------------------*/
 body.screenlock-page {
-  background: url(../img/patterns/5.png) repeat top left #f6f6f6;
+  background: image-url("pattern5.png") repeat top left #f6f6f6;
 }
 body.screenlock-page #page-logo {
   width: 250px;
@@ -183,7 +183,7 @@ body.screenlock-page .login-alert .alert{
    LOGIN.HTML
 --------------------------*/
 body.login-page {
-  background: url(../img/patterns/5.png) repeat top left #f6f6f6;
+  background: image-url("pattern5.png") repeat top left #f6f6f6;
 }
 body.login-page #page-logo {
   width: 250px;

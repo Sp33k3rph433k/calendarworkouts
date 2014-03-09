@@ -25,8 +25,7 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
 
-# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
+# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks (removed Mar 8)
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
@@ -56,6 +55,8 @@ end
 gem 'bootstrap-sass'
 group :development do
   gem 'rails_layout'
+  gem 'meta_request'
 end
 
 gem "font-awesome-rails"
+gem 'jquery-datatables-rails', git: 'git://github.com/rweng/jquery-datatables-rails.git'
