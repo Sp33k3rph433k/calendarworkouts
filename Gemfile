@@ -52,6 +52,14 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.0.0.beta'
 end
 
+group :test do
+  gem 'factory_girl_rails'
+  gem 'cucumber-rails', :require => false
+  gem 'email_spec'
+  gem 'database_cleaner'
+  gem 'capybara'
+end
+
 gem 'bootstrap-sass'
 group :development do
   gem 'rails_layout'
@@ -60,3 +68,4 @@ end
 
 gem "font-awesome-rails"
 gem 'jquery-datatables-rails', git: 'git://github.com/rweng/jquery-datatables-rails.git'
+gem 'figaro'
