@@ -125,17 +125,26 @@
                 %li.border-bottom-none
                   .item-icon
                     %i.fa.fa-cog
-                  %a.item-message{:href=>"#"}
+                - if user_signed_in?
+                  %a.item-message{:href=> edit_user_registration_path }
                     Settings
+                - else
+                  %a.item-message{:href=> new_user_registration_path}
+                    Sign Up
                 %li.padding-none
                   .dropdown-lockout
                     %i.fa.fa-lock
                     %a{:href=>"#"}
                       Screen Lock
                   .dropdown-signout
+                  - if user_signed_in?
                     %i.fa.fa-sign-out
-                    %a{:href=>"#"}
+                    %a{:href=> destroy_user_session_path, :method => "delete"}
                       Sign Out
+                  - else
+                    %i.fa.fa-sign-out
+                    %a{:href=> new_user_session_path}
+                      Sign In
   .main
     = render :partial => "layouts/sidebar"
     %section.content
