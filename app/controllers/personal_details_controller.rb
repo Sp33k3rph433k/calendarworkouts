@@ -19,6 +19,28 @@ class PersonalDetailsController < ApplicationController
     end
   end
 
+  def show
+    @user = current_user
+    @personal_detail = @user.personal_detail
+  end
+
+  def edit
+    @user = current_user
+    @personal_detail = @user.personal_detail
+  end
+
+  def update
+    @user = current_user
+    @personal_detail = @user.personal_detail
+    if @personal_detail.update_attributes(detail_params)
+      flash[:notice] = "Check-in any time you'd like!"
+      redirect_to user_dashboard_path
+    else
+      flash[:notice] = "There was a problem checking in"
+      redirect_to edit_user_personal_detail_path
+    end
+  end
+
 
 
   private
