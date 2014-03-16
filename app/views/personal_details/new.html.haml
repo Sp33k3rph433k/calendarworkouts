@@ -1,0 +1,14 @@
+= simple_form_for [:user, @personal_detail] do |f|
+  = f.input :gender
+  = f.input :weight
+  = f.input :bicep
+  = f.input :shoulders
+  = f.input :chest
+  = f.input :neck
+  = f.input :waist
+  = f.input :hips
+  = f.input :thigh
+  = f.input :resting_heart_rate
+  = f.input :calf
+  = f.button :submit
+  / added :user to the simple_form_for and it worked, but I have no idea why.
