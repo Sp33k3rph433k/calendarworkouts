@@ -69,3 +69,6 @@ end
 gem "font-awesome-rails"
 gem 'jquery-datatables-rails', git: 'git://github.com/rweng/jquery-datatables-rails.git'
 gem 'figaro'
+gem 'simple_form'
+gem 'country-select'
+gem 'paper_trail'

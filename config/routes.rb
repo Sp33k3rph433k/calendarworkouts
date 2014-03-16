@@ -1,16 +1,15 @@
 Cwapp::Application.routes.draw do
+  root :controller => 'static', :action => '/'
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   resources :users, except: [:show] do
-    member do
-      get 'dashboard'
-    end
+    resources :personal_details
   end
+  get 'users/dashboard' => 'users#index', :as => :user_dashboard
 
   # You can have the root of your site routed with "root"
-  root 'users#dashboard'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

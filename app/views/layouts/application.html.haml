@@ -14,10 +14,12 @@
 
 
   %body.dashboard
-    %header.navbar.navbar-fixed-top
+    %header.navbar.navbar-fixed-top{:style => "height: 50px;"}
       .pull-left
-        .navbar-logo
-          = link_to image_tag("logo.png"), "#", {:alt => "logo", :class => "img-responsive"}
+        %a.navbar-brand{:href=>"#"}
+          .navbar-logo
+            = image_tag("logo.png", :style=>"height:50px;", :alt => "logo", :class => "img-responsive")
+      = render 'layouts/messages'
       .pull-right.header-btns
         .messages-menu
           %button.btn.btn-sm.dropdown-animate(data-toggle="dropdown"){:type => "button"}
@@ -145,10 +147,10 @@
                     %i.fa.fa-sign-out
                     %a{:href=> new_user_session_path}
                       Sign In
-  .main
+  #main
     = render :partial => "layouts/sidebar"
-    %section.content
-      .topbar
+    %section#content
+      #topbar
         %ol.breadcrumb
           %li
             %a{:href=> "#"}
@@ -158,5 +160,5 @@
               Home
           %li.active
             Dashboard
-      .container
+      #skin-menu.container
         = yield
