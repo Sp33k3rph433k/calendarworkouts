@@ -1,4 +1,133 @@
 %h4 it worked!
-%h3 Go update your personal info!
-= link_to "Here!", new_user_personal_detail_path(@user)
+- if @personal_detail
+  = link_to "Click here to checkin any time you want", edit_user_personal_detail_path(@user, @personal_detail)
+  = link_to "If you need to see how to measure properly, click here", "#"
+- else
+  = link_to "It looks like you haven't checked in your measurements yet. Click here to do so", new_user_personal_detail_path(@user)
+  = link_to "Or click here to learn how to measure properly.", "#"
 / Why do I have to pass in (@user)?
+
+.row
+  .col-sm-12.col-md-10.col-md-offset-1
+    %hr.alt/
+    .pricing-tables.margin-top-lg.text-center.row
+      .col-sm-4.col-md-3.hero-plan
+        .pricing-plan.margin-none
+          .pricing-title.btn-blue4
+            %h3 03-15-14
+          .pricing-info
+            %h2 59
+            %h6 Per Month
+          .pricing-features
+          - @personal_detail.versions.each do |f|
+            %ul
+              %li
+                %i.glyphicons.glyphicons-heart
+                %b Resting Heart Rate:
+                = @personal_detail.resting_heart_rate
+              %li
+                %i.fa.fa-hdd-o
+                %b Weight:
+                = @personal_detail.weight
+              %li
+                %i.glyphicons.glyphicons-dumbbell
+                %b Bicep:
+                = @personal_detail.bicep
+              %li
+                %i.fa.fa-refresh
+                %b Chest:
+                = @personal_detail.chest
+              %li
+                %i.glyphicons.glyphicons-dumbbell
+                %b Shoulders:
+                = @personal_detail.shoulders
+              %li
+                %i.glyphicons.glyphicons-dumbbell
+                %b Neck:
+                = @personal_detail.neck
+              %li
+                %i.glyphicons.glyphicons-dumbbell
+                %b Waist
+                = @personal_detail.waist
+              %li
+                %i.glyphicons.glyphicons-dumbbell
+                %b Hips:
+                = @personal_detail.hips
+              %li
+                %i.glyphicons.glyphicons-dumbbell
+                %b Thigh:
+                = @personal_detail.thigh
+              %li
+                %i.glyphicons.glyphicons-dumbbell
+                %b Calf:
+                = @personal_detail.calf
+          %a.btn.btn-blue4{href: "#"} Sign up
+      .col-sm-4.col-md-3.hero-plan
+        .pricing-plan.margin-none
+          .pricing-title.btn-blue
+            %h3= @personal_detail.updated_at
+          .pricing-info
+            %span.currency-sign $
+            %h2 59
+            %h6 Per Month
+          .pricing-features
+            %ul
+              %li
+                %i.fa.fa-hdd-o
+                %b 2GB
+                Disk Space
+              %li
+                %i.fa.fa-exchange
+                %b 20GB
+                Bandwidth
+              %li
+                %i.fa.fa-refresh
+                %b 5
+                Email Accounts
+          %a.btn.btn-blue{href: "#"} Sign up
+      .col-sm-4.col-md-3.hero-plan
+        .pricing-plan.margin-none
+          .pricing-title.btn-green
+            %h3 Standard
+          .pricing-info
+            %span.currency-sign $
+            %h2 59
+            %h6 Per Month
+          .pricing-features
+            %ul
+              %li
+                %i.fa.fa-hdd-o
+                %b 2GB
+                Disk Space
+              %li
+                %i.fa.fa-exchange
+                %b 20GB
+                Bandwidth
+              %li
+                %i.fa.fa-refresh
+                %b 5
+                Email Accounts
+          %a.btn.btn-green{href: "#"} Sign up
+      .hidden-sm.col-md-3.hero-plan
+        .pricing-plan.margin-none
+          .pricing-title.btn-alert
+            %h3 Standard
+          .pricing-info
+            %span.currency-sign $
+            %h2 59
+            %h6 Per Month
+          .pricing-features
+            %ul
+              %li
+                %i.fa.fa-hdd-o
+                %b 2GB
+                Disk Space
+              %li
+                %i.fa.fa-exchange
+                %b 20GB
+                Bandwidth
+              %li
+                %i.fa.fa-refresh
+                %b 5
+                Email Accounts
+          %a.btn.btn-alert{href: "#"} Sign up
