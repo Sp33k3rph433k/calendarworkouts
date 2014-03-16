@@ -2,25 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1c2979e-ea9f-498e-bad9-a07d934370c0" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/users/dashboard.html.haml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_sidebar.html.haml" afterPath="$PROJECT_DIR$/app/views/layouts/_sidebar.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.haml" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/devise.rb" afterPath="$PROJECT_DIR$/config/initializers/devise.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/index.html.haml" afterPath="$PROJECT_DIR$/app/views/users/index.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/cwapp.iml" afterPath="$PROJECT_DIR$/.idea/cwapp.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/personal_detail.rb" afterPath="$PROJECT_DIR$/app/models/personal_detail.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/personal_detail_spec.rb" afterPath="$PROJECT_DIR$/spec/models/personal_detail_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/personal_details_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/personal_details_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/user_spec.rb" afterPath="$PROJECT_DIR$/spec/models/user_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/step_definitions/user_steps.rb" afterPath="$PROJECT_DIR$/features/step_definitions/user_steps.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
     </list>
     <ignored path="cwapp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,10 +30,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="17" selection-start="1760" selection-end="1760" vertical-scroll-proportion="0.9346939" vertical-offset="481" max-vertical-offset="1264">
+            <state line="73" column="17" selection-start="1760" selection-end="1760" vertical-scroll-proportion="0.0" vertical-offset="481" max-vertical-offset="1264">
               <folding />
             </state>
           </provider>
@@ -64,10 +48,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="personal_detail.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="personal_detail.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/personal_detail.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="68" selection-end="68" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="192">
+            <state line="3" column="2" selection-start="63" selection-end="63" vertical-scroll-proportion="0.06530612" vertical-offset="0" max-vertical-offset="735">
               <folding />
             </state>
           </provider>
@@ -165,7 +149,6 @@
         <option value="$PROJECT_DIR$/features/step_definitions/user_steps.rb" />
         <option value="$PROJECT_DIR$/spec/models/user_spec.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/models/personal_detail.rb" />
         <option value="$PROJECT_DIR$/spec/models/personal_detail_spec.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
         <option value="$PROJECT_DIR$/app/views/users/show.html.haml" />
@@ -173,6 +156,7 @@
         <option value="$PROJECT_DIR$/app/views/personal_details/new.html.haml" />
         <option value="$PROJECT_DIR$/app/controllers/personal_details_controller.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/models/personal_detail.rb" />
       </list>
     </option>
   </component>
@@ -909,16 +893,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/personal_detail.rb">
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="68" selection-end="68" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="192">
+        <state line="73" column="17" selection-start="1760" selection-end="1760" vertical-scroll-proportion="0.0" vertical-offset="481" max-vertical-offset="1264">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
+    <entry file="file://$PROJECT_DIR$/app/models/personal_detail.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="17" selection-start="1760" selection-end="1760" vertical-scroll-proportion="0.9346939" vertical-offset="481" max-vertical-offset="1264">
+        <state line="3" column="2" selection-start="63" selection-end="63" vertical-scroll-proportion="0.06530612" vertical-offset="0" max-vertical-offset="735">
           <folding />
         </state>
       </provider>
