@@ -9,5 +9,6 @@ class UsersController < ApplicationController
   def index
     @user = current_user
     @personal_detail = @user.personal_detail
+    @workout = Workout.new
   end
 end
