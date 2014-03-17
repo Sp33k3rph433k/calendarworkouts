@@ -11,4 +11,6 @@ class User < ActiveRecord::Base
   #attr_accessible :email, :password, :password_confirmation, :zip
 
   has_one :personal_detail
+  has_many :workouts
+  has_many :exercises, through: :workouts
 end
