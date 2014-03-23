@@ -9,7 +9,7 @@ class Workout < ActiveRecord::Base
   private
 
   def detail_params
-    params.require(:workout).permit(:name,
+    params.require(:workout).permit(:name, :date,
                                     :muscle_groups_attributes => [:id, :name,
                                     :exercises_attributes => [:id, :name, :sets, :reps, :weight, :time, :youtube_url]
     ])
