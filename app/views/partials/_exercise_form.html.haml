@@ -1,0 +1,11 @@
+= simple_form_for [@workout, @exercise] do |f|
+  = f.input :name
+  = f.input :youtube_url
+  = f.input :sets
+  = f.input :reps
+  = f.input :weight
+  = f.input :is_run?, as: :boolean
+  = f.input :time
+  = f.input :user_id, :as => :hidden, :html => { :value => "{@user.id}"}
+  = f.input group
+  / added :user to the simple_form_for and it worked, but I have no idea why.

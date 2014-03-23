@@ -72,3 +72,6 @@ gem 'figaro'
 gem 'simple_form'
 gem 'country-select'
 gem 'paper_trail'
+gem 'recommendable'
+gem "resque", "~> 2.0.0.pre.1", github: "resque/resque"
+gem "redis", "~> 3.0.1"
