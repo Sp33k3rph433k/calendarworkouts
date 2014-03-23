@@ -9,11 +9,12 @@ class WorkoutsController < ApplicationController
   end
 
   def create
-    @workout = Workout.new(params[:workout])
+    @user = current_user
+    @workout = @user.workouts.build(detail_params)
 
     if @workout.save
       flash[:notice] = "Workout created! Now tell us what exercises you did!"
-      redirect_to new_workout_exercise_path
+      redirect_to new_workout_exercise_path(@workout)
     else
       flash[:notice] = "Error creating workout"
       redirect_to new_user_workout
@@ -21,4 +22,9 @@ class WorkoutsController < ApplicationController
   end
 
 
+  private
+
+  def detail_params
+    params.require(:workout).permit(:name, :date)
+  end
 end

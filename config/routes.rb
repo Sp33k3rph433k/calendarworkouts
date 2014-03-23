@@ -5,7 +5,7 @@ Cwapp::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   resources :users, except: [:show] do
-    resources :personal_detail
+    resources :personal_details
     resources :workouts, only: [:index, :new, :create, :show]
   end
 
