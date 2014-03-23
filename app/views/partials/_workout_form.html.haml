@@ -1,11 +1,5 @@
-= simple_form_for [@user, @workout, @exercise], :url => new_user_workout_exercise_path do |f|
+= simple_form_for [@user, @workout], :url => new_user_workout_path do |f|
   = f.input :name
-  = f.input :youtube_url
-  = f.input :sets
-  = f.input :reps
-  = f.input :weight
-  = f.input :is_run?, as: :boolean
-  = f.input :time
-- @muscle_groups.each do |group|
-  = f.input group
+  = f.input :date
+  = f.submit
   / added :user to the simple_form_for and it worked, but I have no idea why.

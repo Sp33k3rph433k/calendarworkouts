@@ -6,10 +6,13 @@ Cwapp::Application.routes.draw do
 
   resources :users, except: [:show] do
     resources :personal_detail
-    resources :workouts do
-      resources :exercises
-    end
+    resources :workouts, only: [:index, :new, :create, :show]
   end
+
+  resources :workouts, only:[:edit] do
+    resources :exercises
+    end
+
   get 'users/dashboard' => 'users#index', :as => :user_dashboard
 
   # You can have the root of your site routed with "root"
