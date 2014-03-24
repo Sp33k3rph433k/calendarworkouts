@@ -6,6 +6,7 @@ class Workout < ActiveRecord::Base
 
   validates_presence_of :name
 
+
   private
 
   def detail_params

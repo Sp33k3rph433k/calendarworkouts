@@ -6,6 +6,5 @@
   = f.input :weight
   = f.input :is_run?, as: :boolean
   = f.input :time
-  = f.input :user_id, :as => :hidden, :html => { :value => "{@user.id}"}
-  = f.input group
-  / added :user to the simple_form_for and it worked, but I have no idea why.
+  = f.input :muscle_group_id, collection: @muscle_groups, group_method: :name
+  = f.submit

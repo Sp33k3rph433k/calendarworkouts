@@ -5,7 +5,6 @@ class WorkoutsController < ApplicationController
     @workout = Workout.new
     @exercise = Exercise.new
     @user = current_user
-    @muscle_groups = MuscleGroup.all
   end
 
   def create
