@@ -1,5 +1,6 @@
 = simple_form_for [@user, @personal_detail] do |f|
-  = f.input :gender
+  - unless @user.personal_detail
+    = f.input :gender
   = f.input :weight
   = f.input :bicep
   = f.input :shoulders
