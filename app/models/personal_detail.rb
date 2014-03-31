@@ -13,4 +13,12 @@ class PersonalDetail < ActiveRecord::Base
     end
   end
 
+  def get_four_entries
+    self.versions.limit(4).order('id desc')
+  end
+
+  def reify_if_not_nil
+    return unless self.version.reify == nil
+  end
+
 end

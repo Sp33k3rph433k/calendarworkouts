@@ -17,13 +17,59 @@
     .col-sm-12.col-md-10.col-md-offset-1
       %hr.alt/
       .pricing-tables.margin-top-lg.text-center.row
+        - @personal_detail.versions.last(3).map do |f|
+          - unless f.reify == nil
+            .col-sm-4.col-md-3.hero-plan
+              .pricing-plan.margin-none
+                .pricing-title.btn-blue4
+                  %h3 03-15-14
+                .pricing-features
+                  %ul
+                    %li
+                      %i.glyphicons.glyphicons-heart
+                      %b Resting Heart Rate:
+                      = f.reify.resting_heart_rate
+                    %li
+                      %i.fa.fa-hdd-o
+                      %b Weight:
+                      = f.reify.weight
+                    %li
+                      %i.glyphicons.glyphicons-dumbbell
+                      %b Bicep:
+                      = f.reify.bicep
+                    %li
+                      %i.fa.fa-refresh
+                      %b Chest:
+                      = f.reify.chest
+                    %li
+                      %i.glyphicons.glyphicons-dumbbell
+                      %b Shoulders:
+                      = f.reify.shoulders
+                    %li
+                      %i.glyphicons.glyphicons-dumbbell
+                      %b Neck:
+                      = f.reify.neck
+                    %li
+                      %i.glyphicons.glyphicons-dumbbell
+                      %b Waist
+                      = f.reify.waist
+                    %li
+                      %i.glyphicons.glyphicons-dumbbell
+                      %b Hips:
+                      = f.reify.hips
+                    %li
+                      %i.glyphicons.glyphicons-dumbbell
+                      %b Thigh:
+                      = f.reify.thigh
+                    %li
+                      %i.glyphicons.glyphicons-dumbbell
+                      %b Calf:
+                      = f.reify.calf
+                %a.btn.btn-blue4{href: "#"} Sign up
         .col-sm-4.col-md-3.hero-plan
           .pricing-plan.margin-none
             .pricing-title.btn-blue4
               %h3 03-15-14
-            .pricing-info
-              %h2 59
-              %h6 Per Month
             .pricing-features
               %ul
                 %li
@@ -67,72 +113,3 @@
                   %b Calf:
                   = @personal_detail.calf
             %a.btn.btn-blue4{href: "#"} Sign up
-        .col-sm-4.col-md-3.hero-plan
-          .pricing-plan.margin-none
-            .pricing-title.btn-blue
-              %h3= @personal_detail.updated_at
-            .pricing-info
-              %span.currency-sign $
-              %h2 59
-              %h6 Per Month
-            .pricing-features
-              %ul
-                %li
-                  %i.fa.fa-hdd-o
-                  %b 2GB
-                  Disk Space
-                %li
-                  %i.fa.fa-exchange
-                  %b 20GB
-                  Bandwidth
-                %li
-                  %i.fa.fa-refresh
-                  %b 5
-                  Email Accounts
-            %a.btn.btn-blue{href: "#"} Sign up
-        .col-sm-4.col-md-3.hero-plan
-          .pricing-plan.margin-none
-            .pricing-title.btn-green
-              %h3 Standard
-            .pricing-info
-              %span.currency-sign $
-              %h2 59
-              %h6 Per Month
-            .pricing-features
-              %ul
-                %li
-                  %i.fa.fa-hdd-o
-                  %b 2GB
-                  Disk Space
-                %li
-                  %i.fa.fa-exchange
-                  %b 20GB
-                  Bandwidth
-                %li
-                  %i.fa.fa-refresh
-                  %b 5
-                  Email Accounts
-            %a.btn.btn-green{href: "#"} Sign up
-        .hidden-sm.col-md-3.hero-plan
-          .pricing-plan.margin-none
-            .pricing-title.btn-alert
-              %h3 Standard
-            .pricing-info
-              %span.currency-sign $
-              %h2 59
-              %h6 Per Month
-            .pricing-features
-              %ul
-                %li
-                  %i.fa.fa-hdd-o
-                  %b 2GB
-                  Disk Space
-                %li
-                  %i.fa.fa-exchange
-                  %b 20GB
-                  Bandwidth
-                %li
-                  %i.fa.fa-refresh
-                  %b 5
-                  Email Accounts
-            %a.btn.btn-alert{href: "#"} Sign up
