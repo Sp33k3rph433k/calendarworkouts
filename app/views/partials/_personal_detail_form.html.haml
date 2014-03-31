@@ -1,6 +1,6 @@
 = simple_form_for [@user, @personal_detail] do |f|
   - unless @user.personal_detail
-    = f.input :gender
+    = f.input :gender, :collection => %w[Male Female]
   = f.input :weight
   = f.input :bicep
   = f.input :shoulders
@@ -12,4 +12,3 @@
   = f.input :resting_heart_rate
   = f.input :calf
   = f.button :submit
-  / added :user to the simple_form_for and it worked, but I have no idea why.
