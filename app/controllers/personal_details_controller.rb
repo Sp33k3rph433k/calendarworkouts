@@ -9,7 +9,7 @@ class PersonalDetailsController < ApplicationController
   def create
     @user = current_user
     @personal_detail = @user.build_personal_detail(detail_params)
-
+    @personal_detail.date = Date.today
     if @personal_detail.save
       flash[:notice] = "Thanks for checking in! We'll track your progress"
       redirect_to user_dashboard_path
@@ -32,6 +32,7 @@ class PersonalDetailsController < ApplicationController
   def update
     @user = current_user
     @personal_detail = @user.personal_detail
+    @personal_detail.date = Date.today
     if @personal_detail.update_attributes(detail_params)
       flash[:notice] = "Check-in any time you'd like!"
       redirect_to user_dashboard_path
@@ -46,6 +47,6 @@ class PersonalDetailsController < ApplicationController
   private
 
   def detail_params
-    params.require(:personal_detail).permit(:gender, :weight, :bicep, :shoulders, :chest, :neck, :waist, :hips, :thigh, :resting_heart_rate, :calf, :submit)
+    params.require(:personal_detail).permit(:gender, :weight, :bicep, :shoulders, :chest, :neck, :waist, :hips, :thigh, :resting_heart_rate, :calf, :submit, :date)
   end
 end
