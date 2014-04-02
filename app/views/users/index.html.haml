@@ -12,6 +12,35 @@
   = link_to "Or click here to learn how to measure properly.", "#"
 / Why do I have to pass in (@user)?
 - if @workout
+  .row
+    .col-sm-12
+      .pricing-tables.margin-top-lg.text-center
+        - for workout in @workout do
+          .col-sm-2
+            .pricing-plan
+              .pricing-title.btn-light2
+                %h3
+                  = workout.name
+                %h6
+                  = workout.date
+              .pricing-features
+                %ul
+                  - for exercise in workout.exercises
+                    %li
+                      %i.fa.fa-hdd-o
+                      %b
+                        = exercise.name
+              .pricing-icons
+                %ul
+                  %li
+                    %i.fa.fa-times
+                  %li
+                    %i.fa.fa-times
+                  %li
+                    %i.fa.fa-times
+                  %li
+                    %i.fa.fa-ellipsis-h
+              %a.btn.btn-large.btn-dark{href: "#"} Sign up
 
 - if @personal_detail
   .row
@@ -23,7 +52,8 @@
             .col-sm-4.col-md-3.hero-plan
               .pricing-plan.margin-none
                 .pricing-title.btn-blue4
-                  %h3 03-15-14
+                  %h3
+                    = @personal_detail.date
                 .pricing-features
                   %ul
                     %li
