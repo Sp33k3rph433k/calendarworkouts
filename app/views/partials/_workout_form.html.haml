@@ -1,6 +1,6 @@
 = simple_form_for [@user, @workout] do |f|
   = f.input :name
   / = f.input :date
-  = f.date_select :date, { start_year: 10.years.ago.year, end_year: Date.today.year, default: Date.today}
+  = f.date_select :date, { default: Date.today}
   = f.submit
   / added :user to the simple_form_for and it worked, but I have no idea why.
