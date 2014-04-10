@@ -22,20 +22,22 @@
                 %h3
                   = workout.name
                 %h6
-                  = workout.date
+                  = workout.date.strftime("%Y-%m-%d")
               .pricing-features
                 %ul
                   - for exercise in workout.exercises
                     %li
-                      %i.fa.fa-hdd-o
                       %b
                         = exercise.name
+                    #workout-stats
+                      %ul.workout-numbers
+                        %li= "Reps: #{exercise.reps}"
+                        %li= "Sets: #{ exercise.sets}"
+                        %li= "Weight: #{exercise.weight}"
               .pricing-icons
                 %ul
                   %li
                     %i.fa.fa-times
-                  %li
-                    %i.fa.fa-ellipsis-h
               %a.btn.btn-large.btn-dark{href: "#"} Sign up
 
 - if @personal_detail

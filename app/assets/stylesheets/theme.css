@@ -2254,10 +2254,10 @@ td#weekly-calendar {
     border-top: 1px solid #DDD;
 }
 .pricing-features li {
-    padding: 10px 0;
-    border-bottom: 1px solid #DDD;
+    padding: 6px 0;
+    border-bottom: none;
     background-color: #FFF;
-    color: #999;
+    color: black;
     margin: 0;
 }
 /*.pricing-tables .pricing-features li b { font-weight: 600 }*/
@@ -2311,3 +2311,19 @@ td#weekly-calendar {
     font-weight: 600;
 }
 .hero-plan .pricing-plan a.btn { margin: 40px 0 20px }
+
+#workout-stats > ul > li {
+    padding: 0;
+    display: inline;
+    color: black;
+    margin-right: 10px;
+    border-bottom: none;
+}
+
+#workout-stats > ul {
+    border-top: none;
+}
+
+#workout-stats {
+    border-bottom: 1px solid #DDD;
+}

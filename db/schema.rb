@@ -91,7 +91,7 @@ ActiveRecord::Schema.define(version: 20140401024420) do
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.time     "date"
+    t.date     "date"
     t.integer  "muscle_group_id"
     t.integer  "user_id"
   end
