@@ -3,15 +3,13 @@
   = link_to "Click here to checkin any time you want", edit_user_personal_detail_path(@user, @personal_detail)
   <br />
   = link_to "If you need to see how to measure properly, click here", "#"
-  <br />
-  = link_to "Go create a new workout!", new_user_workout_path(@user, @workout)
 - else
   %h2 Get Started!
   = link_to "It looks like you haven't checked in your measurements yet. Click here to do so", new_user_personal_detail_path(@user)
   <br />
   = link_to "Or click here to learn how to measure properly.", "#"
 / Why do I have to pass in (@user)?
-- if @workout
+- if @user.workouts.count > 0
   .row
     .col-sm-12
       .pricing-tables.margin-top-lg.text-center

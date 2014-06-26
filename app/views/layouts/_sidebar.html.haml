@@ -8,18 +8,19 @@
       %i.fa.fa-bars
   #sidebar-menu
     %ul.nav.sidebar-nav
-      %li
-        %a{:href=>"#"}
-          %span.glyphicons.glyphicons-sort
-          %span.sidebar-title
-            Portlets
       %li.active
-        %a{:href=>"#"}
+        %a{:href=>user_dashboard_path}
           %span.glyphicons.glyphicons-star
           %span.sidebar-title
             Dashboard
+      - if @user.personal_detail
+        %li
+          %a{:href=>edit_user_personal_detail_path(@user, @personal_detail)}
+            %span.glyphicons.glyphicons-ruler
+            %span.sidebar-title
+              New Check-in
       %li
-        %a{:href=>"#", :class=>"accordion-toggle menu-open"}
+        %a{:href=>"#", :class=>"accordion-toggle"}
           %span.glyphicons.glyphicons-settings
           %span.sidebar-title
             Resources
