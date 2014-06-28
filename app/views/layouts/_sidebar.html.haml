@@ -13,12 +13,12 @@
           %span.glyphicons.glyphicons-star
           %span.sidebar-title
             Dashboard
-      - if @user.personal_detail
-        %li
-          %a{:href=>edit_user_personal_detail_path(@user, @personal_detail)}
-            %span.glyphicons.glyphicons-ruler
-            %span.sidebar-title
-              New Check-in
+      -#- if @user.personal_detail
+      -#  %li
+      -#    %a{:href=>edit_user_personal_detail_path(@user, @personal_detail)}
+      -#      %span.glyphicons.glyphicons-ruler
+      -#      %span.sidebar-title
+      -#        New Check-in #TODO Causing issues in the new workout form
       %li
         %a{:href=>"#", :class=>"accordion-toggle"}
           %span.glyphicons.glyphicons-settings
