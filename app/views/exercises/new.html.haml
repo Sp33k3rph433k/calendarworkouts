@@ -1,1 +1,18 @@
+-if @workout.exercises
+ -for exercise in @workout.exercises
+  .pricing_features
+   %ul
+    %li
+     %b
+      Name:
+     =exercise.name
+    %li
+     %b
+      Reps:
+     =exercise.reps
+    %li
+     %b
+      Sets:
+     =exercise.sets
 = render 'partials/exercise_form'
+= link_to "Finish Adding Workouts", user_dashboard_path

@@ -8,6 +8,7 @@
     %title= content_for?(:title) ? yield(:title) : 'Cwapp'
     %meta{:name => "description", :content => "#{content_for?(:description) ? yield(:description) : 'Cwapp'}"}
     = stylesheet_link_tag 'application'
+    = stylesheet_link_tag 'theme'
     = javascript_include_tag 'application'
     = stylesheet_link_tag 'fonts/glyphicons_pro/glyphicons'
     = csrf_meta_tags

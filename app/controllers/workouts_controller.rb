@@ -20,6 +20,24 @@ class WorkoutsController < ApplicationController
     end
   end
 
+  def destroy
+    @workout = Workout.find(params[:id])
+    Workout.find(params[:id]).destroy
+    redirect_to user_dashboard_path
+  end
+
+  def edit
+    @workout = Workout.find(params[:id])
+
+    if @workout.save
+      flash[:notice] = "Workout updated!"
+      redirect_to user_dashboard_path
+    else
+      flash[:notice] = "Error updating this workout, email support@calendarworkouts.com"
+      redirect_to user_dashboard_path
+    end
+  end
+
 
   private
 

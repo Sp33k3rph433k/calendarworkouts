@@ -3,6 +3,8 @@
   = link_to "Click here to checkin any time you want", edit_user_personal_detail_path(@user, @personal_detail)
   <br />
   = link_to "If you need to see how to measure properly, click here", "#"
+  <br />
+  = link_to "Create a new workout", new_user_workout_path(@user)
 - else
   %h2 Get Started!
   = link_to "It looks like you haven't checked in your measurements yet. Click here to do so", new_user_personal_detail_path(@user)
@@ -36,20 +38,22 @@
                 %ul
                   %li
                     %i.fa.fa-times
-              %a.btn.btn-large.btn-dark{href: "#"} Sign up
+              = link_to "Edit", edit_user_workout_path(@user, workout.id), class: "btn btn-primary btn-sm"
+              = link_to "Delete", delete_workout_path(workout.id), class: "btn btn-danger btn-sm", method: :delete, confirm: "Are you sure?"
+
 
 - if @personal_detail
   .row
     .col-sm-12.col-md-10.col-md-offset-1
       %hr.alt/
       .pricing-tables.margin-top-lg.text-center.row
-        - @personal_detail.versions.last(3).map do |f|
+        - @personal_detail.versions.last(4).map do |f|
           - unless f.reify == nil
             .col-sm-4.col-md-3.hero-plan
               .pricing-plan.margin-none
                 .pricing-title.btn-blue4
                   %h3
-                    = @personal_detail.date
+                    = f.reify.date
                 .pricing-features
                   %ul
                     %li
@@ -93,50 +97,3 @@
                       %b Calf:
                       = f.reify.calf
                 %a.btn.btn-blue4{href: "#"} Sign up
-        .col-sm-4.col-md-3.hero-plan
-          .pricing-plan.margin-none
-            .pricing-title.btn-blue4
-              %h3 03-15-14
-            .pricing-features
-              %ul
-                %li
-                  %i.glyphicons.glyphicons-heart
-                  %b Resting Heart Rate:
-                  = @personal_detail.resting_heart_rate
-                %li
-                  %i.fa.fa-hdd-o
-                  %b Weight:
-                  = @personal_detail.weight
-                %li
-                  %i.glyphicons.glyphicons-dumbbell
-                  %b Bicep:
-                  = @personal_detail.bicep
-                %li
-                  %i.fa.fa-refresh
-                  %b Chest:
-                  = @personal_detail.chest
-                %li
-                  %i.glyphicons.glyphicons-dumbbell
-                  %b Shoulders:
-                  = @personal_detail.shoulders
-                %li
-                  %i.glyphicons.glyphicons-dumbbell
-                  %b Neck:
-                  = @personal_detail.neck
-                %li
-                  %i.glyphicons.glyphicons-dumbbell
-                  %b Waist
-                  = @personal_detail.waist
-                %li
-                  %i.glyphicons.glyphicons-dumbbell
-                  %b Hips:
-                  = @personal_detail.hips
-                %li
-                  %i.glyphicons.glyphicons-dumbbell
-                  %b Thigh:
-                  = @personal_detail.thigh
-                %li
-                  %i.glyphicons.glyphicons-dumbbell
-                  %b Calf:
-                  = @personal_detail.calf
-            %a.btn.btn-blue4{href: "#"} Sign up
