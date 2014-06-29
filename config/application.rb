@@ -20,6 +20,10 @@ module Cwapp
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
 
+    config.assets.enabled = true
+    config.assets.digest = true
+
+
     # Don't generate RSpec tests for views and helpers (though it may be too late)
     config.generators do |g|
       g.test_framework :rspec, fixture: true
