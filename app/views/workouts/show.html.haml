@@ -1,0 +1,16 @@
+-for exercise in @workout.exercises
+  -if exercise.is_run?
+    %p= exercise.time
+    %p Need to add "distance"
+  -else
+    %h2 Name:
+    %p= exercise.name
+    %h2 Weight:
+    %p= exercise.weight
+    %h2 Sets:
+    %p= exercise.sets
+    %h2 Reps:
+    %p= exercise.reps
+    -if exercise.muscle_group
+      %h2 Muscle Group
+      %p= exercise.muscle_group.name unless exercise.muscle_group == nil
