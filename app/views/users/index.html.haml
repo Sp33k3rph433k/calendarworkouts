@@ -20,7 +20,7 @@
             .pricing-plan
               .pricing-title.btn-light2
                 %h3
-                  = workout.name
+                  =link_to workout.name, user_workout_path(current_user.id, workout.id)
                 %h6
                   = workout.date.strftime("%Y-%m-%d")
               .pricing-features
