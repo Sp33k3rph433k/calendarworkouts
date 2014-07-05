@@ -1,50 +1,50 @@
 .row
-    .page-logo
-        = link_to image_tag("logo.png"), "#", {:class => "img-responsive", :alt => "logo"}
+  .page-logo
+    = link_to image_tag("logo.png"), "#", {:class => "img-responsive", :alt => "logo"}
 .row
-    .panel
-        .panel-heading
-            .panel-title
-                %i.fa.fa-lock
-                Login
-            %span.panel-title-sm.pull-right.padding-right-sm
-                Not
-                %b
-                    Cynthia Blue?
-        = form_for(resource, :as => resource_name, html:{:class=>"cmxform", :id=> "altForm", :method=>:put}, :url => registration_path(resource_name)) do |f|
-            .panel-body
-                .login-avatar
-                    = link_to image_tag("login.png"), {:width=>"150", :height=>"112", :alt=>"avatar"}
-                .form-group
-                    .input-group
-                        %span.input-group-addon
-                            %i.fa.fa-user
-                        = f.input :name
-                .form-group
-                    .input-group
-                        %span.input-group-addon
-                            %i.fa.fa-key
-                        = f.input :email
-                .form-group
-                    .input-group
-                        %span.input-group-addon
-                            %i.fa.fa-key
-                        = f.password_field :password
-                .form-group
-                    .input-group
-                        %span.input-group-addon
-                            %i.fa.fa-key
-                        = f.password_field :password_confirmation
-                .alert.alert-warning.login-alert
-                    Please read our
-                        %b
-                            Terms of use
-                    before logging in
-                .panel-footer
-                    %span.panel-title-sm.pull-left, {:style => "padding-top:7px;"}
-                        = link_to "Forgotten password?", "#"
-                    .form-group.margin-bottom-none
-                        f.submit "Sign up/in"
-                        .clearfix
+  .panel
+    .panel-heading
+      .panel-title
+        %i.fa.fa-lock
+        Login
+      %span.panel-title-sm.pull-right.padding-right-sm
+        Not
+        %b
+          Cynthia Blue?
+    = simple_form_for(resource, :as => resource_name, html:{:class=>"cmxform", :id=> "altForm", :method=>:put}, :url => registration_path(resource_name)) do |f|
+      .panel-body
+        .login-avatar
+          = link_to image_tag("login.png"), {:width=>"150", :height=>"112", :alt=>"avatar"}
+        .form-group
+          .input-group
+            %span.input-group-addon
+              %i.fa.fa-user
+            = f.input :name
+        .form-group
+          .input-group
+            %span.input-group-addon
+              %i.fa.fa-key
+            = f.input :email
+        .form-group
+          .input-group
+            %span.input-group-addon
+              %i.fa.fa-key
+            = f.password_field :password
+        .form-group
+          .input-group
+            %span.input-group-addon
+              %i.fa.fa-key
+            = f.password_field :password_confirmation
+        .alert.alert-warning.login-alert
+          Please read our
+          %b
+            Terms of use
+          before logging in
+      .panel-footer
+        %span.panel-title-sm.pull-left{:style => "padding-top:7px;"}
+        = link_to "Forgotten password?", "#"
+        .form-group.margin-bottom-none
+          =f.submit "Sign up/in"
+          .clearfix
 = render 'devise/shared/links'
 
