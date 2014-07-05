@@ -8,6 +8,7 @@ Cwapp::Application.routes.draw do
     resources :personal_details
     resources :workouts, only: [:index, :new, :create, :show, :edit]
   end
+  get 'users/:id/edit_profile' => 'users#edit_profile', as: :user_edit_profile
 
   resources :workouts, only:[:edit] do
     resources :exercises
