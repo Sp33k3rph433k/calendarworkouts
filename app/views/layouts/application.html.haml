@@ -21,133 +21,134 @@
           .navbar-logo
             = image_tag("logo.png", :style=>"height:50px;", :alt => "logo", :class => "img-responsive")
       = render 'layouts/messages'
-      .pull-right.header-btns
-        .messages-menu
-          %button.btn.btn-sm.dropdown-animate(data-toggle="dropdown"){:type => "button"}
-            %span.glyphicon.glyphicon-comment
-            %b 4
-          %ul.dropdown-menu.checkbox-persist{:role=>"menu"}
-            %li.menu-arrow
-              .menu-arrow-up
-            %li.dropdown-header
-              Recent Messages
-              %span.pull-right.glyphicons.glyphicons-comment
-            %li
-              %ul.dropdown-items
-                %li
-                  .item-avatar
-                    =image_tag "avatar1.jpg", :alt=>"avatar"
-                  .item-message
-                    %b
-                      Maggie
-                    %small.text-muted
-                      12 minutes ago
-                    Great work yesterday!
-            %li.dropdown-footer
-              %a{:href=>"#"}
-                View All Messages
-                %i.fa.fa-caret-right
-        .alerts-menu
-          %button.btn.btn-sm.dropdown-toggle(data-toggle="dropdown"){:type=>"button"}
-            %span.glyphicons.glyphicons-bell
-            %b
-              3
-          %ul.dropdown-menu.checkbox-persist{:role=>"menu"}
-            %li.menu-arrow
-              .menu-arrow-up
-            %li.dropdown-header
-              Recent Alerts
-              %span.pull-right.glyphicons.glyphicons-bell
-            %li
-              %ul.dropdown-items
-                %li
-                  .item-icon
-                    %i.fa.fa-facebook{:style=>"color:#0066ad;"}
-                  .item-message
-                    %a{:href=>"#"}
-                      Facebook likes reached
+      -if user_signed_in?
+        .pull-right.header-btns
+          .messages-menu
+            %button.btn.btn-sm.dropdown-animate(data-toggle="dropdown"){:type => "button"}
+              %span.glyphicon.glyphicon-comment
+              %b 4
+            %ul.dropdown-menu.checkbox-persist{:role=>"menu"}
+              %li.menu-arrow
+                .menu-arrow-up
+              %li.dropdown-header
+                Recent Messages
+                %span.pull-right.glyphicons.glyphicons-comment
+              %li
+                %ul.dropdown-items
+                  %li
+                    .item-avatar
+                      =image_tag "avatar1.jpg", :alt=>"avatar"
+                    .item-message
                       %b
-                        8200
-            %li.dropdown-footer
-              %a{:href=>"#"}
-                View All Alerts
-                %i.fa.fa-caret-right
-        .alerts-menu
-          %button.btn.btn-sm.dropdown-toggle(data-toggle="dropdown"){:type=>"button"}
-            %span.glyphicons.glyphicons-tag
-            %b
-              7
-          %ul.dropdown-menu.dropdown-checklist.checkbox-persist{:role=>"menu"}
-            %li.menu-arrow
-              .menu-arrow-up
-            %li.dropdown-header
-              Recent Tasks
-              %span.pull-right.glyphicons.glyphicons-tag
-            %li
-              %ul.dropdown-items
-                %li
-                  .item-icon
-                    %i.fa.fa-pencil
-                  .item-message.text-slash
-                    %a
-                      Try Clicking Me!
-                  .item-label
-                    %span.label.label-danger
-                      Urgent
-                  .item-checkbox
-                    %input.checkbox.row-checkbox{:type=>"checkbox"}
-            %li.dropdown-footer
-              %a{:href=>"#"}
-                View All Tasks
-                %i.fa.fa-caret-right
-        .btn-group.user-menu
-          %button.btn.btn-sm.dropdown-toggle(data-toggle="dropdown"){:type=>"button"}
-            %span.glyphicons.glyphicons-user
-            %b
-              Cynthia
-          %button.btn.btn-sm.dropdown-toggle.padding-none(data-toggle="dropdown"){:type=>"button"}
-            = image_tag "header-login.png", :alt=>"user avatar", :width=>"28", :height=>"28"
-          %ul.dropdown-menu.checkbox-persist{:role=>"menu"}
-            %li.menu-arrow
-              .menu-arrow-up
-            %li.dropdown-header
-              Your Account
-              %span.pull-right.glyphicons.glyphicons-user
-            %li
-              %ul.dropdown-items
-                %li
-                  .item-icon
-                    %i.fa.fa-envelope-o
-                  %a.item-message{:href=>"#"}
-                    Messages
-                %li
-                  .item-icon
-                    %i.fa.fa-calendar
-                  %a.item-message{:href=>user_edit_profile_path(current_user.id)}
-                    Calendar
-                %li.border-bottom-none
-                  .item-icon
-                    %i.fa.fa-cog
-                - if user_signed_in?
-                  %a.item-message{:href=> edit_user_registration_path }
-                    Settings
-                - else
-                  %a.item-message{:href=> new_user_registration_path}
-                    Sign Up
-                %li.padding-none
-                  .dropdown-lockout
-                    %i.fa.fa-lock
-                    %a{:href=>"#"}
-                      Screen Lock
-                  .dropdown-signout
+                        Maggie
+                      %small.text-muted
+                        12 minutes ago
+                      Great work yesterday!
+              %li.dropdown-footer
+                %a{:href=>"#"}
+                  View All Messages
+                  %i.fa.fa-caret-right
+          .alerts-menu
+            %button.btn.btn-sm.dropdown-toggle(data-toggle="dropdown"){:type=>"button"}
+              %span.glyphicons.glyphicons-bell
+              %b
+                3
+            %ul.dropdown-menu.checkbox-persist{:role=>"menu"}
+              %li.menu-arrow
+                .menu-arrow-up
+              %li.dropdown-header
+                Recent Alerts
+                %span.pull-right.glyphicons.glyphicons-bell
+              %li
+                %ul.dropdown-items
+                  %li
+                    .item-icon
+                      %i.fa.fa-facebook{:style=>"color:#0066ad;"}
+                    .item-message
+                      %a{:href=>"#"}
+                        Facebook likes reached
+                        %b
+                          8200
+              %li.dropdown-footer
+                %a{:href=>"#"}
+                  View All Alerts
+                  %i.fa.fa-caret-right
+          .alerts-menu
+            %button.btn.btn-sm.dropdown-toggle(data-toggle="dropdown"){:type=>"button"}
+              %span.glyphicons.glyphicons-tag
+              %b
+                7
+            %ul.dropdown-menu.dropdown-checklist.checkbox-persist{:role=>"menu"}
+              %li.menu-arrow
+                .menu-arrow-up
+              %li.dropdown-header
+                Recent Tasks
+                %span.pull-right.glyphicons.glyphicons-tag
+              %li
+                %ul.dropdown-items
+                  %li
+                    .item-icon
+                      %i.fa.fa-pencil
+                    .item-message.text-slash
+                      %a
+                        Try Clicking Me!
+                    .item-label
+                      %span.label.label-danger
+                        Urgent
+                    .item-checkbox
+                      %input.checkbox.row-checkbox{:type=>"checkbox"}
+              %li.dropdown-footer
+                %a{:href=>"#"}
+                  View All Tasks
+                  %i.fa.fa-caret-right
+          .btn-group.user-menu
+            %button.btn.btn-sm.dropdown-toggle(data-toggle="dropdown"){:type=>"button"}
+              %span.glyphicons.glyphicons-user
+              %b
+                Cynthia
+            %button.btn.btn-sm.dropdown-toggle.padding-none(data-toggle="dropdown"){:type=>"button"}
+              = image_tag "header-login.png", :alt=>"user avatar", :width=>"28", :height=>"28"
+            %ul.dropdown-menu.checkbox-persist{:role=>"menu"}
+              %li.menu-arrow
+                .menu-arrow-up
+              %li.dropdown-header
+                Your Account
+                %span.pull-right.glyphicons.glyphicons-user
+              %li
+                %ul.dropdown-items
+                  %li
+                    .item-icon
+                      %i.fa.fa-envelope-o
+                    %a.item-message{:href=>"#"}
+                      Messages
+                  %li
+                    .item-icon
+                      %i.fa.fa-calendar
+                    %a.item-message{:href=>user_view_profile_path(current_user.id)}
+                      Calendar
+                  %li.border-bottom-none
+                    .item-icon
+                      %i.fa.fa-cog
                   - if user_signed_in?
-                    %i.fa.fa-sign-out
-                    %a{:href=> destroy_user_session_path, :method => "delete"}
-                      Sign Out
+                    %a.item-message{:href=> edit_user_registration_path }
+                      Settings
                   - else
-                    %i.fa.fa-sign-out
-                    %a{:href=> new_user_session_path}
-                      Sign In
+                    %a.item-message{:href=> new_user_registration_path}
+                      Sign Up
+                  %li.padding-none
+                    .dropdown-lockout
+                      %i.fa.fa-lock
+                      %a{:href=>"#"}
+                        Screen Lock
+                    .dropdown-signout
+                    - if user_signed_in?
+                      %i.fa.fa-sign-out
+                      %a{:href=> destroy_user_session_path, :method => "delete"}
+                        Sign Out
+                    - else
+                      %i.fa.fa-sign-out
+                      %a{:href=> new_user_session_path}
+                        Sign In
   #main
     = render :partial => "layouts/sidebar"
     %section#content

@@ -1,6 +1,6 @@
 Cwapp::Application.routes.draw do
   root :controller => 'static', :action => '/'
-  devise_for :users
+  devise_for :users, controllers: {registrations: "registrations"}
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -8,7 +8,8 @@ Cwapp::Application.routes.draw do
     resources :personal_details
     resources :workouts, only: [:index, :new, :create, :show, :edit]
   end
-  get 'users/:id/edit_profile' => 'users#edit_profile', as: :user_edit_profile
+  get 'users/:id/view_profile' => 'users#view_profile', as: :user_view_profile
+  get 'users/about_yourself' => 'users#about_yourself', as: :user_introduction
 
   resources :workouts, only:[:edit] do
     resources :exercises

@@ -12,8 +12,9 @@ class UsersController < ApplicationController
     @workout = @user.workouts
   end
 
-  def edit_profile
+  def view_profile
     @user = current_user
+    @personal_detail = @user.personal_detail
   end
 
   def update
@@ -22,11 +23,23 @@ class UsersController < ApplicationController
     @user.update_attributes!(user_params)
     if @user.save
       flash[:notice] = "Photo updated!"
-      redirect_to user_edit_profile_path
+      redirect_to user_view_profile_path
     else
       flash[:notice] = "Couldn't save user information"
-      redirect_to user_edit_profile_path
+      redirect_to user_view_profile_path
     end
+  end
+
+  def about_yourself
+    @user = current_user
+    #
+    # if @user.save
+    #   redirect_to user_dashboard_path
+    #   flash[:notice] = "Staying in shape is a way of life! Let's get started."
+    # else
+    #   redirect_to user_introduction_path
+    #   flash[:notice] = "Couldn't save your info"
+    # end
   end
 
 
