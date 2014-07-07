@@ -1,0 +1,28 @@
+= image_tag @user.avatar.url
+
+= simple_form_for @user, :html => { :multipart => true } do |form|
+  =form.file_field :avatar
+  =form.submit
+
+- if @user.personal_detail
+  %b
+    Weight:
+  %p= @personal_detail.weight
+  %b
+    Neck:
+  =@personal_detail.neck
+  %b
+    Shoulders:
+  =@personal_detail.shoulders
+  %b
+    Chest:
+  =@personal_detail.chest
+  %b
+    Bicep:
+  =@personal_detail.bicep
+  %b
+    Waist:
+  =@personal_detail.waist
+  %b
+    Calf:
+  =@personal_detail.calf

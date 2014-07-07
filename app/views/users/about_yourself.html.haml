@@ -1,0 +1,11 @@
+%h2 Tell us a little about yourself!
+
+=simple_form_for @user do |f|
+  %p What's your current activity level?
+  =f.input :activity_level, label: "On a scale of 1-10, how active are you?"
+  %p Gender?
+  =simple_fields_for :personal_detail do |p|
+    = p.input :gender, :collection => %w[Male Female]
+  %p Age?
+  =f.input :age
+  =f.submit "Let's rock"
