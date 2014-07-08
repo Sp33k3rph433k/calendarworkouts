@@ -1,45 +1,41 @@
 .row
-  .page-logo
-    = link_to image_tag("logo.png"), "#", {:class => "img-responsive", :alt => "logo"}
-.row
   .panel
     .panel-heading
       .panel-title
-        %i.fa.fa-lock
-        Login
+        %i.fa.fa-smile-o
+        Sign Up
       %span.panel-title-sm.pull-right.padding-right-sm
-        Not <b>Cynthia Blue?</b>
-    = simple_form_for(resource, :as => resource_name, html:{:class=>"cmxform", :id=> "altForm"}, :url => registration_path(resource_name)) do |f|
+        Welcome to Calendar Workouts!
+    = simple_form_for(resource, :as => resource_name, html:{:class=>"cmxform form-horizontal", :id=> "altForm"}, :url => registration_path(resource_name)) do |f|
       .panel-body
-        .login-avatar
-          = link_to image_tag("login.png"), {:width=>"150", :height=>"112", :alt=>"avatar"}
         .form-group
-          .input-group
-            %span.input-group-addon
-              %i.fa.fa-user
-            = f.input :name
+          .col-lg-4
+            .input-group
+              %span.input-group-addon
+                %i.fa.fa-user
+              = f.input :name, label: false, placeholder: "Name", input_html: { class: "form-control"}
         .form-group
-          .input-group
-            %span.input-group-addon
-              %i.fa.fa-key
-            = f.input :email
+          .col-lg-4
+            .input-group
+              %span.input-group-addon
+                %i.fa.fa-envelope
+              = f.input :email, label: false, placeholder: "Email", input_html: { class: "form-control"}
         .form-group
-          .input-group
-            %span.input-group-addon
-              %i.fa.fa-shield
-            = f.input :password
+          .col-lg-4
+            .input-group
+              %span.input-group-addon
+                %i.fa.fa-lock
+              = f.input :password, label: false, placeholder: "Password", input_html: { class: "form-control"}
         .form-group
-          .input-group
-            %span.input-group-addon
-              %i.fa.fa-shield
-            = f.input :password_confirmation
+          .col-lg-4
+            .input-group
+              %span.input-group-addon
+                %i.fa.fa-lock
+              = f.input :password_confirmation, label: false, placeholder: "Confirm Password", input_html: { class: "form-control"}
         .alert.alert-warning.login-alert
           Please read our <b>Terms of Use</b> before logging in
       .panel-footer
-        %span.panel-title-sm.pull-left{:style => "padding-top:7px;"}
-          = link_to "Forgotten password?", "#"
-        .form-group.margin-bottom-none
-          = f.button :submit
-          .clearfix
+        .form-group
+          = f.submit "Create User!", class: "btn btn-default btn-gradient"
 = render 'devise/shared/links'
 

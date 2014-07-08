@@ -9,6 +9,7 @@ class User < ActiveRecord::Base
   validates_presence_of :name
   validates_uniqueness_of :email, :case_sensitive => false
 
+
   #attr_accessible :email, :password, :password_confirmation, :zip
 
   has_attached_file :avatar, :styles => { :medium => "300x300>", :thumb => "100x100>" }, :default_url => "/images/:style/missing.png",
@@ -23,6 +24,8 @@ class User < ActiveRecord::Base
   has_many :exercises, through: :workouts
   has_many :goals
 
+
+  accepts_nested_attributes_for :personal_detail
 
 
   def s3_credentials

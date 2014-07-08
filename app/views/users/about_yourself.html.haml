@@ -1,6 +1,6 @@
 %h2 Tell us a little about yourself!
 
-=simple_form_for @user do |f|
+=simple_form_for @user, :url => {:action => "about_yourself"} do |f|
   %p What's your current activity level?
   =f.input :activity_level, label: "On a scale of 1-10, how active are you?"
   %p Gender?
