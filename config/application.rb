@@ -26,10 +26,8 @@ module Cwapp
 
     # Don't generate RSpec tests for views and helpers (though it may be too late)
     config.generators do |g|
-      g.test_framework :rspec, fixture: true
+      g.test_framework :rspec, fixture: true, view_specs: false, helper_specs: false, routing_specs: false, controller_specs: true, request_specs: true
       g.fixture_replacement :factory_girl, dir: 'spec/factories'
-      g.view_specs false
-      g.helper_specs false
     end
   end
 end

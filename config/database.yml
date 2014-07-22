@@ -17,7 +17,7 @@ development:
 test: &test
   adapter: postgresql
   encoding: unicode
-  database: cw_dev
+  database: cw_test
   pool: 5
   username: sp33k3rph433k
   password: "Dr3amFortre$$"
