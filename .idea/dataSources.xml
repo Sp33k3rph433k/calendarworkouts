@@ -12,7 +12,7 @@
     <data-source source="LOCAL" name="Rails cwapp: test" uuid="96720f3b-419f-406f-a70a-682128b126d5">
       <driver-ref>postgresql</driver-ref>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql:cw_dev</jdbc-url>
+      <jdbc-url>jdbc:postgresql:cw_test</jdbc-url>
       <user-name>sp33k3rph433k</user-name>
       <user-password>dfeedfd8df99dfcbdfc7dfecdfc5dfd8dfdedfd8dfcfdf8edf8e</user-password>
       <libraries />
@@ -28,7 +28,7 @@
     <data-source source="LOCAL" name="Rails cwapp: cucumber" uuid="d86b4610-2876-45fd-9b5d-83d93a41c370">
       <driver-ref>postgresql</driver-ref>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql:cw_dev</jdbc-url>
+      <jdbc-url>jdbc:postgresql:cw_test</jdbc-url>
       <user-name>sp33k3rph433k</user-name>
       <user-password>dfeedfd8df99dfcbdfc7dfecdfc5dfd8dfdedfd8dfcfdf8edf8e</user-password>
       <libraries />
