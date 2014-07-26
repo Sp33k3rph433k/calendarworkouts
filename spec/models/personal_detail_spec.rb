@@ -10,8 +10,15 @@ describe PersonalDetail do
   it { should respond_to(:user)}
   it {should respond_to(:weight)}
 
+  it "should have a valid factory" do
+    FactoryGirl.create(:personal_detail).should be_valid
+  end
+
   describe "#new" do
-    it "asks for a persons measurements"
+    context "haven't yet filled out a personal_detail form" do
+
+      it "asks for a persons measurements"
+    end
 
 
   end
