@@ -16,10 +16,11 @@ describe User do
   end
 
   it "can have only one personal detail" do
-
+    FactoryGirl.create(:personal_detail)
   end
 
   it "is able to update its own personal detail" do
+    FactoryGirl.create(:personal_detail)
 
   end
 
@@ -31,9 +32,19 @@ describe User do
 
     it "displays a link to the personal detail form if there aren't any"
 
-    it "contains a form to input a workout"
+    context "User has completed initial workout test" do
+      it "shows workouts for the current calendar week"
+    end
 
-    it "shows workouts for the current calendar week"
+    it "should link to a workout form"
+  end
+
+  describe "#view_profile" do
+
+    it "can upload a progress picture" do
+
+    end
+
   end
 
 
