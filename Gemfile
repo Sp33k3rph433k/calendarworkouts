@@ -80,6 +80,7 @@ gem "redis", "~> 3.0.1"
 gem "paperclip", "~> 4.1"
 gem "asset_sync"
 gem 'aws-sdk'
+gem 'wicked', github: "schneems/wicked"
 
 
 
