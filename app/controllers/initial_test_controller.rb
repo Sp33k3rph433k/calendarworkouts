@@ -5,12 +5,10 @@ class InitialTestController < ApplicationController
 
   def show
     @user = current_user
-    @initial_test = InitialTest.new
     case steps
       when :basic_bodyweight
         #TODO inital test logic here
-        @user = current_user
-
+        @initial_test = InitialTest.new
       when :one_mile
         #TODO just going for a little run
         @initial_test = InitialTest.find(params[:initial_test])
