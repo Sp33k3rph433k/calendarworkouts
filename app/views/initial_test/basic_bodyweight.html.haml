@@ -1,0 +1,7 @@
+= simple_form_for [@user, @initial_test], url: wizard_path, method: :put do |f|
+  =f.input :pushups
+  =f.input :situps
+  =f.input :bodyweight_squats
+  =f.submit
+
+  = link_to "next step!", next_wizard_path

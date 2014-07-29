@@ -12,7 +12,7 @@ class User < ActiveRecord::Base
 
   #attr_accessible :email, :password, :password_confirmation, :zip
 
-  has_attached_file :avatar, :styles => { :medium => "300x300>", :thumb => "100x100>" }, :default_url => "/images/:style/missing.png",
+  has_attached_file :avatar, :styles => { :medium => "300x300>", :thumb => "100x100>" }, :default_url => "http://lorempixel.com/300/300",
                     storage: :s3,
                     s3_credentials: Proc.new{|a| a.instance.s3_credentials }
 
@@ -20,10 +20,10 @@ class User < ActiveRecord::Base
   validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/
 
   has_one :personal_detail
+  has_one :initial_test
   has_many :workouts
   has_many :exercises, through: :workouts
   has_many :goals
-
 
   accepts_nested_attributes_for :personal_detail
 
