@@ -43,7 +43,7 @@
               = link_to "Delete", delete_workout_path(workout.id), class: "btn btn-danger btn-sm", method: :delete, confirm: "Are you sure?"
 -else
   <br />
-  =link_to 'start your initial test!', user_initial_test_path(@user, "basic_bodyweight")
+  =link_to 'start your initial test!', new_user_initial_test_path(@user)
 
 
 - if @personal_detail

@@ -1,0 +1,5 @@
+=simple_form_for [@user, @initial_test], url: wizard_path do |f|
+  = f.input :mile_run_time
+  = f.submit
+
+=link_to "Last one!", next_wizard_path

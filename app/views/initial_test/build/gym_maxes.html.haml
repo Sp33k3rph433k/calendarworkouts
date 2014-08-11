@@ -1,0 +1,5 @@
+=simple_form_for [@user, @initial_test], url: wizard_path do |f|
+ = f.input :resting_heart_rate
+ = f.submit
+
+=link_to "Back to the Dashboard", user_dashboard_path
