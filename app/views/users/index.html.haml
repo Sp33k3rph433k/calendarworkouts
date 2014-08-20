@@ -41,8 +41,11 @@
                     %i.fa.fa-times
               = link_to "Edit", edit_user_workout_path(@user, workout.id), class: "btn btn-primary btn-sm"
               = link_to "Delete", delete_workout_path(workout.id), class: "btn btn-danger btn-sm", method: :delete, confirm: "Are you sure?"
--else
-  <br />
+
+<br /><br />
+- if @user.initial_test && @user.initial_test.complete?
+  %h2 Finished!
+- else
   =link_to 'start your initial test!', new_user_initial_test_path(@user)
 
 
