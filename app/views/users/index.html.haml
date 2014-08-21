@@ -43,10 +43,9 @@
               = link_to "Delete", delete_workout_path(workout.id), class: "btn btn-danger btn-sm", method: :delete, confirm: "Are you sure?"
 
 <br /><br />
-- if @user.initial_test && @user.initial_test.complete?
-  %h2 Finished!
-- else
-  =link_to 'start your initial test!', new_user_initial_test_path(@user)
+
+- unless @user.initial_test && @user.initial_test.complete?
+  =link_to "We can't build workouts for you until you take our initial test, click here to take it!", new_user_initial_test_path(@user)
 
 
 - if @personal_detail
@@ -54,6 +53,54 @@
     .col-sm-12.col-md-10.col-md-offset-1
       %hr.alt/
       .pricing-tables.margin-top-lg.text-center.row
+        .col-sm-4.col-md-3.hero-plan
+          .pricing-plan.margin-none
+            .pricing-title.btn-blue4
+              %h3
+                = @personal_detail.date
+            .pricing-features
+              %ul
+                %li
+                  %i.glyphicons.glyphicons-heart
+                  %b Resting Heart Rate:
+                  = @personal_detail.resting_heart_rate
+                %li
+                  %i.fa.fa-hdd-o
+                  %b Weight:
+                  = @personal_detail.weight
+                %li
+                  %i.glyphicons.glyphicons-dumbbell
+                  %b Bicep:
+                  = @personal_detail.bicep
+                %li
+                  %i.fa.fa-refresh
+                  %b Chest:
+                  = @personal_detail.chest
+                %li
+                  %i.glyphicons.glyphicons-dumbbell
+                  %b Shoulders:
+                  = @personal_detail.shoulders
+                %li
+                  %i.glyphicons.glyphicons-dumbbell
+                  %b Neck:
+                  = @personal_detail.neck
+                %li
+                  %i.glyphicons.glyphicons-dumbbell
+                  %b Waist
+                  = @personal_detail.waist
+                %li
+                  %i.glyphicons.glyphicons-dumbbell
+                  %b Hips:
+                  = @personal_detail.hips
+                %li
+                  %i.glyphicons.glyphicons-dumbbell
+                  %b Thigh:
+                  = @personal_detail.thigh
+                %li
+                  %i.glyphicons.glyphicons-dumbbell
+                  %b Calf:
+                  = @personal_detail.calf
+            %a.btn.btn-blue4{href: "#"} See Stats
         - @personal_detail.versions.last(4).map do |f|
           - unless f.reify == nil
             .col-sm-4.col-md-3.hero-plan
@@ -103,4 +150,4 @@
                       %i.glyphicons.glyphicons-dumbbell
                       %b Calf:
                       = f.reify.calf
-                %a.btn.btn-blue4{href: "#"} Sign up
+                %a.btn.btn-blue4{href: "#"} See Stats
