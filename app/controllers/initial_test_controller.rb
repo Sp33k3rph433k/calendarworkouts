@@ -6,7 +6,7 @@ class InitialTestController < ApplicationController
   end
 
   def create
-    @initial_test = InitialTest.new(detail_params)
+    @initial_test = InitialTest.create(detail_params)
     if @initial_test.save
       redirect_to user_initial_test_build_path(current_user.id, @initial_test, "one_mile")
     else

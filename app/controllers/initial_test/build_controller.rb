@@ -5,7 +5,7 @@ class InitialTest::BuildController < ApplicationController
 
   def show
     @user = current_user
-    @initial_test = InitialTest.find(params[:initial_test_id])
+    @initial_test = @user.initial_test
     render_wizard
   end
 
