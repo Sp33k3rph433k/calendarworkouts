@@ -1,21 +1,24 @@
-.panel
-  .panel-heading
-    .panel-title
-      Create Your Workout
-  .panel-body
-    = simple_form_for [@user, @workout], input_html: {class: "form-horizontal"} do |f|
-      .form-group
-        =f.label :name, class: "col-lg-2 control-label"
-        .col-md-10
-          .input-group
-            %span.input-group-addon
-              %i.fa.fa-hand-o-right
-            = f.input_field :name, class: "form-control margin-top-none"
-      .form-group
-        =f.label :date, class: "col-lg-2 control-label"
-        .col-md-10
-          .input-group
-            %span.input-group-addon
-              %i.fa.fa-hand-o-right
-            = f.input_field :date, class: "form-control datepicker margin-top-none"
-      = f.submit
+.col-md-6
+  .row
+    .col-md-12
+      .panel
+        .panel-heading
+          .panel-title
+            Create Your Workout
+        .panel-body
+          = simple_form_for [@user, @workout], html: {class: "form-horizontal"} do |f|
+            .form-group
+              =f.label :name, class: "col-lg-2 control-label"
+              .col-md-10
+                .input-group
+                  %span.input-group-addon
+                    %i.imoon.imoon-file
+                  = f.input_field :name, class: "form-control margin-top-none"
+            .form-group
+              =f.label :date, class: "col-lg-2 control-label"
+              .col-md-10
+                .input-group
+                  %span.input-group-addon
+                    %i.glyphicon.glyphicon-calendar
+                  = f.input_field :date, class: "form-control datepicker"
+            = f.submit

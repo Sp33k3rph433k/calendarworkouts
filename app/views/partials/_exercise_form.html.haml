@@ -1,32 +1,60 @@
-.panel
-  .panel-heading
-    .panel-title
-      Create Your Workout
-  .panel-body
-    = simple_form_for [@user, @workout], input_html: {class: "form-horizontal"} do |f|
-      .form-group
-        =f.label :name, class: "col-lg-2 control-label"
-        .col-md-10
-          .input-group
-            %span.input-group-addon
-              %i.fa.fa-hand-o-right
-            = f.input_field :name, class: "form-control margin-top-none"
-      .form-group
-        =f.label :date, class: "col-lg-2 control-label"
-        .col-md-10
-          .input-group
-            %span.input-group-addon
-              %i.fa.fa-hand-o-right
-            = f.input_field :date, class: "form-control datepicker margin-top-none"
-      = f.submit
-
-= simple_form_for [@workout, @exercise] do |f|
-  = f.input :name
-  = f.input :youtube_url
-  = f.input :sets
-  = f.input :reps
-  = f.input :weight
-  = f.input :is_run?, as: :boolean
-  = f.input :time
-  = f.input :muscle_group_id, collection: @muscle_groups, group_method: :name
-  = f.submit
+.col-md-6
+  .row
+    .col-md-12
+      .panel
+        .panel-heading
+          .panel-title
+            Create Your Workout
+        .panel-body
+          = simple_form_for [@workout, @exercise], html: { class: "form-horizontal"} do |f|
+            .form-group
+              =f.label :name, class: "col-lg-2 control-label"
+              .col-md-10
+                .input-group
+                  %span.input-group-addon
+                    %i.imoon.imoon-file
+                  = f.input_field :name, class: "form-control margin-top-none"
+            .form-group
+              =f.label :youtube_url, class: "col-lg-2 control-label", label: "URL"
+              .col-md-10
+                .input-group
+                  %span.input-group-addon
+                    %i.fa.fa-youtube-play
+                  = f.input_field :youtube_url, class: "form-control"
+            .form-group
+              =f.label :sets, class: "col-lg-2 control-label"
+              .col-md-10
+                .input-group
+                  %span.input-group-addon
+                    %i.imoon.imoon-numbered-list
+                  = f.input_field :sets, class: "form-control"
+            .form-group
+              =f.label :reps, class: "col-lg-2 control-label"
+              .col-md-10
+                .input-group
+                  %span.input-group-addon
+                    %i.fa.fa-times
+                  = f.input_field :reps, class: "form-control"
+            .form-group
+              =f.label :weight, class: "col-lg-2 control-label"
+              .col-md-10
+                .input-group
+                  %span.input-group-addon
+                    %i.glyphicons.glyphicons-dumbbell
+                  = f.input_field :weight, class: "form-control"
+            .form-group
+              =f.label :is_run?, class: "col-lg-2 control-label", label: "Run?"
+              .col-md-10
+                .input-group
+                  = f.input :is_run?, class: "form-control", :as => :select, :collection => [['No',false],['Yes',true]], label: false
+            .form-group
+              =f.label :muscle_group_id, class: "col-lg-2 control-label"
+              .col-md-10
+                .input-group
+                  %span.input-group-addon
+                    %i.imoon.imoon-accessibility
+                  = f.input_field :muscle_group_id, class: "form-control", collection: @muscle_groups, group_method: :name
+            .form-group
+              .col-md-10
+                .input-group
+                  = f.submit class: "btn btn-info btn-gradient"
