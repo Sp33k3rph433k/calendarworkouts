@@ -43,6 +43,36 @@ class WorkoutsController < ApplicationController
 
   end
 
+  def index
+    @user = current_user
+    @workouts = @user.workouts #TODO: Turn this shiz into JSON for the calendar!
+    @json = []
+
+    @workouts.each do |w|
+      r = {}
+      r[:title] = w.name
+      r[:start] = w.created_at
+      @json << r
+    end
+  end
+
+
+#   vents: [
+#       {
+#           title  : 'event1',
+#       start  : '2010-01-01'
+#   },
+#       {
+#           title  : 'event2',
+#       start  : '2010-01-05',
+# end    : '2010-01-07'
+# },
+#     {
+#         title  : 'event3',
+#     start  : '2010-01-09T12:30:00',
+#     allDay : false // will make the time show
+#         }
+#     ]
 
   private
 
