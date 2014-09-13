@@ -4,17 +4,94 @@
 <br />
 = link_to "Here's some instructions for how to measure different parts of your body!", "#"
 
-= simple_form_for [@user, @personal_detail] do |f|
-  - unless @user.personal_detail
-    = f.input :gender, :collection => %w[Male Female]
-  = f.input :weight
-  = f.input :bicep
-  = f.input :shoulders
-  = f.input :chest
-  = f.input :neck
-  = f.input :waist
-  = f.input :hips
-  = f.input :thigh
-  = f.input :resting_heart_rate
-  = f.input :calf
-  = f.button :submit
+.col-md-6
+  .row
+    .col-md-12
+      .panel
+        .panel-heading
+          .panel-title
+            Your Measurements
+        .panel-body
+          = simple_form_for [@user, @personal_detail], html: { class: "form-horizontal"} do |f|
+            - unless @user.personal_detail.gender?
+              .form-group
+                =f.label :gender, class:"col-lg-2 control-label"
+                .col-md-10
+                  .input-group
+                    %span.input-group-addon
+                      %i.imoon.imoon-file
+                    = f.select :gender, class: "form-control margin-top-none", collection: %w[Male Female], label: false
+            .form-group
+              =f.label :weight, class: "col-lg-2 control-label"
+              .col-md-10
+                .input-group
+                  %span.input-group-addon
+                    %i.imoon.imoon-file
+                  = f.input_field :weight, class: "form-control"
+            .form-group
+              =f.label :bicep, class: "col-lg-2 control-label"
+              .col-md-10
+                .input-group
+                  %span.input-group-addon
+                    %i.imoon.imoon-file
+                  = f.input_field :bicep, class: "form-control"
+            .form-group
+              =f.label :shoulders, class: "col-lg-2 control-label"
+              .col-md-10
+                .input-group
+                  %span.input-group-addon
+                    %i.imoon.imoon-file
+                  = f.input_field :shoulders, class: "form-control"
+            .form-group
+              =f.label :chest, class: "col-lg-2 control-label"
+              .col-md-10
+                .input-group
+                  %span.input-group-addon
+                    %i.imoon.imoon-file
+                  = f.input_field :chest, class: "form-control"
+            .form-group
+              =f.label :neck, class: "col-lg-2 control-label"
+              .col-md-10
+                .input-group
+                  %span.input-group-addon
+                    %i.imoon.imoon-file
+                  = f.input_field :neck, class: "form-control"
+            .form-group
+              =f.label :waist, class: "col-lg-2 control-label"
+              .col-md-10
+                .input-group
+                  %span.input-group-addon
+                    %i.imoon.imoon-file
+                  = f.input_field :waist, class: "form-control"
+            .form-group
+              =f.label :hips, class: "col-lg-2 control-label"
+              .col-md-10
+                .input-group
+                  %span.input-group-addon
+                    %i.imoon.imoon-file
+                  = f.input_field :hips, class: "form-control"
+            .form-group
+              =f.label :thigh, class: "col-lg-2 control-label"
+              .col-md-10
+                .input-group
+                  %span.input-group-addon
+                    %i.imoon.imoon-file
+                  = f.input_field :thigh, class: "form-control"
+            .form-group
+              =f.label :resting_heart_rate, class: "col-lg-2 control-label"
+              .col-md-10
+                .input-group
+                  %span.input-group-addon
+                    %i.imoon.imoon-file
+                  = f.input_field :resting_heart_rate, class: "form-control"
+            .form-group
+              =f.label :calf, class: "col-lg-2 control-label"
+              .col-md-10
+                .input-group
+                  %span.input-group-addon
+                    %i.imoon.imoon-file
+                  = f.input_field :calf, class: "form-control"
+            .form-group
+              .col-md-10
+                .input-group
+                  = f.submit class: "btn btn-info btn-gradient"

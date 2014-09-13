@@ -13,34 +13,40 @@
   = link_to "Or click here to learn how to measure properly.", "#"
 
 - if @user.workouts.count > 0
-  .row
-    .col-sm-12
-      .pricing-tables.margin-top-lg.text-center
-        - for workout in @workout do
-          .col-sm-2
-            .pricing-plan
-              .pricing-title.btn-light2
-                %h3
-                  =link_to workout.name, user_workout_path(current_user.id, workout.id)
-                %h6
-                  = workout.date.strftime("%Y-%m-%d")
-              .pricing-features
-                %ul
-                  - for exercise in workout.exercises
-                    %li
-                      %b
-                        = exercise.name
-                    #workout-stats
-                      %ul.workout-numbers
-                        %li= "Reps: #{exercise.reps}"
-                        %li= "Sets: #{ exercise.sets}"
-                        %li= "Weight: #{exercise.weight}"
-              .pricing-icons
-                %ul
-                  %li
-                    %i.fa.fa-times
-              = link_to "Edit", edit_user_workout_path(@user, workout.id), class: "btn btn-primary btn-sm"
-              = link_to "Delete", delete_workout_path(workout.id), class: "btn btn-danger btn-sm", method: :delete, confirm: "Are you sure?"
+  - for workout in @workout do
+    .col-md-12
+      .panel
+        .panel-heading
+          %span.workout-modify-buttons
+            = link_to "Edit", edit_user_workout_path(@user, workout.id), class: "btn btn-primary btn-sm"
+            = link_to "Delete", delete_workout_path(workout.id), class: "btn btn-danger btn-sm", method: :delete, confirm: "Are you sure?"
+          .panel-title
+            %i.fa.fa-table
+            =workout.name
+            =workout.date.strftime("%Y-%m-%d")
+        .panel-body
+          %table.table.table-hover
+            %thead
+              %tr
+                %th
+                  Exercise Name
+                %th
+                  Reps
+                %th
+                  Sets
+                %th
+                  Weight
+            %tbody
+              - for ex in workout.exercises
+                %tr
+                  %td
+                    = ex.name
+                  %td
+                    = ex.reps
+                  %td
+                    = ex.sets
+                  %td
+                    = ex.weight
 
 <br /><br />
 
