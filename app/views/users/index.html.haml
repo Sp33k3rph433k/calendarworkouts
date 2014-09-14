@@ -1,8 +1,45 @@
 -unless @user.age
   =link_to "We'd like to learn more about you, click here to introduce yourself (don't worry, it's short!)", user_introduction_path
+.row
+  .col-md-6
+    %h2 This is you
+  .col-md-6
+    %h2 Your goals:
 
+.row
+  .col-md-6
+    .user-progress-pic.col-md-6
+      %img{src: "http://placehold.it/250x250"}
+    - if @personal_detail
+      .col-md-6
+        %ul.list-unstyled
+          %li
+            %h4 Date: #{@personal_detail.date}
+          %li
+            %h4 Resting Heart Rate: #{@personal_detail.resting_heart_rate}
+          %li
+            %h4 Weight: #{@personal_detail.weight}
+          %li
+            %h4 Bicep: #{@personal_detail.bicep}
+          %li
+            %h4 Chest: #{@personal_detail.chest}
+          %li
+            %h4 Calf: #{@personal_detail.calf}
+          %li
+            %h4 Thigh: #{@personal_detail.thigh}
+    .progress-pic-buttons
+      %button.btn.btn-primary Past Progress Pics
+      %button.btn.btn-primary New Progress Pic
+  .col-md-6
+    %ul
+      %li
+        %h4 Goal 1
+      %li
+        %h4 Goal 2
+      %li
+        %h4 Goal 3
 - if @personal_detail
-  %h2 Log your Progress
+
   = link_to "Click here to checkin any time you want", edit_user_personal_detail_path(@user, @personal_detail)
   <br />
   = link_to "Create a new workout", new_user_workout_path(@user)
@@ -12,43 +49,6 @@
   <br />
   = link_to "Or click here to learn how to measure properly.", "#"
 
-- if @user.workouts.count > 0
-  - for workout in @workout do
-    .col-md-12
-      .panel
-        .panel-heading
-          %span.workout-modify-buttons
-            = link_to "Edit", edit_user_workout_path(@user, workout.id), class: "btn btn-primary btn-sm"
-            = link_to "Delete", delete_workout_path(workout.id), class: "btn btn-danger btn-sm", method: :delete, confirm: "Are you sure?"
-          .panel-title
-            %i.fa.fa-table
-            =workout.name
-            =workout.date.strftime("%Y-%m-%d")
-        .panel-body
-          %table.table.table-hover
-            %thead
-              %tr
-                %th
-                  Exercise Name
-                %th
-                  Reps
-                %th
-                  Sets
-                %th
-                  Weight
-            %tbody
-              - for ex in workout.exercises
-                %tr
-                  %td
-                    = ex.name
-                  %td
-                    = ex.reps
-                  %td
-                    = ex.sets
-                  %td
-                    = ex.weight
-
-<br /><br />
 
 - unless @user.initial_test && @user.initial_test.complete?
   =link_to "We can't build workouts for you until you take our initial test, click here to take it!", new_user_initial_test_path(@user)

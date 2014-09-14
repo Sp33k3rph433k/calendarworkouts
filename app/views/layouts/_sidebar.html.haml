@@ -1,63 +1,37 @@
 %aside#sidebar
   #sidebar-search
-    %form{:role=>"search"}
-      %input.search-bar.form-control{:type=>"text", :placeholder=>"search"}
-      %i.fa.fa-search.field-icon-right
-      %button.btn.btn-default.hidden{:type=>"submit"}
     .sidebar-toggle
       %i.fa.fa-bars
   #sidebar-menu
     %ul.nav.sidebar-nav
-      %li.active
+      %li
         %a{:href=>user_dashboard_path}
           %span.glyphicons.glyphicons-star
           %span.sidebar-title
             Dashboard
-      -#- if @user.personal_detail
-      -#  %li
-      -#    %a{:href=>edit_user_personal_detail_path(@user, @personal_detail)}
-      -#      %span.glyphicons.glyphicons-ruler
-      -#      %span.sidebar-title
-      -#        New Check-in #TODO Causing issues in the new workout form
       %li
-        %a{:href=>"#", :class=>"accordion-toggle"}
+        %a{:href=>"#workouts", :class=>"accordion-toggle"}
           %span.glyphicons.glyphicons-settings
           %span.sidebar-title
-            Resources
+            Workouts
           %span.caret
-        %ul#resources.nav.sub-nav.menu-open
+        %ul#workouts.nav.sub-nav
           %li
-            %a{:href=>"#"}
+            %a{:href=> user_workouts_path(@user) }
               %span.glyphicons.glyphicons-edit{:style=>"width:15px;"}
-              Theme Customizer
+              History
           %li
-            %a{:href=>"#"}
+            %a{:href=> new_user_workout_path(@user)}
               %span.glyphicons.glyphicons-magic
-              Demo Style Switcher
-          %li
-            %a{:href=>"#"}
-              %span.glyphicons.glyphicons-book
-              Documentation
+              Log New Workout
       %li
         %a{:href=>"#", :class=>"accordion-toggle"}
           %span.glyphicons.glyphicons-adjust_alt
           %span.sidebar-title
-            UI Elements
+            Personal Details
           %span.caret
         %ul#sideOne.nav.sub-nav
           %li
-            %a{:href=>"#"}
+            %a{:href=> new_user_personal_detail_path(@user)}
               %span.glyphicons.glyphicons-macbook
-              Buttons
-          %li
-            %a{:href=>"#"}
-              %span.glyphicons.glyphicons-font
-              Typography
-          %li
-            %a{:href=>"#"}
-              %span.glyphicons.glyphicons-paperclip
-              Elements
-          %li
-            %a{:href=>"#"}
-              %span.glyphicons.glyphicons-stats
-              Charts
+              New Checkin

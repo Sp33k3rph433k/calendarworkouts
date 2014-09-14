@@ -7,10 +7,12 @@
     %meta{ :name => "description", :content => 'Calendar Workouts was built to help you work out with easy-to-follow workout routines automatically built on your time, goals, and current fitness level!'}
     %title= content_for?(:title) ? yield(:title) : 'Cwapp'
     %meta{:name => "description", :content => "#{content_for?(:description) ? yield(:description) : 'Cwapp'}"}
+    = javascript_include_tag 'application'
     = stylesheet_link_tag 'application'
     = stylesheet_link_tag 'theme'
-    = javascript_include_tag 'application'
     = stylesheet_link_tag 'fonts/glyphicons_pro/glyphicons'
+    = stylesheet_link_tag 'http://cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.min.css'
+    = javascript_include_tag 'http://cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.min.js'
     = csrf_meta_tags
 
 
@@ -163,3 +165,5 @@
             Dashboard
       #skin-menu.container
         = yield
+:javascript
+  Core.init();
