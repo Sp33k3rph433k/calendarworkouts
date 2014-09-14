@@ -1,0 +1,45 @@
+:javascript
+  $(document).ready(function() {
+  var tooltip = $('<div/>').qtip({
+  		id: 'calendar',
+  		prerender: true,
+  		content: {
+  			text: ' ',
+  			title: {
+  				button: true
+  			}
+  		},
+  		position: {
+  			my: 'bottom center',
+  			at: 'top center',
+  			target: 'mouse',
+  			viewport: $('#calendar'),
+  			adjust: {
+  				mouse: false,
+  				scroll: false
+  			}
+  		},
+  		show: false,
+  		hide: false,
+  		style: 'qtip-light'
+  	}).qtip('api');
+
+    $('#calendar').fullCalendar({
+      events: #{@json.to_json},
+      eventMouseover: function(data, event, view) {
+      			var content = '<h3>'+data.title+'</h3>' +
+      				'<p><b>Start:</b> '+data.start+'<br />' +
+      				(data.end && '<p><b>End:</b> '+data.end+'</p>' || '');
+
+      			tooltip.set({
+      				'content.text': content
+      			})
+      			.reposition(event).show(event);
+      		},
+      eventMouseout: function(data, event, view) {
+        tooltip.hide();
+       }
+      })
+  });
+
+#calendar
