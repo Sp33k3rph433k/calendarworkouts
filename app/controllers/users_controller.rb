@@ -16,14 +16,13 @@ class UsersController < ApplicationController
     @user = current_user
     @personal_detail = @user.personal_detail
 
-    @user.update_attributes!(user_params)
-    if @user.save
-      flash[:notice] = "Photo updated!"
-      redirect_to user_view_profile_path
-    else
-      flash[:notice] = "Couldn't save user information"
-      redirect_to user_view_profile_path
-    end
+    # if @user.update_attributes!(user_params)
+    #   flash[:notice] = "Photo updated!"
+    #   redirect_to user_view_profile_path
+    # else
+    #   flash[:notice] = "Couldn't save user information"
+    #   redirect_to user_view_profile_path
+    # end
   end
 
   def update
@@ -31,7 +30,7 @@ class UsersController < ApplicationController
 
     if @user.update_attributes(user_params)
       redirect_to user_dashboard_path
-      flash[:notice] = "Updated!"
+      flash[:notice] = "Updated your personal info!"
     else
       redirect_to :back
       flash[:notice] = "Couldn't save your info"

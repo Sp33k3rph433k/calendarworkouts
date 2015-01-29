@@ -6,12 +6,26 @@ class InitialTest::BuildController < ApplicationController
   def show
     @user = current_user
     @initial_test = @user.initial_test
+    case step
+      when :basic_bodyweight
+        if !@initial_test.pushups.blank?
+          next_step
+        end
+      when :one_mile
+        if !@initial_test.mile_run_time.blank?
+          next_step
+        end
+      when :gym_maxes
+
+    end
     render_wizard
   end
 
 
   def update
     @initial_test = InitialTest.find(params[:initial_test_id])
+    params[:product][:status] = step.to_s
+    params[:product][:status] = 'complete' if step == steps.last
     @initial_test.update_attributes(detail_params)
     render_wizard @initial_test
   end

@@ -21,6 +21,8 @@ Cwapp::Application.routes.draw do
   get 'users/dashboard' => 'users#index', :as => :user_dashboard
   delete 'workouts/delete/:id' => 'workouts#destroy', :as => :delete_workout
 
+  get "/pages/*id" => 'pages#show', as: :page, format: false
+
   # You can have the root of your site routed with "root"
 
   # Example of regular route:

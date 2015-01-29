@@ -3,6 +3,9 @@ class InitialTestController < ApplicationController
   def new
     @user = current_user
     @initial_test = InitialTest.new
+    if @user.initial_test && !@user.initial_test.pushups.blank?
+      redirect_to user_initial_test_build_path(@user.id, @user.initial_test, "one_mile")
+    end
   end
 
   def create

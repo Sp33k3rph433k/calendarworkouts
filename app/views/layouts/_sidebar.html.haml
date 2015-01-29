@@ -2,8 +2,9 @@
   #sidebar-search
     .sidebar-toggle
       %i.fa.fa-bars
-  #sidebar-menu
-    %ul.nav.sidebar-nav
+  - if user_signed_in?
+    #sidebar-menu
+      %ul.nav.sidebar-nav
       %li
         %a{:href=>user_dashboard_path}
           %span.glyphicons.glyphicons-star
