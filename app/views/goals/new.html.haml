@@ -1,0 +1,63 @@
+:javascript
+  $(document).ready( function() {
+    var form = $("#example-form");
+    form.validate({
+      errorPlacement: function errorPlacement(error, element) { element.before(error); },
+      rules: {
+        confirm: {
+          equalTo: "#password"
+        }
+      }
+    });
+    form.children("div").steps({
+      headerTag: "h3",
+      bodyTag: "section",
+      transitionEffect: "slideLeft",
+      onStepChanging: function (event, currentIndex, newIndex)
+      {
+        form.validate().settings.ignore = ":disabled,:hidden";
+        return form.valid();
+      },
+      onFinishing: function (event, currentIndex)
+      {
+        form.validate().settings.ignore = ":disabled";
+        return form.valid();
+      },
+      onFinished: function (event, currentIndex)
+      {
+        alert("Submitted!");
+      }
+    });
+  });
+%form#example-form{:action => "#"}
+  %div
+    %h3 Account
+    %section
+      %label{:for => "userName"} User name *
+      %input#userName.required{:name => "userName", :type => "text"}
+        %label{:for => "password"} Password *
+        %input#password.required{:name => "password", :type => "text"}
+          %label{:for => "confirm"} Confirm Password *
+          %input#confirm.required{:name => "confirm", :type => "text"}
+            %p (*) Mandatory
+    %h3 Profile
+    %section
+      %label{:for => "name"} First name *
+      %input#name.required{:name => "name", :type => "text"}
+        %label{:for => "surname"} Last name *
+        %input#surname.required{:name => "surname", :type => "text"}
+          %label{:for => "email"} Email *
+          %input#email.required.email{:name => "email", :type => "text"}
+            %label{:for => "address"} Address
+            %input#address{:name => "address", :type => "text"}
+              %p (*) Mandatory
+    %h3 Hints
+    %section
+      %ul
+        %li Foo
+        %li Bar
+        %li Foobar
+    %h3 Finish
+    %section
+      %input#acceptTerms.required{:name => "acceptTerms", :type => "checkbox"}
+        %label{:for => "acceptTerms"} I agree with the Terms and Conditions.

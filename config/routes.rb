@@ -6,6 +6,7 @@ Cwapp::Application.routes.draw do
 
   resources :users, except: [:show] do
     resources :personal_details
+    resources :goals
     resources :workouts, only: [:index, :new, :create, :show, :edit]
     resources :initial_test do
       resources :build, controller: 'initial_test/build'

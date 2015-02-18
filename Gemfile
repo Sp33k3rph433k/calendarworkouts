@@ -52,6 +52,8 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.0.0.beta'
   gem 'guard-rspec', require: false
   gem 'factory_girl_rails'
+  gem 'better_errors'
+  gem 'binding_of_caller'
 end
 
 group :test do
@@ -82,6 +84,7 @@ gem "asset_sync"
 gem 'aws-sdk'
 gem 'wicked', github: "schneems/wicked"
 gem 'high_voltage', '~> 2.2.1'
+
 
 
 
