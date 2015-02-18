@@ -1,4 +1,4 @@
-= image_tag @user.avatar.url
+= image_tag @user.avatar.url(:medium)
 
 = simple_form_for @user, :html => { :multipart => true } do |form|
   =form.file_field :avatar

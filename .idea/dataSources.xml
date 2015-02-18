@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="3351691119">
+  <component name="DataSourceManagerImpl" format="xml" hash="1827145914">
     <data-source source="LOCAL" name="Rails cwapp: development" uuid="084aa235-9f84-4496-a8af-dc66e8f7ef40">
       <driver-ref>postgresql</driver-ref>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>

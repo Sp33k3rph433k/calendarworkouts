@@ -15,4 +15,5 @@
 //= require jquery-ui
 //= require bootstrap-sprockets
 //= require dataTables/jquery.dataTables
+//= require jquery.steps.min
 //= require_tree .

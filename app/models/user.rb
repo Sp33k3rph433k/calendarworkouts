@@ -12,7 +12,7 @@ class User < ActiveRecord::Base
 
   #attr_accessible :email, :password, :password_confirmation, :zip
 
-  has_attached_file :avatar, :styles => { :medium => "300x300>", :thumb => "100x100>" }, :default_url => "http://lorempixel.com/300/300",
+  has_attached_file :avatar, :styles => { :medium => "300x300>", :thumb => "100x100>", :progress_size => "250x250>" }, :default_url => "https://s3.amazonaws.com/calw-assets/static/avatarplaceholder.jpg",
                     storage: :s3,
                     s3_credentials: Proc.new{|a| a.instance.s3_credentials }
 
@@ -29,7 +29,7 @@ class User < ActiveRecord::Base
 
 
   def s3_credentials
-    {:bucket => "cwassets/avatars", :access_key_id => "AKIAIXBBR3HHVZRI2PFQ", :secret_access_key => "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"}
+    {:bucket => "calw-assets/avatars", :access_key_id => "AKIAIBOYEOEUKG3EWWMQ", :secret_access_key => "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"}
   end
 
 end

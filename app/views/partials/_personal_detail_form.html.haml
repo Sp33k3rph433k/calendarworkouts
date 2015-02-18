@@ -13,14 +13,14 @@
             Your Measurements
         .panel-body
           = simple_form_for [@user, @personal_detail], html: { class: "form-horizontal"} do |f|
-            - unless @user.personal_detail.gender?
-              .form-group
-                =f.label :gender, class:"col-lg-2 control-label"
-                .col-md-10
-                  .input-group
-                    %span.input-group-addon
-                      %i.imoon.imoon-file
-                    = f.select :gender, class: "form-control margin-top-none", collection: %w[Male Female], label: false
+            -#- unless @user.personal_detail.gender.blank?
+            -#  .form-group
+            -#    =f.label :gender, class:"col-lg-2 control-label"
+            -#    .col-md-10
+            -#      .input-group
+            -#        %span.input-group-addon
+            -#          %i.imoon.imoon-file
+            -#        = f.select :gender, class: "form-control margin-top-none", collection: %w[Male Female], label: false
             .form-group
               =f.label :weight, class: "col-lg-2 control-label"
               .col-md-10

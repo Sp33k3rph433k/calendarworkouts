@@ -6,10 +6,14 @@
   .col-md-6
     %h2 Your goals:
 
-.row
+.row#first-user-row
   .col-md-6
     .user-progress-pic.col-md-6
-      %img{src: "http://placehold.it/250x250"}
+      .wrapper
+        -#=image_tag @user.avatar.url(:progress_size)
+        = simple_form_for @user, :html => { :multipart => true } do |form|
+          =form.file_field :avatar
+          =form.submit "Upload Your Photo"
     - if @personal_detail
       .col-md-6
         %ul.list-unstyled
@@ -27,7 +31,7 @@
             %h4 Calf: #{@personal_detail.calf}
           %li
             %h4 Thigh: #{@personal_detail.thigh}
-    .progress-pic-buttons
+    .progress-pic-buttons.col-md-6
       %button.btn.btn-primary Past Progress Pics
       %button.btn.btn-primary New Progress Pic
   .col-md-6
@@ -157,3 +161,19 @@
                       %b Calf:
                       = f.reify.calf
                 %a.btn.btn-blue4{href: "#"} See Stats
+:css
+  .user-progress-pic {
+    background: url("#{@user.avatar.url(:progress_size)}") no-repeat;
+    background-size: cover;
+    display: block;
+    position: relative;
+    height: 250px;
+  }
+  #user_avatar {
+    width: 250px;
+    height: 250px;
+    margin-right: 100px;
+    opacity: 0;
+    filter: alpha(opacity=0); /* IE 5-7 */
+    margin-bottom: 8px;
+  }
