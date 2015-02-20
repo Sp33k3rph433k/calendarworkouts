@@ -24,6 +24,7 @@ class User < ActiveRecord::Base
   has_many :workouts
   has_many :exercises, through: :workouts
   has_many :goals
+  has_one :schedule
 
   accepts_nested_attributes_for :personal_detail
 

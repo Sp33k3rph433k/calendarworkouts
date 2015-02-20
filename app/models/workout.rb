@@ -1,6 +1,9 @@
 class Workout < ActiveRecord::Base
   has_many :exercises
   has_many :muscle_groups, through: :exercises
+  has_many :exercise_goals, through: :exercises
+  has_many :exercise_sets, through: :exercises
+  has_many :exercise_body_parts, through: :exercises
   belongs_to :user
   accepts_nested_attributes_for :exercises
 
