@@ -1,4 +1,6 @@
 Cwapp::Application.routes.draw do
+  get "initial_questionnaires/new"
+  get "initial_questionnaires/create"
   root :controller => 'static', :action => '/'
   devise_for :users, controllers: {registrations: "registrations"}
   # The priority is based upon order of creation: first created -> highest priority.
@@ -7,6 +9,7 @@ Cwapp::Application.routes.draw do
   resources :users, except: [:show] do
     resources :personal_details
     resources :goals
+    resources :initial_questionnaires
     resources :workouts, only: [:index, :new, :create, :show, :edit]
     resources :initial_test do
       resources :build, controller: 'initial_test/build'
@@ -14,6 +17,7 @@ Cwapp::Application.routes.draw do
   end
   get 'users/:id/view_profile' => 'users#view_profile', as: :user_view_profile
   get 'users/about_yourself' => 'users#about_yourself', as: :user_introduction
+
 
   resources :workouts, only:[:edit] do
     resources :exercises

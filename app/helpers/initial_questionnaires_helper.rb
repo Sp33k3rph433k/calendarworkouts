@@ -1,0 +1,2 @@
+module InitialQuestionnairesHelper
+end
