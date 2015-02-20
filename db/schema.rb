@@ -11,10 +11,39 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150218035325) do
+ActiveRecord::Schema.define(version: 20150220024031) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "exercise_body_parts", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "exercise_id"
+    t.string   "name"
+  end
+
+  add_index "exercise_body_parts", ["exercise_id"], name: "index_exercise_body_parts_on_exercise_id", using: :btree
+
+  create_table "exercise_goals", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "exercise_id"
+    t.string   "name"
+  end
+
+  add_index "exercise_goals", ["exercise_id"], name: "index_exercise_goals_on_exercise_id", using: :btree
+
+  create_table "exercise_sets", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "exercise_id"
+    t.integer  "reps"
+    t.integer  "weight"
+    t.integer  "rest_time"
+  end
+
+  add_index "exercise_sets", ["exercise_id"], name: "index_exercise_sets_on_exercise_id", using: :btree
 
   create_table "exercises", force: true do |t|
     t.string   "name"
@@ -79,6 +108,11 @@ ActiveRecord::Schema.define(version: 20150218035325) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.date     "date"
+  end
+
+  create_table "schedules", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "users", force: true do |t|
