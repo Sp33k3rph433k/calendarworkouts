@@ -24,10 +24,11 @@ class InitialTest::BuildController < ApplicationController
 
   def update
     @initial_test = InitialTest.find(params[:initial_test_id])
-    params[:product][:status] = step.to_s
-    params[:product][:status] = 'complete' if step == steps.last
+    params[:initial_test][:status] = step.to_s
+    params[:initial_test][:status] = 'complete' if step == steps.last
     @initial_test.update_attributes(detail_params)
     render_wizard @initial_test
+    #todo -- consider redirecting to the user dashboard with a notice here.
   end
 
   private

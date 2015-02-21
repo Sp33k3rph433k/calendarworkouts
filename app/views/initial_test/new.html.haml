@@ -2,7 +2,8 @@
   =f.input :pushups
   =f.input :situps
   =f.input :bodyweight_squats
-  -#=f.hidden_field :user_id, value: @user.id
+  =f.hidden_field :user_id, value: @user.id
+  =f.hidden_field :status, value: "basic_bodyweight"
   =f.submit
 
   -#= link_to "next step!", next_wizard_path
