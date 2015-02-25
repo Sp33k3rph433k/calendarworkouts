@@ -3,6 +3,7 @@ class PersonalDetail < ActiveRecord::Base
   has_paper_trail :ignore => [:gender]
 
   belongs_to :user
+  belongs_to :initial_questionnaire
 
   def get_past_weight
     prior_details = []

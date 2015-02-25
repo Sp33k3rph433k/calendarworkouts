@@ -1,6 +1,10 @@
 class InitialQuestionnaire < ActiveRecord::Base
-  accepts_nested_attributes_for :goal, :personal_detail, :schedule, :user
+
 
   belongs_to :user
+  has_many :goals
+  has_one :personal_detail
+  has_one :schedule
 
+  accepts_nested_attributes_for :goals, :personal_detail, :schedule, :user
 end
