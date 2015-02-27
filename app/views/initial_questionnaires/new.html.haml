@@ -1,2 +1,14 @@
 %h1 InitialQuestionnaires#new
 %p Find me in app/views/initial_questionnaires/new.html.haml
+
+= simple_form_for [@user, @initial_questionnaire] do |m|
+  = m.simple_fields_for :goals do |g|
+    = g.input :name
+  = m.simple_fields_for :personal_detail do |p|
+    = p.input :chest
+  = m.simple_fields_for :schedule do |s|
+    = s.input :name
+  = m.hidden_field :id
+  = m.submit
+
+%p= "Not ready to fill this out just yet? #{link_to "Go to your dashboard."}".html_safe

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150221234642) do
+ActiveRecord::Schema.define(version: 20150225012711) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -61,23 +61,11 @@ ActiveRecord::Schema.define(version: 20150221234642) do
     t.boolean  "is_run"
   end
 
-  create_table "goal", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.integer  "user_id"
-    t.string   "name"
-    t.string   "how_text"
-    t.string   "image_url"
-    t.integer  "initial_questionnaire_id"
-  end
-
-  add_index "goal", ["initial_questionnaire_id"], name: "index_goal_on_initial_questionnaire_id", using: :btree
-  add_index "goal", ["user_id"], name: "index_goal_on_user_id", using: :btree
-
   create_table "goals", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "initial_questionnaire_id"
+    t.string   "name"
   end
 
   add_index "goals", ["initial_questionnaire_id"], name: "index_goals_on_initial_questionnaire_id", using: :btree
@@ -132,6 +120,7 @@ ActiveRecord::Schema.define(version: 20150221234642) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "initial_questionnaire_id"
+    t.string   "name"
   end
 
   add_index "schedules", ["initial_questionnaire_id"], name: "index_schedules_on_initial_questionnaire_id", using: :btree
