@@ -6,6 +6,8 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
   has_paper_trail :only => [:avatar]
 
+  before_save :ensure_user_has_schedule
+
   validates_presence_of :name
   validates_uniqueness_of :email, :case_sensitive => false
 
@@ -29,9 +31,23 @@ class User < ActiveRecord::Base
 
   accepts_nested_attributes_for :personal_detail
 
+  # def initialize
+  #   self.create_schedule
+  # end
+
 
   def s3_credentials
     {:bucket => "calw-assets/avatars", :access_key_id => "AKIAIBOYEOEUKG3EWWMQ", :secret_access_key => "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"}
+  end
+
+  def workout_windows
+    schedule.workout_windows
+  end
+
+  private
+
+  def ensure_user_has_schedule
+    self.create_schedule unless schedule
   end
 
 end

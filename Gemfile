@@ -85,6 +85,7 @@ gem "asset_sync"
 gem 'aws-sdk'
 gem 'wicked', github: "schneems/wicked"
 gem 'high_voltage', '~> 2.2.1'
+gem 'momentjs-rails'
 
 
 

@@ -1,4 +1,5 @@
 Cwapp::Application.routes.draw do
+  get "schedules/create"
   get "initial_questionnaires/new"
   get "initial_questionnaires/create"
   root :controller => 'static', :action => '/'
@@ -9,6 +10,7 @@ Cwapp::Application.routes.draw do
   resources :users, except: [:show] do
     resources :personal_details
     resources :goals
+    resources :schedules
     resources :initial_questionnaires
     resources :workouts, only: [:index, :new, :create, :show, :edit]
     resources :initial_test do
