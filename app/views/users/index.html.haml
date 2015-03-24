@@ -36,12 +36,9 @@
       %button.btn.btn-primary New Progress Pic
   .col-md-6
     %ul
-      %li
-        %h4 Goal 1
-      %li
-        %h4 Goal 2
-      %li
-        %h4 Goal 3
+      - @goals.each do |f|
+        %li
+          %h4= f.name
 - if @personal_detail
 
   = link_to "Click here to checkin any time you want", edit_user_personal_detail_path(@user, @personal_detail)

@@ -2,27 +2,16 @@ class UsersController < ApplicationController
 
   before_action :authenticate_user!
 
-  def dashboard
-    @personal_detail = current_user.personal_detail
-  end
-
   def index
     @user = current_user
     @personal_detail = @user.personal_detail
     @workout = @user.workouts
+    @goals = @user.goals
   end
 
   def view_profile
     @user = current_user
     @personal_detail = @user.personal_detail
-
-    # if @user.update_attributes!(user_params)
-    #   flash[:notice] = "Photo updated!"
-    #   redirect_to user_view_profile_path
-    # else
-    #   flash[:notice] = "Couldn't save user information"
-    #   redirect_to user_view_profile_path
-    # end
   end
 
   def update
