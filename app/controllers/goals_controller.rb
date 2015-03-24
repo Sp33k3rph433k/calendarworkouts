@@ -8,7 +8,7 @@ class GoalsController < ApplicationController
   def create
     user = User.find_by_id(params[:user_id])
     goal_names = params[:goal][:name]
-    goal_names.each {|user_goals| user.goals.create(name: user_goals)}
+    goal_names.each {|user_goals| user.goals.create(name: user_goals) unless user_goals.blank? }
     # TODO need to add something that validates whether or not these saved.
     flash[:notice] = "Successfully saved your goals!"
     redirect_to user_dashboard_path

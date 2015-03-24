@@ -2,6 +2,7 @@ class User < ActiveRecord::Base
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable,
   # :lockable, :timeoutable and :omniauthable
+  INJURY_BODY_PARTS = %w(legs arms back neck feet hands shoulders wrists)
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
   has_paper_trail :only => [:avatar]
@@ -28,8 +29,9 @@ class User < ActiveRecord::Base
   has_many :goals
   has_one :schedule
   has_one :initial_questionnaire
+  has_many :injuries
 
-  accepts_nested_attributes_for :personal_detail
+  accepts_nested_attributes_for :personal_detail, :injuries
 
   # def initialize
   #   self.create_schedule

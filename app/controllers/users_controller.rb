@@ -29,6 +29,9 @@ class UsersController < ApplicationController
   def about_yourself
     @user = current_user
     @personal_detail = PersonalDetail.new
+  end
+
+  def check_for_injuries
 
   end
 
@@ -36,7 +39,7 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:avatar, :age, :activity_level, personal_detail_attributes: [:id, :gender])
+    params.require(:user).permit(:avatar, :age, :activity_level, personal_detail_attributes: [:id, :gender], injury_attributes: [:id, :body_part])
   end
 
 end

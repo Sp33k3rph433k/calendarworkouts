@@ -35,10 +35,13 @@
       %button.btn.btn-primary Past Progress Pics
       %button.btn.btn-primary New Progress Pic
   .col-md-6
-    %ul
-      - @goals.each do |f|
-        %li
-          %h4= f.name
+    - unless @goals.empty?
+      %ul
+        - @goals.each do |f|
+          %li
+            %h4= f.name
+    - else
+      %p= "Our site is about helping you achieve your goals! #{link_to 'Click here', new_user_goal_path(@user)} to tell us what they are and get started!".html_safe
 - if @personal_detail
 
   = link_to "Click here to checkin any time you want", edit_user_personal_detail_path(@user, @personal_detail)

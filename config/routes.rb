@@ -16,6 +16,7 @@ Cwapp::Application.routes.draw do
     resources :initial_test do
       resources :build, controller: 'initial_test/build'
     end
+    get 'check_for_injuries' => 'users#check_for_injuries'
   end
   get 'users/:id/view_profile' => 'users#view_profile', as: :user_view_profile
   get 'users/about_yourself' => 'users#about_yourself', as: :user_introduction
