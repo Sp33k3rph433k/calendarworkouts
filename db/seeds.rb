@@ -12,3 +12,9 @@ puts "Seeding muscle group data"
 ["Abdominal", "Biceps", "Deltoids", "Erector Spinae", "Gastrocnemius and Soleus", "Gluteus", "Hamstrings", "Latissimus Dorsi", "Rhomboids", "Obliques", "Pectoralis", "Quadriceps", "Trapezius", "Triceps"].each do |mg|
   MuscleGroup.find_or_create_by_name(mg)
 end
+
+puts "Seeding goal data"
+
+["Get stronger", "Get faster", "Slim down", "Lose baby weight", "Bulk Up", "Tone up", "Get started"].each do |g|
+  Goal.find_or_create_by_name(g)
+end

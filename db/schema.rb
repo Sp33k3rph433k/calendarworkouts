@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150308195920) do
+ActiveRecord::Schema.define(version: 20150315012124) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20150308195920) do
     t.datetime "updated_at"
     t.integer  "exercise_id"
     t.string   "name"
+    t.integer  "score"
   end
 
   add_index "exercise_body_parts", ["exercise_id"], name: "index_exercise_body_parts_on_exercise_id", using: :btree
@@ -79,13 +80,16 @@ ActiveRecord::Schema.define(version: 20150308195920) do
     t.datetime "updated_at"
     t.integer  "initial_questionnaire_id"
     t.string   "name"
+    t.integer  "user_id"
   end
 
   add_index "goals", ["initial_questionnaire_id"], name: "index_goals_on_initial_questionnaire_id", using: :btree
+  add_index "goals", ["user_id"], name: "index_goals_on_user_id", using: :btree
 
   create_table "initial_questionnaires", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "injuries"
   end
 
   create_table "initial_tests", force: true do |t|

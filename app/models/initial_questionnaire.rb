@@ -1,6 +1,8 @@
 class InitialQuestionnaire < ActiveRecord::Base
+  serialize :injuries, Array
 
-
+  GOAL_NAMES = ["Get stronger", "Get faster", "Slim down", "Lose baby weight", "Bulk Up", "Tone up", "Get started"]
+  INJURED_BODY_PARTS = ["Arm", "Leg", "Back", "Wrist"]
   belongs_to :user
   has_many :goals
   has_one :personal_detail

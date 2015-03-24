@@ -2,10 +2,10 @@ class InitialQuestionnairesController < ApplicationController
   def new
     @user = current_user
     @initial_questionnaire = InitialQuestionnaire.new
-    @initial_questionnaire.schedule = Schedule.new
     @initial_questionnaire.personal_detail = PersonalDetail.new
-    @initial_questionnaire.goals.build
+    @initial_questionnaire.goals = @user.goals
   end
+
 
   def create
     binding.pry
@@ -19,6 +19,6 @@ class InitialQuestionnairesController < ApplicationController
   private
 
   def initial_questionnaire_params
-    params.require(:initial_questionnaire).permit( goals_attributes:[:id, :name, :initial_questionnaire_id], personal_detail_attributes:[:id, :name, :chest, :initial_questionnaire_id], schedule_attributes: [:id, :name, :initial_questionnaire_id])
+    params.require(:initial_questionnaire).permit(:injuries, goals_attributes:[:id, :name, :initial_questionnaire_id, :user_id], personal_detail_attributes:[:id, :name, :chest, :initial_questionnaire_id], schedule_attributes: [:id, :name, :initial_questionnaire_id])
   end
 end

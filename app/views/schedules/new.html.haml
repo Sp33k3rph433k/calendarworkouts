@@ -1,0 +1,81 @@
+:javascript
+  $(document).ready(function() {
+  //var tooltip = $('<div/>').qtip({
+  //		id: 'calendar',
+  //		prerender: true,
+  //		content: {
+  //			text: ' ',
+  //			title: {
+  //				button: true
+  //			}
+  //		},
+  //		position: {
+  //			my: 'bottom center',
+  //			at: 'top center',
+  //			target: 'mouse',
+  //			viewport: $('#calendar'),
+  //			adjust: {
+  //				mouse: false,
+  //				scroll: false
+  //			}
+  //		},
+  //		show: false,
+  //		hide: false,
+  //		style: 'qtip-light'
+  //	}).qtip('api');
+    $('#calendar').fullCalendar({
+      defaultView: "agendaWeek",
+      selectable: true,
+      header: false,
+      columnFormat: 'dddd',
+      select: function( start, end, jsEvent, view ) {
+        var workoutTime = new Object();
+        workoutTime.title = start.day();
+        workoutTime.allDay = false;
+        workoutTime.start = start;
+        workoutTime.end = end;
+        //console.log(JSON.stringify(workoutTime));
+        //console.log(JSON.stringify(eventArray));
+        $('#calendar').fullCalendar('renderEvent', workoutTime, true); // stick? = true
+        var allWorkoutRanges = $('#calendar').fullCalendar('clientEvents');
+        var key = "schedule";
+        var rangeArray = [];
+        $.each(allWorkoutRanges, function(index, value) {
+          var event = new Object();
+          event.start_time = value.start;
+          event.end_time = value.end;
+          event.name = value.title;
+          event.user_id = "#{current_user.id}"
+          rangeArray.push(event);
+        });
+        var scheduleObject = {schedule: rangeArray};
+        console.log(JSON.stringify(rangeArray));
+        console.log(JSON.stringify(scheduleObject));
+        $.ajax({
+          type: "POST",
+          url: "#{escape_javascript user_schedules_path}",
+          data: JSON.stringify(scheduleObject),
+          success: function(){},
+          dataType: "json",
+          contentType: "application/json"
+        })
+      },
+      editable: true,
+      eventDrop: function(event, delta, revertFunc) {
+
+        alert(event.title + " was dropped on " + event.start.format());
+
+        if (!confirm("Are you sure about this change?")) {
+            revertFunc();
+        }
+
+      }
+    })
+  });
+
+%p= "Not ready to fill this out just yet? #{link_to "Go to your dashboard."}".html_safe
+
+
+
+
+#calendar

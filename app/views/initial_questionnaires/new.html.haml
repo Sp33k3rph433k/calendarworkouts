@@ -1,92 +1,11 @@
-:javascript
-  $(document).ready(function() {
-  //var tooltip = $('<div/>').qtip({
-  //		id: 'calendar',
-  //		prerender: true,
-  //		content: {
-  //			text: ' ',
-  //			title: {
-  //				button: true
-  //			}
-  //		},
-  //		position: {
-  //			my: 'bottom center',
-  //			at: 'top center',
-  //			target: 'mouse',
-  //			viewport: $('#calendar'),
-  //			adjust: {
-  //				mouse: false,
-  //				scroll: false
-  //			}
-  //		},
-  //		show: false,
-  //		hide: false,
-  //		style: 'qtip-light'
-  //	}).qtip('api');
-    $('#calendar').fullCalendar({
-      defaultView: "agendaWeek",
-      selectable: true,
-      select: function( start, end, jsEvent, view ) {
-        var workoutTime = new Object();
-        workoutTime.title = start.day();
-        workoutTime.allDay = false;
-        workoutTime.start = start;
-        workoutTime.end = end;
-        //console.log(JSON.stringify(workoutTime));
-        //console.log(JSON.stringify(eventArray));
-        $('#calendar').fullCalendar('renderEvent', workoutTime, true); // stick? = true
-        var allWorkoutRanges = $('#calendar').fullCalendar('clientEvents');
-        var key = "schedule";
-        var rangeArray = [];
-        $.each(allWorkoutRanges, function(index, value) {
-          var event = new Object();
-          event.start_time = value.start;
-          event.end_time = value.end;
-          event.name = value.title;
-          event.user_id = "#{current_user.id}"
-          rangeArray.push(event);
-        });
-        var scheduleObject = {schedule: rangeArray};
-        console.log(JSON.stringify(rangeArray));
-        console.log(JSON.stringify(scheduleObject));
-        $.ajax({
-          type: "POST",
-          url: "#{escape_javascript user_schedules_path}",
-          data: JSON.stringify(scheduleObject),
-          success: function(){},
-          dataType: "json",
-          contentType: "application/json"
-        })
-      },
-      editable: true,
-      eventDrop: function(event, delta, revertFunc) {
-
-        alert(event.title + " was dropped on " + event.start.format());
-
-        if (!confirm("Are you sure about this change?")) {
-            revertFunc();
-        }
-
-      }
-    })
-  });
-
-%h1 InitialQuestionnaires#new
-%p Find me in app/views/initial_questionnaires/new.html.haml
+%h1 Initial Questions
+%p These questions will help us get to know you better and learn what workouts we should and shouldn't build for you!
 
 = simple_form_for [@user, @initial_questionnaire] do |m|
+  = m.input :injuries, collection: InitialQuestionnaire::INJURED_BODY_PARTS, as: :check_boxes
   = m.simple_fields_for :goals do |g|
-    = g.input :name
-  = m.simple_fields_for :personal_detail do |p|
-    = p.input :chest
-  = m.simple_fields_for :schedule do |s|
-    = s.input :name
-  = m.hidden_field :id
+    = g.input :name, collection: InitialQuestionnaire::GOAL_NAMES, as: :check_boxes
+    = g.hidden_field :user_id, value: current_user.id
   = m.submit
 
-%p= "Not ready to fill this out just yet? #{link_to "Go to your dashboard."}".html_safe
-
-
-
-
-#calendar
+%p= "Not ready to fill this out just yet? #{link_to "Go to your dashboard", user_dashboard_path}".html_safe
