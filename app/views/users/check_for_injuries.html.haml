@@ -1,1 +1,4 @@
-= simple_form_for @user do |f|
+%h2 We just need to know if you have any exercises you can't do due to injury.
+
+= simple_form_for @user, url: user_build_injuries_path, method: :post do |f|
+  = f.input :injury_parameters, collection: BodyPart::BODY_PART_NAMES

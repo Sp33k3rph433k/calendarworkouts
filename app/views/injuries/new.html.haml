@@ -1,0 +1,4 @@
+= simple_form_for [@user, @injury] do |f|
+  = f.simple_fields_for :body_parts do |b|
+    = b.input :part_name, collection: BodyPart::BODY_PART_NAMES, as: :check_boxes
+  = f.submit

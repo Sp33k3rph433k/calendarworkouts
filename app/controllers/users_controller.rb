@@ -32,7 +32,21 @@ class UsersController < ApplicationController
   end
 
   def check_for_injuries
+    @user = current_user
+    @injuries = Injury.new
+    @body_part = BodyPart.new
+  end
 
+  def build_injuries
+
+
+    if @user.update_attributes(user_params)
+      redirect_to # next URL
+      flash[:notice] = "We've recorded that information for later, we don't want you to get hurt!"
+    else
+      redirect_to :back
+      flash[:notice] = "error in the users controller, build_injuries!"
+    end
   end
 
 
