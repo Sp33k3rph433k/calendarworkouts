@@ -16,6 +16,15 @@ class InitialTest < ActiveRecord::Base
   def second_step_or_complete?
     status.include?("one_mile") || complete?
   end
+
+  def next_step
+    case status
+      when "basic_bodyweight"
+        "one_mile"
+      when "one_mile"
+        "gym_maxes"
+    end
+  end
   private
 
   def detail_params
