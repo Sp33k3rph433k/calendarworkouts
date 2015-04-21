@@ -11,8 +11,13 @@ class PersonalDetailsController < ApplicationController
     @personal_detail = @user.build_personal_detail(detail_params)
     @personal_detail.date = Date.today
     if @personal_detail.save
-      flash[:notice] = "Thanks for checking in! We'll track your progress"
-      redirect_to user_dashboard_path
+      if @user.schedule.workout_windows.blank?
+        flash[:notice] = "Now we want to collect some information about your schedule!"
+        redirect_to new_user_schedule_path
+      else
+        flash[:notice] = "Thanks for checking in! We'll track your progress"
+        redirect_to user_dashboard_path
+      end
     else
       flash[:notice] = "There was an error saving your info"
       render :action => :new
@@ -34,13 +39,8 @@ class PersonalDetailsController < ApplicationController
     @personal_detail = @user.personal_detail
     @personal_detail.date = Date.today
     if @personal_detail.update_attributes(detail_params)
-      if @user.initial_test.complete?
       flash[:notice] = "Check-in any time you'd like!"
       redirect_to user_dashboard_path
-      else
-        redirect_to user_initial_test_build_path(@user.id, @user.initial_test.id, @user.initial_test.next_step)
-        flash[:notice] = "Complete your initial test so we can start giving you some workouts!"
-      end
     else
       flash[:notice] = "There was a problem checking in"
       redirect_to edit_user_personal_detail_path

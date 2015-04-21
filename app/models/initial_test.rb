@@ -19,6 +19,8 @@ class InitialTest < ActiveRecord::Base
 
   def next_step
     case status
+      when nil
+        "basic_bodyweight"
       when "basic_bodyweight"
         "one_mile"
       when "one_mile"

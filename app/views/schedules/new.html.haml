@@ -72,8 +72,10 @@
       }
     })
   });
-
-%p= "Not ready to fill this out just yet? #{link_to "Go to your dashboard."}".html_safe
+%p All you have to do is click and drag the times when you're available to work out.
+<br />
+%p= "When you're finished, #{link_to "click here to go to your first workout test!", new_user_initial_test_path(@user)}".html_safe
+%p= "Not ready to fill this out just yet? #{link_to "Go to your dashboard.", user_dashboard_path(@user)}".html_safe
 
 
 

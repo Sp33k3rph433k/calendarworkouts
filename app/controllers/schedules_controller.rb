@@ -7,7 +7,8 @@ class SchedulesController < ApplicationController
   end
 
   def new
-    @schedule = current_user.schedule
+    @user = current_user
+    @schedule = @user.schedule
   end
 
   private

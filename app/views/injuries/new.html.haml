@@ -1,4 +1,6 @@
+%p We want to get more information about any injuries you might have so we can recommend workouts that won't aggrivate said injuries. Choose from the list below if you have injuries on any of your corresponding body parts:
+
 = simple_form_for [@user, @injury] do |f|
   = f.simple_fields_for :body_parts do |b|
-    = b.input :part_name, collection: BodyPart::BODY_PART_NAMES, as: :check_boxes
+    = b.input :part_name, collection: BodyPart::BODY_PART_NAMES, as: :check_boxes, label: false
   = f.submit
