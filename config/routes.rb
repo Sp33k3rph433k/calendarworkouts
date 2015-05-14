@@ -1,3 +1,5 @@
+require 'resque/server'
+
 Cwapp::Application.routes.draw do
   get "schedules/create"
   get "initial_questionnaires/new"
@@ -30,6 +32,8 @@ Cwapp::Application.routes.draw do
   delete 'workouts/delete/:id' => 'workouts#destroy', :as => :delete_workout
 
   get "/pages/*id" => 'pages#show', as: :page, format: false
+
+  mount Resque::Server.new, :at => "/resque"
 
   # You can have the root of your site routed with "root"
 

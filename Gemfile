@@ -78,7 +78,6 @@ gem 'figaro'
 gem 'simple_form'
 gem 'country-select'
 gem 'paper_trail'
-gem "resque", "~> 2.0.0.pre.1", github: "resque/resque"
 gem "redis", "~> 3.0.1"
 gem "paperclip", "~> 4.1"
 gem "asset_sync"
@@ -86,7 +85,8 @@ gem 'aws-sdk', '< 2.0'
 gem 'wicked', github: "schneems/wicked"
 gem 'high_voltage', '~> 2.2.1'
 gem 'momentjs-rails'
-
+gem "resque"
+gem 'resque-scheduler'
 
 
 

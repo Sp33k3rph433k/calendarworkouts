@@ -29,8 +29,5 @@ class InitialTest < ActiveRecord::Base
   end
   private
 
-  def detail_params
-    params.require(:workout).permit(:name, :date)
-  end
 
 end

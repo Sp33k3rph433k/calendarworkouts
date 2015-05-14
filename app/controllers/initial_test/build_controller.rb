@@ -37,6 +37,7 @@ class InitialTest::BuildController < ApplicationController
   end
 
   def finish_wizard_path
+    Resque.enqueue(WorkoutGenerator, @initial_test.id)
     user_dashboard_path(current_user)
   end
 

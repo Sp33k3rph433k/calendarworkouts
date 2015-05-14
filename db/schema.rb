@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150420011157) do
+ActiveRecord::Schema.define(version: 20150509211931) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,9 +21,14 @@ ActiveRecord::Schema.define(version: 20150420011157) do
     t.datetime "updated_at"
     t.integer  "injury_id"
     t.string   "part_name"
+    t.integer  "score"
+    t.integer  "exercises_id"
+    t.integer  "muscle_group_id"
   end
 
+  add_index "body_parts", ["exercises_id"], name: "index_body_parts_on_exercises_id", using: :btree
   add_index "body_parts", ["injury_id"], name: "index_body_parts_on_injury_id", using: :btree
+  add_index "body_parts", ["muscle_group_id"], name: "index_body_parts_on_muscle_group_id", using: :btree
 
   create_table "body_parts_injuries", id: false, force: true do |t|
     t.integer "injury_id",    null: false
@@ -66,7 +71,6 @@ ActiveRecord::Schema.define(version: 20150420011157) do
     t.string   "proper_form_text"
     t.string   "mini_image_url"
     t.integer  "workout_id"
-    t.integer  "muscle_group_id"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "reps"
@@ -132,7 +136,11 @@ ActiveRecord::Schema.define(version: 20150420011157) do
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "exercise_id"
+    t.integer  "weighted_score"
   end
+
+  add_index "muscle_groups", ["exercise_id"], name: "index_muscle_groups_on_exercise_id", using: :btree
 
   create_table "personal_details", force: true do |t|
     t.string   "gender"
