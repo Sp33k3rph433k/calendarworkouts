@@ -10,6 +10,9 @@ class InitialTestController < ApplicationController
 
   def create
     @initial_test = InitialTest.create(detail_params)
+    # we need to create a workout
+
+    # We need to give 3 exercises to those workouts
     if @initial_test.save
       redirect_to user_initial_test_build_path(current_user.id, @initial_test, "one_mile")
     else

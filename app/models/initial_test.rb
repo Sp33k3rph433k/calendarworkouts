@@ -1,8 +1,12 @@
 class InitialTest < ActiveRecord::Base
   belongs_to :user
+  has_many :exercises, through: :workout
+  has_one :workout
   validates :pushups, :situps, :bodyweight_squats,      :presence => true, :if => :first_step_or_complete?
   validates :mile_run_time,                              :presence => true, if: :second_step_or_complete?
   validates :resting_heart_rate,                         presence: true, if: :complete?
+
+  accepts_nested_attributes_for :exercises
 
 
   def complete?

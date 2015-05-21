@@ -5,9 +5,14 @@ class Workout < ActiveRecord::Base
   has_many :exercise_sets, through: :exercises
   has_many :exercise_body_parts, through: :exercises
   belongs_to :user
+  belongs_to :initial_test
   accepts_nested_attributes_for :exercises
 
   validates_presence_of :name
+
+  def build_initial_test_exercises
+
+  end
 
 
   private
