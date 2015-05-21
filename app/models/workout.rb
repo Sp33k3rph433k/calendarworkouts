@@ -1,11 +1,13 @@
 class Workout < ActiveRecord::Base
-  has_many :exercises
+  has_many :exercises, through: :exercise_details
+  has_many :exercise_details
   has_many :muscle_groups, through: :exercises
-  has_many :exercise_goals, through: :exercises
-  has_many :exercise_sets, through: :exercises
-  has_many :exercise_body_parts, through: :exercises
+  # has_many :exercise_goals, through: :exercises TODO: take this stuff out, don't think we need it
+  # has_many :exercise_sets, through: :exercises
+  # has_many :exercise_body_parts, through: :exercises
   belongs_to :user
   belongs_to :initial_test
+
   accepts_nested_attributes_for :exercises
 
   validates_presence_of :name

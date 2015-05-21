@@ -1,6 +1,7 @@
 class Exercise < ActiveRecord::Base
   has_many :muscle_groups
-  belongs_to :workout
+  has_one :workout, through: :exercise_details
+
   has_many :exercise_sets
   has_many :body_parts
   has_many :exercise_goals
