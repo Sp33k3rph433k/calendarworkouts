@@ -3,9 +3,9 @@
 FactoryGirl.define do
   factory :exercise do
     name "Ab Ripper"
-    reps 10
-    sets 3
+    youtube_url "http://www.youtube.com/abripperx"
+    proper_form_text "You should be ripping those abs, YEAH!! RIP EM!!"
+    mini_image_url "http://lorempixel.com/g/200/200"
     is_run false
-    workout
   end
 end

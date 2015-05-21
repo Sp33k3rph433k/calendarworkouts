@@ -2,9 +2,9 @@ require 'spec_helper'
 
 describe User do
 
-  it "has a valid factory" do
-    FactoryGirl.create(:user).should be_valid
-  end
+  let(:user) {FactoryGirl.create(:user)}
+
+  it should be_valid
 
   it "is invalid without an email" do
     FactoryGirl.build(:user, email: nil).should_not be_valid
@@ -18,8 +18,5 @@ describe User do
   it "can have only one personal detail" do
     FactoryGirl.create(:personal_detail)
   end
-
-
-
 
 end

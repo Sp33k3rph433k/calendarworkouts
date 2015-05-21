@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150521013459) do
+ActiveRecord::Schema.define(version: 20150521015330) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -50,9 +50,15 @@ ActiveRecord::Schema.define(version: 20150521013459) do
     t.integer  "user_id"
     t.integer  "workout_id"
     t.integer  "exercise_id"
+    t.integer  "reps"
+    t.integer  "sets"
+    t.integer  "weight"
+    t.integer  "time"
+    t.integer  "initial_test_id"
   end
 
   add_index "exercise_details", ["exercise_id"], name: "index_exercise_details_on_exercise_id", using: :btree
+  add_index "exercise_details", ["initial_test_id"], name: "index_exercise_details_on_initial_test_id", using: :btree
   add_index "exercise_details", ["user_id"], name: "index_exercise_details_on_user_id", using: :btree
   add_index "exercise_details", ["workout_id"], name: "index_exercise_details_on_workout_id", using: :btree
 
@@ -82,6 +88,7 @@ ActiveRecord::Schema.define(version: 20150521013459) do
     t.string   "proper_form_text"
     t.string   "mini_image_url"
     t.integer  "workout_id"
+    t.integer  "muscle_group_id"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "reps"
@@ -90,19 +97,6 @@ ActiveRecord::Schema.define(version: 20150521013459) do
     t.integer  "time"
     t.boolean  "is_run"
   end
-
-  create_table "goal", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.integer  "user_id"
-    t.string   "name"
-    t.string   "how_text"
-    t.string   "image_url"
-    t.integer  "initial_questionnaire_id"
-  end
-
-  add_index "goal", ["initial_questionnaire_id"], name: "index_goal_on_initial_questionnaire_id", using: :btree
-  add_index "goal", ["user_id"], name: "index_goal_on_user_id", using: :btree
 
   create_table "goals", force: true do |t|
     t.datetime "created_at"
