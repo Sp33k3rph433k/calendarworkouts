@@ -87,8 +87,6 @@ ActiveRecord::Schema.define(version: 20150521015330) do
     t.string   "youtube_url"
     t.string   "proper_form_text"
     t.string   "mini_image_url"
-    t.integer  "workout_id"
-    t.integer  "muscle_group_id"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "reps"
@@ -97,6 +95,19 @@ ActiveRecord::Schema.define(version: 20150521015330) do
     t.integer  "time"
     t.boolean  "is_run"
   end
+
+  create_table "goal", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "user_id"
+    t.string   "name"
+    t.string   "how_text"
+    t.string   "image_url"
+    t.integer  "initial_questionnaire_id"
+  end
+
+  add_index "goal", ["initial_questionnaire_id"], name: "index_goal_on_initial_questionnaire_id", using: :btree
+  add_index "goal", ["user_id"], name: "index_goal_on_user_id", using: :btree
 
   create_table "goals", force: true do |t|
     t.datetime "created_at"

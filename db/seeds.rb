@@ -10,11 +10,13 @@ user = User.find_or_create_by_email :name => ENV['ADMIN_NAME'].dup, :email => EN
 puts 'user: ' << user.name
 puts "Seeding muscle group data"
 ["Abdominal", "Biceps", "Deltoids", "Erector Spinae", "Gastrocnemius and Soleus", "Gluteus", "Hamstrings", "Latissimus Dorsi", "Rhomboids", "Obliques", "Pectoralis", "Quadriceps", "Trapezius", "Triceps"].each do |mg|
-  MuscleGroup.find_or_create_by_name(mg)
+  MuscleGroup.find_or_create_by(name: mg)
 end
 
 puts "Seeding goal data"
 
 ["Get stronger", "Get faster", "Slim down", "Lose baby weight", "Bulk Up", "Tone up", "Get started"].each do |g|
-  Goal.find_or_create_by_name(g)
+  Goal.find_or_create_by(name: g)
 end
+
+["pushups", "situps", "body weight squats"].each {|s| Workout.find_or_create_by(name: s) }

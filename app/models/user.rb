@@ -8,6 +8,7 @@ class User < ActiveRecord::Base
   has_paper_trail :only => [:avatar]
 
   before_save :ensure_user_has_schedule
+  before_save :ensure_user_has_initial_test
 
   validates_presence_of :name
   validates_uniqueness_of :email, :case_sensitive => false
@@ -51,6 +52,10 @@ class User < ActiveRecord::Base
 
   def ensure_user_has_schedule
     self.create_schedule unless schedule
+  end
+
+  def ensure_user_has_initial_test
+    self.create_initial_test unless initial_test
   end
 
 end
