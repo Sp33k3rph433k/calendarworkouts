@@ -10,7 +10,7 @@ describe InitialTest do
   end
 
   it "should be created with 3 exercises" do
-    excpect(initial_test.exercises.size).to equal(3)
+    expect(initial_test.exercises.size).to equal(3)
   end
 
 end

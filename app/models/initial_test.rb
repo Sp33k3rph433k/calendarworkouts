@@ -39,9 +39,9 @@ class InitialTest < ActiveRecord::Base
   private
 
   def spin_up_initial_exercises
-    self.exercise_details.find_or_create_by(exercise_id: Workout.find_by_name("pushups"))
-    self.exercise_details.find_or_create_by(exercise_id: Workout.find_by_name("situps"))
-    self.exercise_details.find_or_create_by(exercise_id: Workout.find_by_name("body weight squats"))
+    self.exercise_details.find_or_create_by(exercise_id: Exercise.find_by_name("pushups").id)
+    self.exercise_details.find_or_create_by(exercise_id: Exercise.find_by_name("situps").id)
+    self.exercise_details.find_or_create_by(exercise_id: Exercise.find_by_name("body weight squats").id)
   end
 
 end

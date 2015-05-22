@@ -1,6 +1,6 @@
-FactoryGirl.define do
-  factory :injury do
-    
-  end
-
-end
+# FactoryGirl.define do
+#   factory :injury do
+#
+#   end
+#
+# end
