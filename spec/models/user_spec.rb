@@ -4,8 +4,6 @@ describe User do
 
   let(:user) {FactoryGirl.create(:user)}
 
-  it should be_valid
-
   it "is invalid without an email" do
     FactoryGirl.build(:user, email: nil).should_not be_valid
   end
@@ -15,8 +13,11 @@ describe User do
     User.create(name: "Fake Imposter", email: "testingforspecs@gmail.com", password: "test123!", password_confirmation: "test123!").should_not be_valid
   end
 
-  it "can have only one personal detail" do
-    FactoryGirl.create(:personal_detail)
+  it "should have a schedule when created" do
+    expect(user.schedule).to be_valid
   end
 
+  it "should have a profile picture" do
+
+  end
 end
