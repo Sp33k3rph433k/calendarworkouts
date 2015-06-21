@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1c2979e-ea9f-498e-bad9-a07d934370c0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="c1c2979e-ea9f-498e-bad9-a07d934370c0" name="Default" comment="" />
     <ignored path="cwapp.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -133,8 +131,8 @@
       <file leaf-file-name="scratch_6" pinned="false" current-in-tab="true">
         <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_6">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.024834437">
-              <caret line="1" column="46" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.07450331">
+              <caret line="3" column="16" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -1193,8 +1191,8 @@
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_6">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.024834437">
-          <caret line="1" column="46" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.07450331">
+          <caret line="3" column="16" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="16" />
           <folding />
         </state>
       </provider>
