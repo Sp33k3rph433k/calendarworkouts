@@ -20,6 +20,10 @@ class ExercisesController < ApplicationController
     end
   end
 
+  def admin_create
+
+  end
+
 
   private
 

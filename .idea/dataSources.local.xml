@@ -2,20 +2,20 @@
 <project version="4">
   <component name="dataSourceStorageLocal">
     <data-source name="Rails cwapp: development" uuid="084aa235-9f84-4496-a8af-dc66e8f7ef40">
-      <user-name>camkidman</user-name>
-      <user-password>df9bdfe2dfeadffcdf89dfe4dfc5dff8dfcfdfcddfd8dfcfdfdedfd9df8b</user-password>
+      <user-name>cw_user</user-name>
+      <user-password>dfdadfcbdfd9dfd9dfdddfc5dfd8dfcedf9b</user-password>
     </data-source>
     <data-source name="Rails cwapp: test" uuid="96720f3b-419f-406f-a70a-682128b126d5">
-      <user-name>camkidman</user-name>
-      <user-password>df9bdfe2dfeadffcdf89dfe4dfc5dff8dfcfdfcddfd8dfcfdfdedfd9df8b</user-password>
+      <user-name>cw_user</user-name>
+      <user-password>dfdadfcbdfd9dfd9dfdddfc5dfd8dfcedf9b</user-password>
     </data-source>
     <data-source name="Rails cwapp: production" uuid="d161bbfc-0f58-4768-ad1f-ac8701ea03fb">
-      <user-name>camkidman</user-name>
-      <user-password>df9bdfe2dfeadffcdf89dfe4dfc5dff8dfcfdfcddfd8dfcfdfdedfd9df8b</user-password>
+      <user-name>&lt;%= ENV['CW_PRODUCTION_DATABASE_USER'] %&gt;</user-name>
+      <user-password>df96df8fdf97df8adfefdfe4dffcdff1df8ddfe9dffddff5dffadff8dfe5dfeedfffdfe9dffedfe3dfe5dfe4dff5dfeedfebdffedfebdfe8dfebdff9dfefdff5dffadfebdff9dff9dffddfe5dff8dfeedf8ddff7df8adf8fdf94</user-password>
     </data-source>
     <data-source name="Rails cwapp: cucumber" uuid="d86b4610-2876-45fd-9b5d-83d93a41c370">
-      <user-name>camkidman</user-name>
-      <user-password>df9bdfe2dfeadffcdf89dfe4dfc5dff8dfcfdfcddfd8dfcfdfdedfd9df8b</user-password>
+      <user-name>cw_user</user-name>
+      <user-password>dfdadfcbdfd9dfd9dfdddfc5dfd8dfcedf9b</user-password>
     </data-source>
   </component>
 </project>
