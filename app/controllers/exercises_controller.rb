@@ -20,8 +20,13 @@ class ExercisesController < ApplicationController
     end
   end
 
-  def admin_creation
+  def admin_form
+    @exercise = Exercise.new
+    @muscle_groups = MuscleGroup::DEFAULT_GROUPS
+  end
 
+  def admin_create
+    @exercise = Exercise.new
   end
 
 
