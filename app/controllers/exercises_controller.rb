@@ -20,7 +20,7 @@ class ExercisesController < ApplicationController
     end
   end
 
-  def admin_create
+  def admin_creation
 
   end
 

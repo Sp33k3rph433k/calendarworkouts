@@ -26,7 +26,8 @@ Cwapp::Application.routes.draw do
 
   resources :workouts, only:[:edit] do
     resources :exercises
-    end
+  end
+  get 'admin_exercise_creation' => 'exercises#admin_creation'
 
   get 'users/dashboard' => 'users#index', :as => :user_dashboard
   delete 'workouts/delete/:id' => 'workouts#destroy', :as => :delete_workout
