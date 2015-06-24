@@ -23,17 +23,27 @@ class ExercisesController < ApplicationController
   def admin_form
     @exercise = Exercise.new
     @muscle_groups = MuscleGroup::DEFAULT_GROUPS
+    @user = current_user
   end
 
   def admin_create
-    @exercise = Exercise.new
+    @exercise = Exercise.new(detail_params)
+
+    if @exercise.save
+      params[:muscle_groups].each { |muscle_group| @exercise.muscle_groups.create(muscle_group) }
+      flash[:notice] = "Exercise saved in the database!"
+      redirect_to user_dashboard_path(@user)
+    else
+      flash[:notice] = "Error saving exercise, try again"
+      redirect_to :back
+    end
   end
 
 
   private
 
   def detail_params
-    params.require(:exercise).permit(:name, :youtube_url, :proper_form_text, :mini_image_url, :muscle_group, :reps, :sets, :weight, :time, :is_run)
+    params.require(:exercise).permit(:name, :youtube_url, :proper_form_text, :mini_image_url, :muscle_group, :reps, :sets, :weight, :time, :is_run, :muscle_groups => [])
   end
 
 end
