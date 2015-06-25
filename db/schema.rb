@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150521015330) do
+ActiveRecord::Schema.define(version: 20150625002738) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -94,6 +94,7 @@ ActiveRecord::Schema.define(version: 20150521015330) do
     t.integer  "weight"
     t.integer  "time"
     t.boolean  "is_run"
+    t.boolean  "requires_gym"
   end
 
   create_table "goal", force: true do |t|
