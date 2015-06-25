@@ -87,7 +87,7 @@ gem 'high_voltage', '~> 2.2.1'
 gem 'momentjs-rails'
 gem "resque"
 gem 'resque-scheduler'
-
+gem 'rails_12factor'
 
 
 gem 'recommendable'
