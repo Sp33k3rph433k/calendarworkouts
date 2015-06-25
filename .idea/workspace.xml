@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1c2979e-ea9f-498e-bad9-a07d934370c0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/cwapp.iml" afterPath="$PROJECT_DIR$/.idea/cwapp.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cwapp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,23 +44,9 @@
       <file leaf-file-name="index.html.haml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/users/index.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.75">
+            <state vertical-scroll-proportion="0.0">
               <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
               <folding>
-                <marker date="1435200576000" expanded="true" signature="817:885" placeholder=".row" />
-                <marker date="1435200576000" expanded="true" signature="824:853" placeholder=".col-md-6" />
-                <marker date="1435200576000" expanded="true" signature="856:885" placeholder=".col-md-6" />
-                <marker date="1435200576000" expanded="true" signature="909:1836" placeholder=".col-md-6" />
-                <marker date="1435200576000" expanded="true" signature="1205:1705" placeholder=".col-md-6" />
-                <marker date="1435200576000" expanded="true" signature="1710:1836" placeholder=".progress-pic-buttons.col-md-6" />
-                <marker date="1435200576000" expanded="true" signature="2651:4328" placeholder=".col-sm-4.col-md-3.hero-plan" />
-                <marker date="1435200576000" expanded="true" signature="2690:4328" placeholder=".pricing-plan.margin-none" />
-                <marker date="1435200576000" expanded="true" signature="2728:2810" placeholder=".pricing-title.btn-blue4" />
-                <marker date="1435200576000" expanded="true" signature="2823:4278" placeholder=".pricing-features" />
-                <marker date="1435200576000" expanded="true" signature="4430:6196" placeholder=".col-sm-4.col-md-3.hero-plan" />
-                <marker date="1435200576000" expanded="true" signature="4473:6196" placeholder=".pricing-plan.margin-none" />
-                <marker date="1435200576000" expanded="true" signature="4515:4596" placeholder=".pricing-title.btn-blue4" />
-                <marker date="1435200576000" expanded="true" signature="4613:6142" placeholder=".pricing-features" />
                 <marker date="1435200576000" expanded="true" signature="6223:6248" placeholder="{...}" />
               </folding>
             </state>
@@ -96,11 +83,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Gemfile" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.86903137">
-              <caret line="89" column="20" selection-start-line="89" selection-start-column="20" selection-end-line="89" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workout_generator.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/workers/workout_generator.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.032467533">
+              <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -109,7 +106,7 @@
       <file leaf-file-name="new.html.haml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/personal_detail/new.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
+            <state vertical-scroll-proportion="0.0">
               <caret line="0" column="31" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="31" />
               <folding />
             </state>
@@ -119,50 +116,9 @@
       <file leaf-file-name="_personal_detail_form.html.haml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/partials/_personal_detail_form.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.875">
+            <state vertical-scroll-proportion="0.0">
               <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
-              <folding>
-                <marker date="1435200576000" expanded="true" signature="424:4131" placeholder=".col-md-6" />
-                <marker date="1435200576000" expanded="true" signature="436:4131" placeholder=".row" />
-                <marker date="1435200576000" expanded="true" signature="445:4131" placeholder=".col-md-12" />
-                <marker date="1435200576000" expanded="true" signature="462:4131" placeholder=".panel" />
-                <marker date="1435200576000" expanded="true" signature="477:544" placeholder=".panel-heading" />
-                <marker date="1435200576000" expanded="true" signature="502:544" placeholder=".panel-title" />
-                <marker date="1435200576000" expanded="true" signature="553:4131" placeholder=".panel-body" />
-                <marker date="1435200576000" expanded="true" signature="1102:1378" placeholder=".form-group" />
-                <marker date="1435200576000" expanded="true" signature="1192:1378" placeholder=".col-md-10" />
-                <marker date="1435200576000" expanded="true" signature="1219:1378" placeholder=".input-group" />
-                <marker date="1435200576000" expanded="true" signature="1391:1665" placeholder=".form-group" />
-                <marker date="1435200576000" expanded="true" signature="1480:1665" placeholder=".col-md-10" />
-                <marker date="1435200576000" expanded="true" signature="1507:1665" placeholder=".input-group" />
-                <marker date="1435200576000" expanded="true" signature="1678:1960" placeholder=".form-group" />
-                <marker date="1435200576000" expanded="true" signature="1771:1960" placeholder=".col-md-10" />
-                <marker date="1435200576000" expanded="true" signature="1798:1960" placeholder=".input-group" />
-                <marker date="1435200576000" expanded="true" signature="1973:2247" placeholder=".form-group" />
-                <marker date="1435200576000" expanded="true" signature="2062:2247" placeholder=".col-md-10" />
-                <marker date="1435200576000" expanded="true" signature="2089:2247" placeholder=".input-group" />
-                <marker date="1435200576000" expanded="true" signature="2260:2532" placeholder=".form-group" />
-                <marker date="1435200576000" expanded="true" signature="2348:2532" placeholder=".col-md-10" />
-                <marker date="1435200576000" expanded="true" signature="2375:2532" placeholder=".input-group" />
-                <marker date="1435200576000" expanded="true" signature="2545:2819" placeholder=".form-group" />
-                <marker date="1435200576000" expanded="true" signature="2634:2819" placeholder=".col-md-10" />
-                <marker date="1435200576000" expanded="true" signature="2661:2819" placeholder=".input-group" />
-                <marker date="1435200576000" expanded="true" signature="2832:3104" placeholder=".form-group" />
-                <marker date="1435200576000" expanded="true" signature="2920:3104" placeholder=".col-md-10" />
-                <marker date="1435200576000" expanded="true" signature="2947:3104" placeholder=".input-group" />
-                <marker date="1435200576000" expanded="true" signature="3117:3391" placeholder=".form-group" />
-                <marker date="1435200576000" expanded="true" signature="3206:3391" placeholder=".col-md-10" />
-                <marker date="1435200576000" expanded="true" signature="3233:3391" placeholder=".input-group" />
-                <marker date="1435200576000" expanded="true" signature="3404:3704" placeholder=".form-group" />
-                <marker date="1435200576000" expanded="true" signature="3506:3704" placeholder=".col-md-10" />
-                <marker date="1435200576000" expanded="true" signature="3533:3704" placeholder=".input-group" />
-                <marker date="1435200576000" expanded="true" signature="3717:3989" placeholder=".form-group" />
-                <marker date="1435200576000" expanded="true" signature="3805:3989" placeholder=".col-md-10" />
-                <marker date="1435200576000" expanded="true" signature="3832:3989" placeholder=".input-group" />
-                <marker date="1435200576000" expanded="true" signature="4002:4131" placeholder=".form-group" />
-                <marker date="1435200576000" expanded="true" signature="4028:4131" placeholder=".col-md-10" />
-                <marker date="1435200576000" expanded="true" signature="4055:4131" placeholder=".input-group" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -173,18 +129,6 @@
             <state vertical-scroll-proportion="0.0">
               <caret line="10" column="56" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="schedule.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/schedule.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding>
-                <marker date="1435200576000" expanded="true" signature="187:221" placeholder=" ... end" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -277,8 +221,8 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="width" value="1080" />
+    <option name="height" value="1920" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -307,113 +251,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="RailsProjectView" />
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cwapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cwapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cwapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cwapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cwapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cwapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cwapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cwapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cwapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cwapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cwapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cwapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cwapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="initial_test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -544,6 +381,113 @@
             <PATH_ELEMENT USER_OBJECT="cwapp">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="RailsProjectView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cwapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cwapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cwapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cwapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cwapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cwapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cwapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="workers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cwapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cwapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cwapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cwapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cwapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cwapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="initial_test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -822,18 +766,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
+    <frame x="0" y="0" width="1080" height="1920" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12524085" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32827103" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26685935" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.11608094" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10330138" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32896462" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.08574181" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32827103" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32867134" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -841,10 +782,13 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32827103" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26685935" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32896462" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32896462" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -864,9 +808,9 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28898427" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32896462" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1092,14 +1036,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.10843374">
           <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/workers/workout_generator.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14457831">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -1107,7 +1043,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1136,7 +1071,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="222" selection-start-line="2" selection-start-column="222" selection-end-line="2" selection-end-column="222" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1144,9 +1078,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5588235">
           <caret line="38" column="39" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
-          <folding>
-            <marker date="1435193974000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1154,7 +1085,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.13366337">
           <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1170,7 +1100,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="45" column="162" selection-start-line="45" selection-start-column="162" selection-end-line="45" selection-end-column="162" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1178,9 +1107,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <marker date="1435200576000" expanded="true" signature="187:221" placeholder=" ... end" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1194,50 +1121,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/partials/_personal_detail_form.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.875">
+        <state vertical-scroll-proportion="0.0">
           <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
-          <folding>
-            <marker date="1435200576000" expanded="true" signature="424:4131" placeholder=".col-md-6" />
-            <marker date="1435200576000" expanded="true" signature="436:4131" placeholder=".row" />
-            <marker date="1435200576000" expanded="true" signature="445:4131" placeholder=".col-md-12" />
-            <marker date="1435200576000" expanded="true" signature="462:4131" placeholder=".panel" />
-            <marker date="1435200576000" expanded="true" signature="477:544" placeholder=".panel-heading" />
-            <marker date="1435200576000" expanded="true" signature="502:544" placeholder=".panel-title" />
-            <marker date="1435200576000" expanded="true" signature="553:4131" placeholder=".panel-body" />
-            <marker date="1435200576000" expanded="true" signature="1102:1378" placeholder=".form-group" />
-            <marker date="1435200576000" expanded="true" signature="1192:1378" placeholder=".col-md-10" />
-            <marker date="1435200576000" expanded="true" signature="1219:1378" placeholder=".input-group" />
-            <marker date="1435200576000" expanded="true" signature="1391:1665" placeholder=".form-group" />
-            <marker date="1435200576000" expanded="true" signature="1480:1665" placeholder=".col-md-10" />
-            <marker date="1435200576000" expanded="true" signature="1507:1665" placeholder=".input-group" />
-            <marker date="1435200576000" expanded="true" signature="1678:1960" placeholder=".form-group" />
-            <marker date="1435200576000" expanded="true" signature="1771:1960" placeholder=".col-md-10" />
-            <marker date="1435200576000" expanded="true" signature="1798:1960" placeholder=".input-group" />
-            <marker date="1435200576000" expanded="true" signature="1973:2247" placeholder=".form-group" />
-            <marker date="1435200576000" expanded="true" signature="2062:2247" placeholder=".col-md-10" />
-            <marker date="1435200576000" expanded="true" signature="2089:2247" placeholder=".input-group" />
-            <marker date="1435200576000" expanded="true" signature="2260:2532" placeholder=".form-group" />
-            <marker date="1435200576000" expanded="true" signature="2348:2532" placeholder=".col-md-10" />
-            <marker date="1435200576000" expanded="true" signature="2375:2532" placeholder=".input-group" />
-            <marker date="1435200576000" expanded="true" signature="2545:2819" placeholder=".form-group" />
-            <marker date="1435200576000" expanded="true" signature="2634:2819" placeholder=".col-md-10" />
-            <marker date="1435200576000" expanded="true" signature="2661:2819" placeholder=".input-group" />
-            <marker date="1435200576000" expanded="true" signature="2832:3104" placeholder=".form-group" />
-            <marker date="1435200576000" expanded="true" signature="2920:3104" placeholder=".col-md-10" />
-            <marker date="1435200576000" expanded="true" signature="2947:3104" placeholder=".input-group" />
-            <marker date="1435200576000" expanded="true" signature="3117:3391" placeholder=".form-group" />
-            <marker date="1435200576000" expanded="true" signature="3206:3391" placeholder=".col-md-10" />
-            <marker date="1435200576000" expanded="true" signature="3233:3391" placeholder=".input-group" />
-            <marker date="1435200576000" expanded="true" signature="3404:3704" placeholder=".form-group" />
-            <marker date="1435200576000" expanded="true" signature="3506:3704" placeholder=".col-md-10" />
-            <marker date="1435200576000" expanded="true" signature="3533:3704" placeholder=".input-group" />
-            <marker date="1435200576000" expanded="true" signature="3717:3989" placeholder=".form-group" />
-            <marker date="1435200576000" expanded="true" signature="3805:3989" placeholder=".col-md-10" />
-            <marker date="1435200576000" expanded="true" signature="3832:3989" placeholder=".input-group" />
-            <marker date="1435200576000" expanded="true" signature="4002:4131" placeholder=".form-group" />
-            <marker date="1435200576000" expanded="true" signature="4028:4131" placeholder=".col-md-10" />
-            <marker date="1435200576000" expanded="true" signature="4055:4131" placeholder=".input-group" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1245,14 +1131,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="56" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="55" column="87" selection-start-line="55" selection-start-column="87" selection-end-line="55" selection-end-column="87" />
           <folding />
         </state>
       </provider>
@@ -1269,29 +1147,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.579809">
           <caret line="54" column="23" selection-start-line="54" selection-start-column="23" selection-end-line="54" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/index.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.75">
+        <state vertical-scroll-proportion="0.0">
           <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
           <folding>
-            <marker date="1435200576000" expanded="true" signature="817:885" placeholder=".row" />
-            <marker date="1435200576000" expanded="true" signature="824:853" placeholder=".col-md-6" />
-            <marker date="1435200576000" expanded="true" signature="856:885" placeholder=".col-md-6" />
-            <marker date="1435200576000" expanded="true" signature="909:1836" placeholder=".col-md-6" />
-            <marker date="1435200576000" expanded="true" signature="1205:1705" placeholder=".col-md-6" />
-            <marker date="1435200576000" expanded="true" signature="1710:1836" placeholder=".progress-pic-buttons.col-md-6" />
-            <marker date="1435200576000" expanded="true" signature="2651:4328" placeholder=".col-sm-4.col-md-3.hero-plan" />
-            <marker date="1435200576000" expanded="true" signature="2690:4328" placeholder=".pricing-plan.margin-none" />
-            <marker date="1435200576000" expanded="true" signature="2728:2810" placeholder=".pricing-title.btn-blue4" />
-            <marker date="1435200576000" expanded="true" signature="2823:4278" placeholder=".pricing-features" />
-            <marker date="1435200576000" expanded="true" signature="4430:6196" placeholder=".col-sm-4.col-md-3.hero-plan" />
-            <marker date="1435200576000" expanded="true" signature="4473:6196" placeholder=".pricing-plan.margin-none" />
-            <marker date="1435200576000" expanded="true" signature="4515:4596" placeholder=".pricing-title.btn-blue4" />
-            <marker date="1435200576000" expanded="true" signature="4613:6142" placeholder=".pricing-features" />
             <marker date="1435200576000" expanded="true" signature="6223:6248" placeholder="{...}" />
           </folding>
         </state>
@@ -1315,8 +1178,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.86903137">
-          <caret line="89" column="20" selection-start-line="89" selection-start-column="20" selection-end-line="89" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="55" column="87" selection-start-line="55" selection-start-column="87" selection-end-line="55" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/workers/workout_generator.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.032467533">
+          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
           <folding />
         </state>
       </provider>
