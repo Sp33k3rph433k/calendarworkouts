@@ -30,7 +30,7 @@
     <data-source source="LOCAL" name="Rails cwapp: production" uuid="d161bbfc-0f58-4768-ad1f-ac8701ea03fb">
       <driver-ref>postgresql</driver-ref>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql:cw_production</jdbc-url>
+      <jdbc-url>jdbc:postgresql:cw_production CW_PRODUCTION_DATABASE_NAME</jdbc-url>
       <libraries>
         <library>
           <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/postgresql-driver-license.txt</url>
