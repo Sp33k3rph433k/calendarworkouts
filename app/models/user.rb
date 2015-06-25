@@ -8,7 +8,7 @@ class User < ActiveRecord::Base
   has_paper_trail :only => [:avatar]
 
   before_save :ensure_user_has_schedule
-  before_save :ensure_user_has_initial_test
+  # before_save :ensure_user_has_initial_test
 
   validates_presence_of :name
   validates_uniqueness_of :email, :case_sensitive => false
@@ -46,6 +46,10 @@ class User < ActiveRecord::Base
 
   def workout_windows
     schedule.workout_windows
+  end
+
+  def has_completed_injury_form?
+    !injuries.blank?
   end
 
   private

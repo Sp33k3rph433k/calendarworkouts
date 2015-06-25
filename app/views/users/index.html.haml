@@ -1,5 +1,14 @@
--unless @user.age
-  =link_to "We'd like to learn more about you, click here to introduce yourself (don't worry, it's short!)", user_introduction_path
+%h2 Steps to Get Started:
+%ul
+  -unless @user.age
+    %li= link_to "We'd like to learn more about you, click here to introduce yourself (don't worry, it's short!)", user_introduction_path
+  - unless @user.has_completed_injury_form?
+    %li= link_to "Click here to tell us about any injuries you might have. This will prevent us from giving you workouts you can't do!", new_user_injury_path(@user)
+    <br />
+  - unless @user.initial_test && @user.initial_test.complete?
+    %li= link_to "We can't build workouts for you until you take our initial test, click here to take it!", new_user_initial_test_path(@user)
+  - unless @user.schedule.filled_out?
+    %li= link_to "We need to know your availibility to schedule you workouts!", new_user_schedule_path(@user)
 .row
   .col-md-6
     %h2 This is you
@@ -51,11 +60,6 @@
   %h2 Get Started!
   = link_to "It looks like you haven't checked in your measurements yet. Click here to do so", new_user_personal_detail_path(@user)
   <br />
-  = link_to "Or click here to learn how to measure properly.", "#"
-
-
-- unless @user.initial_test && @user.initial_test.complete?
-  =link_to "We can't build workouts for you until you take our initial test, click here to take it!", new_user_initial_test_path(@user)
 
 
 - if @personal_detail
