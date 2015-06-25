@@ -27,6 +27,11 @@
                 .input-group
                   = f.input :is_run?, class: "form-control", :as => :select, :collection => [['No',false],['Yes',true]], label: false
             .form-group
+              =f.label :requires_gym, class: "col-lg-2 control-label", label: "Requires a gym?"
+              .col-md-10
+                .input-group
+                  = f.input :requires_gym, class: "form-control", :as => :select, :collection => [['No',false],['Yes',true]], label: false
+            .form-group
               =f.label :proper_form_text, class: "col-lg-2 control-label"
               .col-md-10
                 .input-group

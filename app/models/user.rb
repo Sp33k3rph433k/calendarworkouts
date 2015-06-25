@@ -41,7 +41,7 @@ class User < ActiveRecord::Base
 
 
   def s3_credentials
-    {:bucket => "calw-assets/avatars", :access_key_id => "AKIAIBOYEOEUKG3EWWMQ", :secret_access_key => "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"}
+    {:bucket => "calw-assets/avatars", :access_key_id => ENV['CW_AWS_ACCESS_KEY'], :secret_access_key => ENV['CW_AWS_SECRET_ACCESS_KEY']}
   end
 
   def workout_windows
