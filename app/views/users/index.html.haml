@@ -1,14 +1,14 @@
-%h2 Steps to Get Started:
-%ul
-  -unless @user.age
-    %li= link_to "We'd like to learn more about you, click here to introduce yourself (don't worry, it's short!)", user_introduction_path
-  - unless @user.has_completed_injury_form?
-    %li= link_to "Click here to tell us about any injuries you might have. This will prevent us from giving you workouts you can't do!", new_user_injury_path(@user)
-    <br />
-  - unless @user.initial_test && @user.initial_test.complete?
-    %li= link_to "We can't build workouts for you until you take our initial test, click here to take it!", new_user_initial_test_path(@user)
-  - unless @user.schedule.filled_out?
-    %li= link_to "We need to know your availibility to schedule you workouts!", new_user_schedule_path(@user)
+- unless @user.completed_getting_started_steps?
+  %h2 Steps to Get Started:
+  %ul
+    -unless @user.age
+      %li= link_to "We'd like to learn more about you, click here to introduce yourself (don't worry, it's short!)", user_introduction_path
+    - unless @user.has_completed_injury_form?
+      %li= link_to "Click here to tell us about any injuries you might have. This will prevent us from giving you workouts you can't do!", new_user_injury_path(@user)
+    - unless @user.initial_test && @user.initial_test.complete?
+      %li= link_to "We can't build workouts for you until you take our initial test, click here to take it!", new_user_initial_test_path(@user)
+    - unless @user.schedule.filled_out?
+      %li= link_to "We need to know your availibility to schedule you workouts!", new_user_schedule_path(@user)
 .row
   .col-md-6
     %h2 This is you

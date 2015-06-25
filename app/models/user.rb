@@ -52,6 +52,10 @@ class User < ActiveRecord::Base
     !injuries.blank?
   end
 
+  def completed_getting_started_steps?
+    age && has_completed_injury_form? && initial_test.complete? && schedule.filled_out?
+  end
+
   private
 
   def ensure_user_has_schedule
