@@ -17,6 +17,7 @@ Cwapp::Application.routes.draw do
     resources :workouts, only: [:index, :new, :create, :show, :edit]
     resources :initial_test do
       resources :build, controller: 'initial_test/build'
+      get 'one_mile_form'
     end
     resources :injuries
   end

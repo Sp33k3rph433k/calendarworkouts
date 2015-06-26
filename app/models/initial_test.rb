@@ -18,6 +18,10 @@ class InitialTest < ActiveRecord::Base
     status == "complete"
   end
 
+  def exercise_array
+    %w(pushups situps bodyweight_squats)
+  end
+
   def first_step_or_complete?
     status.include?("basic_bodyweight") || complete?
   end
@@ -38,10 +42,13 @@ class InitialTest < ActiveRecord::Base
   end
   private
 
-  def spin_up_initial_exercises
-    self.exercise_details.find_or_create_by(exercise_id: Exercise.find_by_name("pushups").id)
-    self.exercise_details.find_or_create_by(exercise_id: Exercise.find_by_name("situps").id)
-    self.exercise_details.find_or_create_by(exercise_id: Exercise.find_by_name("body weight squats").id)
+  def spin_up_initial_exercises #maybe not do this on an after_create?
+    exercise_array.each do |exercise|
+
+    end
+    # self.exercise_details.find_or_create_by(exercise_id: Exercise.find_by_name("pushups").id, user_id: user_id)
+    # self.exercise_details.find_or_create_by(exercise_id: Exercise.find_by_name("situps").id, user_id: user_id)
+    # self.exercise_details.find_or_create_by(exercise_id: Exercise.find_by_name("bodyweight_squats").id, user_id: user_id)
   end
 
 end
