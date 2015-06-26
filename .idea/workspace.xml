@@ -2,105 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1c2979e-ea9f-498e-bad9-a07d934370c0" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/FontAwesome-6d541199e3d3adf4f7254ae6ac5f090a.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/alt-bg-4802db43d33875ab7381f3ba5401b910.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-123c97233172b1f9b35e4e5449f069ec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-123c97233172b1f9b35e4e5449f069ec.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-bad617dd9acf66b6d540023ead23ce36.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-bad617dd9acf66b6d540023ead23ce36.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/arrow_left_12x12-af415e40894eab8c5a2e86ed14e52936.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/arrow_right_12x12-7866fea738693b2f23bc75819a6883c4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/avatar1-bdfb7a4ba41114dd58fe9629d5c62c9d.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bg-input-7ba05ac92e8487a3187a36a9e4b5f96e.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bg-input-focus-a1c65a04a7b2a16c69db27b09e2834c7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap/glyphicons-halflings-regular-01365d7abbe7dd099566f65b692ea6c7.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap/glyphicons-halflings-regular-348e045af17bb19ad15ff19de5316190.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap/glyphicons-halflings-regular-ca0d5a60eac48facf0dfae3fbb881454.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap/glyphicons-halflings-regular-cdec39bb49a088716d2fa9b815dd4e4d.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap/glyphicons-halflings-regular-d5521dd67b17eb348351baccf39dc15f.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/coming-soon-bg-a998a579e2f9c976d47843648c1a546d.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/dataTables/back_disabled-3a04f1483c60da258bfa94d2ba7318d4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/dataTables/back_enabled-c60f932965864c4b47753f7c48f7b74d.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/dataTables/back_enabled_hover-cb511a08e2583adb0b6a762e6aaa43d8.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/dataTables/extras/as3/ZeroClipboard-f56846fb7b4fce53f575365d3ff8f497.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/dataTables/extras/as3/ZeroClipboardPdf-bc8c4a6d13f416a5b74cb7e644a918fd.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/dataTables/extras/as3/lib/AlivePDF-b01b379069881620bd73b73cc4f94c1f.swc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/dataTables/extras/background-eb5746699fc76c475ea61fc2ac6a5a3f.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/dataTables/extras/button-18535fbbb1417c96bac0fa00f21e81b3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/dataTables/extras/collection-ab2bf5c80d7677a77b1ce3c5b2c288b3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/dataTables/extras/collection_hover-fa82f9c7bab97f334a2fb61576765dfc.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/dataTables/extras/copy-b56a898025429f7681b442b5a40ae61b.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/dataTables/extras/copy_hover-788229fa7a36f7cb85b5b61530f5a231.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/dataTables/extras/csv-d834394e92d0e51e673c770dae8e857d.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/dataTables/extras/csv_hover-93150914e18efb5df8dfe3cde2f36c96.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/dataTables/extras/filler-f36339e3ad84c013fbb1182c3a6e9ce9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/dataTables/extras/insert-716533b141a9abd218b280b274d73443.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/dataTables/extras/loading-background-40e686622792eda4ba78784be0bd5b58.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/dataTables/extras/pdf-87aff51916f96f82026bbe461da813aa.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/dataTables/extras/pdf_hover-980dfb0cdc61fbe1ccad2fbdd8852261.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/dataTables/extras/print-7f4be162ed5dfeef42d978b94a215e3c.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/dataTables/extras/print_hover-53155315667692b43f10b4b5c285e80c.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/dataTables/extras/swf/copy_csv_xls-3903d1c789c294f5fe242bfe9092f920.swf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/dataTables/extras/swf/copy_csv_xls_pdf-0a7764c555324bcf303ce10769cf2204.swf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/dataTables/extras/xls-869100615d91fc00b0718388703ae4e5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/dataTables/extras/xls_hover-18feb4f9fb7ddf00f1489cb81378f177.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/dataTables/favicon-ccc7d1d2e3a3e5e7130b8a1fa0fae3da.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/dataTables/forward_disabled-028053d8dc2e84f370763ff180f5075d.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/dataTables/forward_enabled-e30df2ab6b64f11f804e8e5b3fd1cd26.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/dataTables/forward_enabled_hover-bf7087d9a796ebd47479c65d72b091f7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/dataTables/foundation/sort_asc-543da7d5201fe664b7556f459e0928df.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/dataTables/foundation/sort_asc_disabled-c04a2e0359e5737739dd38f042c5afeb.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/dataTables/foundation/sort_both-3a9612f6e25815b20a4ed4d7aa182424.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/dataTables/foundation/sort_desc-d86048b718df985ddd44a2e9139fad49.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/dataTables/foundation/sort_desc_disabled-02e78feaf7c89f76b35b2c1abc8eaf14.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/dataTables/minus-1389447d12b23e68c910af728a354944.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/dataTables/plus-3fea339d0155af120998f38165991814.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/dataTables/sort_asc-543da7d5201fe664b7556f459e0928df.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/dataTables/sort_asc_disabled-70728498b98a58e339b8ebc47460f1e9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/dataTables/sort_both-3a9612f6e25815b20a4ed4d7aa182424.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/dataTables/sort_desc-d86048b718df985ddd44a2e9139fad49.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/dataTables/sort_desc_disabled-02e78feaf7c89f76b35b2c1abc8eaf14.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fontawesome-webfont-29d56a9092a8c216858e0d2c1b3ee59c.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fontawesome-webfont-4ce8602a06b889d5fb67594f35cbfef3.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fontawesome-webfont-aac159749d4f82963ae766925b1ded28.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fontawesome-webfont-db80947ca91af9925330d7b4d0c17fcc.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fontawesome-webfont-f4261f5290cbdf5f3e3d4d27757978d6.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/grip-0f6d28e9041297984ce784839adec93f.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/header-login-ba0bb91b82a483fe6b7d18d6d87d05df.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui-bg_flat_0_aaaaaa_40x100-a686700c1551c4b98836e7bfdd9e10cb.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui-bg_flat_75_ffffff_40x100-58fd061cfec1827977dee4265e3c039c.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui-bg_glass_55_fbf9ee_1x400-415b1dac42aaf2c88d0305147bae6b0c.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui-bg_glass_65_ffffff_1x400-497515d6d56ee5adf0b481c6667ab136.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui-bg_glass_75_dadada_1x400-5c220b124984c57b9db8dd0fe13d20b3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui-bg_glass_75_e6e6e6_1x400-2eeaa282285664e12edc42ddae22cc75.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui-bg_glass_95_fef1ec_1x400-9cceb08a1efbe545d970c9512009fc5c.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui-bg_highlight-soft_75_cccccc_1x100-2ad771fa587230a211aa9bfec0036c4a.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui-icons_222222_256x240-1eced1611c94f911ecd0972a5fe3ce24.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui-icons_2e83ff_256x240-dfb88438e0a0e16ef7917d4fbf978fc6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui-icons_454545_256x240-6a617e3523463b677aa7e0f3f4a32fea.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui-icons_888888_256x240-db2bac96c9894c906f9dd5039d681393.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui-icons_cd0a0a_256x240-025bddb66c5b2e1b1f3045dc78dea5dc.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/login-dacb0e7cd0666af56e128410fe7b96c5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/logo-cb0a2a82a3dde96176ebd89cacd2772b.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/manifest-2cb4294ddb5f346b67d3aae2ded955ad.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/menu-arrow-down-b9161067096bda9d68ac211151dfbd01.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/menu-arrow-up-a0f0bfebcc9fb87fae10721f87a57089.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/pattern1-37914d74bca8736900ea3b4efb03a68f.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/pattern10-a9185b8a7badd99e003772b7b00e96b2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/pattern2-6892feaa8b246afa6b060634967bf99f.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/pattern3-b462b095bd710f602fef810ed79587ae.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/pattern4-16943f0666b4c0f26e493d5f8c3e8109.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/pattern5-0e628161f345f0d13d0fa268889e24bf.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/pattern6-ffa8a65159745a4bd79bdd028171db63.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/pattern7-3b007e1b34df1e5c3c67dc6b39f2bec2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/pattern8-38b5ed2be40b0b1e58ac50c8a0baa353.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/patterneight-38b5ed2be40b0b1e58ac50c8a0baa353.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/slider-knob-c25f5d206189f90ae796ddea73ae7113.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/sprite-dac0b1a78741889c030436ced48f5c8d.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/initial_test.rb" afterPath="$PROJECT_DIR$/app/models/initial_test.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/initial_test_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/initial_test_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/initial_test/new.html.haml" afterPath="$PROJECT_DIR$/app/views/initial_test/new.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cwapp.iws" />
@@ -139,16 +42,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Gemfile" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gemfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="workout_generator.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/workers/workout_generator.rb">
           <provider selected="true" editor-type-id="text-editor">
@@ -159,11 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="initial_test_controller.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="initial_test_controller.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/initial_test_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="46" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="46" />
+            <state vertical-scroll-proportion="0.21915585">
+              <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -172,8 +65,8 @@
       <file leaf-file-name="one_mile_form.html.haml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/initial_test/one_mile_form.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.25">
-              <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+            <state vertical-scroll-proportion="-0.625">
+              <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -189,11 +82,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="initial_test.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="initial_test.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/initial_test.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.20292208">
-              <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="44" column="5" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -302,10 +195,10 @@
         <option value="$PROJECT_DIR$/config/application.yml" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/views/initial_test/new.html.haml" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/views/initial_test/one_mile_form.html.haml" />
         <option value="$PROJECT_DIR$/app/models/initial_test.rb" />
         <option value="$PROJECT_DIR$/app/controllers/initial_test_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/initial_test/one_mile_form.html.haml" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
       </list>
     </option>
   </component>
@@ -497,6 +390,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="cwapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cwapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cwapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cwapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cwapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrate" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -991,13 +916,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/migrate/20150521010531_create_exercise_details.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140218044846_create_exercises.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1380,34 +1298,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/exercise.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/initial_test/build/one_mile.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.024671054">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/initial_test/one_mile_form.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.25">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/initial_test_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="46" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="46" />
           <folding />
         </state>
       </provider>
@@ -1420,10 +1314,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20140316225832_add_time_to_exercise.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/initial_test.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20292208">
-          <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="44" column="5" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/exercise.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/initial_test/one_mile_form.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.625">
+          <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/initial_test_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21915585">
+          <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
           <folding />
         </state>
       </provider>

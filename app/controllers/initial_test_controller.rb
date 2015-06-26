@@ -13,18 +13,25 @@ class InitialTestController < ApplicationController
     @initial_test = @user.create_initial_test(detail_params)
     exercise_params.each {| exer, qty | @initial_test.exercise_details.create(exercise_id: Exercise.where(name: exer).first.id, reps: qty, user_id: @initial_test.user_id) }
 
-    # we need to create a workout
-    binding.pry
-    # We need to give 3 exercises to those workouts
     if @initial_test.save
-      redirect_to user_initial_test_build_path(current_user.id, @initial_test, "one_mile")
+      redirect_to user_initial_test_one_mile_form_path(current_user.id, @initial_test)
     else
       render :new
     end
   end
 
   def update
-    @initial_test = InitialTest.find(params[:initial_test_id])
+    @initial_test = InitialTest.find(params[:id])
+
+    if detail_params["mile_run_time(4i)"] && detail_params["mile_run_time(5i)"] && !@initial_test.already_has_run?
+      run_time = (detail_params["mile_run_time(4i)"].to_i * 60)+ detail_params["mile_run_time(5i)"].to_i
+      @initial_test.exercise_details.create(exercise_id: Exercise.where(name: "one_mile_run").first.id, time: run_time, user_id: @initial_test.user_id)
+    end
+    binding.pry
+    if !!try(:exercise_params)
+      exercise_params.each {| exer, qty | @initial_test.exercise_details.create(exercise_id: Exercise.where(name: exer).first.id, reps: qty, time: qty, user_id: @initial_test.user_id) }
+    end
+
     if @initial_test.save
       flash[:notice] = "Updated!"
       redirect_to user_dashboard_path
@@ -45,6 +52,6 @@ class InitialTestController < ApplicationController
   end
 
   def exercise_params
-    params.require(:exercises).permit(:pushups, :situps, :bodyweight_squats)
+    params.require(:exercises).permit(:pushups, :situps, :bodyweight_squats, :one_mile_run)
   end
 end

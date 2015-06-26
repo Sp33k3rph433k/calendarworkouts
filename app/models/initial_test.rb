@@ -7,7 +7,7 @@ class InitialTest < ActiveRecord::Base
   # validates :mile_run_time,                              :presence => true, if: :second_step_or_complete?
   # validates :resting_heart_rate,                         presence: true, if: :complete?
 
-  after_create :spin_up_initial_exercises
+  # after_create :spin_up_initial_exercises
 
   has_paper_trail
 
@@ -40,15 +40,19 @@ class InitialTest < ActiveRecord::Base
         "gym_maxes"
     end
   end
+
+  def already_has_run?
+    !exercises.where(name: "one_mile_run").blank?
+  end
   private
 
-  def spin_up_initial_exercises #maybe not do this on an after_create?
-    exercise_array.each do |exercise|
-
-    end
-    # self.exercise_details.find_or_create_by(exercise_id: Exercise.find_by_name("pushups").id, user_id: user_id)
-    # self.exercise_details.find_or_create_by(exercise_id: Exercise.find_by_name("situps").id, user_id: user_id)
-    # self.exercise_details.find_or_create_by(exercise_id: Exercise.find_by_name("bodyweight_squats").id, user_id: user_id)
-  end
+  # def spin_up_initial_exercises #maybe not do this on an after_create?
+  #   exercise_array.each do |exercise|
+  #
+  #   end
+  #   # self.exercise_details.find_or_create_by(exercise_id: Exercise.find_by_name("pushups").id, user_id: user_id)
+  #   # self.exercise_details.find_or_create_by(exercise_id: Exercise.find_by_name("situps").id, user_id: user_id)
+  #   # self.exercise_details.find_or_create_by(exercise_id: Exercise.find_by_name("bodyweight_squats").id, user_id: user_id)
+  # end
 
 end
