@@ -1,13 +1,13 @@
 class InitialTest::BuildController < ApplicationController
   include Wicked::Wizard
 
-  steps :basic_bodyweight, :one_mile, :gym_maxes
+  steps :basic_body_weight, :one_mile, :gym_maxes
 
   def show
     @user = current_user
     @initial_test = @user.initial_test
     case step
-      when :basic_bodyweight
+      when :basic_body_weight
         if !@initial_test.pushups.blank?
           next_step
         end

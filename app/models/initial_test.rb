@@ -34,11 +34,11 @@ class InitialTest < ActiveRecord::Base
   end
 
   def exercise_array
-    %w(pushups situps body_weight_squats)
+    %w(pushups situps body_weight_squats one_mile_run)
   end
 
   def first_step_or_complete?
-    status.include?("basic_bodyweight") || complete?
+    status.include?("basic_body_weight") || complete?
   end
 
   def second_step_or_complete?
@@ -48,8 +48,8 @@ class InitialTest < ActiveRecord::Base
   def next_step
     case status
       when nil
-        "basic_bodyweight"
-      when "basic_bodyweight"
+        "basic_body_weight"
+      when "basic_body_weight"
         "one_mile"
       when "one_mile"
         "gym_maxes"
