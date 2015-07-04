@@ -1,7 +1,7 @@
 = simple_form_for [@user, @initial_test], url: user_initial_test_index_path do |f|
   =f.input :pushups, input_html:{ name: "exercises[pushups]" }
   =f.input :situps, input_html: { name: "exercises[situps]" }
-  =f.input :bodyweight_squats, input_html: { name: "exercises[bodyweight_squats]" }
+  =f.input :body_weight_squats, input_html: { name: "exercises[body_weight_squats]" }
   =f.hidden_field :status, value: "basic_bodyweight"
   =f.submit
 

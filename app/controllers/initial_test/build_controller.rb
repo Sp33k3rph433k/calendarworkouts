@@ -33,7 +33,7 @@ class InitialTest::BuildController < ApplicationController
 
   private
   def detail_params
-    params.require(:initial_test).permit(:id, :pushups, :situps, :bodyweight_squats, :mile_run_time, :resting_heart_rate, :status)
+    params.require(:initial_test).permit(:id, :pushups, :situps, :body_weight_squats, :mile_run_time, :resting_heart_rate, :status)
   end
 
   def finish_wizard_path

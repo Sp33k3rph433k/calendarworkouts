@@ -15,11 +15,26 @@ class InitialTest < ActiveRecord::Base
 
 
   def complete?
-    status == "complete"
+    for exercise in exercise_array
+      return false if exercise_details.where(exercise_id: Exercise.find_by(name: exercise)).blank?
+    end
+    true
+  end
+
+  def has_pushups?
+    !exercise_details.where(exercise_id: Exercise.find_by(name: "pushups")).blank?
+  end
+
+  def has_situps?
+    !exercise_details.where(exercise_id: Exercise.find_by(name: "situps")).blank?
+  end
+
+  def has_body_weight_squats?
+    !exercise_details.where(exercise_id: Exercise.find_by(name: "body_weight_squats")).blank?
   end
 
   def exercise_array
-    %w(pushups situps bodyweight_squats)
+    %w(pushups situps body_weight_squats)
   end
 
   def first_step_or_complete?

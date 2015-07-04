@@ -132,7 +132,7 @@ ActiveRecord::Schema.define(version: 20150625002738) do
     t.datetime "updated_at"
     t.integer  "pushups"
     t.integer  "situps"
-    t.integer  "bodyweight_squats"
+    t.integer  "body_weight_squats"
     t.time     "mile_run_time"
     t.integer  "resting_heart_rate"
     t.string   "status"

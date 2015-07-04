@@ -48,10 +48,10 @@ class InitialTestController < ApplicationController
 
   private
   def detail_params
-    params.require(:initial_test).permit(:id, :pushups, :situps, :bodyweight_squats, :mile_run_time, :resting_heart_rate, :user_id, :status, :exercises => [])
+    params.require(:initial_test).permit(:id, :pushups, :situps, :body_weight_squats, :mile_run_time, :resting_heart_rate, :user_id, :status, :exercises => [])
   end
 
   def exercise_params
-    params.require(:exercises).permit(:pushups, :situps, :bodyweight_squats, :one_mile_run)
+    params.require(:exercises).permit(:pushups, :situps, :body_weight_squats, :one_mile_run)
   end
 end
