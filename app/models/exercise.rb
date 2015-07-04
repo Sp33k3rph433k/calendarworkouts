@@ -10,6 +10,16 @@ class Exercise < ActiveRecord::Base
 
 
   # validates_presence_of :name, :reps, :sets, :unless => :is_run
+  def core_muscle_group
+    muscle_groups.max_by(&:weighted_score)
+  end
+
+  def similar_exercises(weighted_score)
+    lower_bound = weighted_score - 15
+    upper_bound = weighted_score + 15
+    MuscleGroup.where(name: name).where("weighted_score >= ? AND weighted_score <= ?", lower_bound, upper_bound).collect(&:exercise).compact!.uniq!
+  end
+
 
 
 end

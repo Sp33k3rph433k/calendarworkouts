@@ -70,6 +70,7 @@ gem 'bootstrap-sass'
 group :development do
   gem 'rails_layout'
   gem 'meta_request'
+  gem 'awesome_print'
 end
 
 gem "font-awesome-rails"
@@ -88,6 +89,7 @@ gem 'momentjs-rails'
 gem "resque"
 gem 'resque-scheduler'
 gem 'rails_12factor'
+
 
 
 gem 'recommendable'

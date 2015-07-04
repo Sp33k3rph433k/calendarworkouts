@@ -52,6 +52,7 @@ GEM
     autoprefixer-rails (5.1.11)
       execjs
       json
+    awesome_print (1.6.1)
     aws-sdk (1.64.0)
       aws-sdk-v1 (= 1.64.0)
     aws-sdk-v1 (1.64.0)
@@ -450,6 +451,7 @@ PLATFORMS
 
 DEPENDENCIES
   asset_sync
+  awesome_print
   aws-sdk (< 2.0)
   better_errors
   binding_of_caller
