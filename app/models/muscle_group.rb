@@ -13,7 +13,8 @@ class MuscleGroup < ActiveRecord::Base
   def associate_body_parts
     case name
       when 'Abdominal'
-        #
+        bps = %w(Core Hips Lower_Back)
+        bps.each {|body_part| self.body_parts.create(part_name: body_part)}
       when 'Biceps'
         bps = %w(Arms Wrists)
         bps.each {|body_part| self.body_parts.create(part_name: body_part)}

@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1c2979e-ea9f-498e-bad9-a07d934370c0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/body_part.rb" afterPath="$PROJECT_DIR$/app/models/body_part.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/exercise.rb" afterPath="$PROJECT_DIR$/app/models/exercise.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/muscle_group.rb" afterPath="$PROJECT_DIR$/app/models/muscle_group.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cwapp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,8 +63,8 @@
       <file leaf-file-name="muscle_group.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/muscle_group.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.10551948">
-              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.040584415">
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -1112,8 +1109,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/muscle_group.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10551948">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.040584415">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
