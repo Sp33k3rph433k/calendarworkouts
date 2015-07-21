@@ -14,10 +14,10 @@ class Exercise < ActiveRecord::Base
     muscle_groups.max_by(&:weighted_score)
   end
 
-  def similar_exercises(weighted_score)
-    lower_bound = weighted_score - 15
-    upper_bound = weighted_score + 15
-    MuscleGroup.where(name: name).where("weighted_score >= ? AND weighted_score <= ?", lower_bound, upper_bound).collect(&:exercise).compact!.uniq!
+  def similar_exercises(muscle_group)
+    lower_bound = muscle_group.weighted_score - 15
+    upper_bound = muscle_group.weighted_score + 15
+    MuscleGroup.where("body_parts LIKE ?", body_parts).where("weighted_score >= ? AND weighted_score <= ?", lower_bound, upper_bound).collect(&:exercise).compact!.uniq!
   end
 
 
