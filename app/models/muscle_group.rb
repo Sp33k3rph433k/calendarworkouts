@@ -14,46 +14,102 @@ class MuscleGroup < ActiveRecord::Base
     case name
       when 'Abdominal'
         bps = %w(Core Hips Lower_Back)
-        bps.each {|body_part| body_parts.create(part_name: body_part)}
+        bps.each do |body_part|
+          unless exercise && exercise.body_parts.any? { |part| part.part_name == body_part }
+            body_parts.create(part_name: body_part)
+          end
+        end
       when 'Biceps'
         bps = %w(Arms Wrists)
-        bps.each {|body_part| body_parts.create(part_name: body_part)}
+        bps.each do |body_part|
+          unless exercise && exercise.body_parts.any? { |part| part.part_name == body_part }
+            body_parts.create(part_name: body_part)
+          end
+        end
       when 'Deltoids'
         bps = %w(Shoulders Arms Wrists)
-        bps.each {|body_part| body_parts.create(part_name: body_part)}
+        bps.each do |body_part|
+          unless exercise && exercise.body_parts.any? { |part| part.part_name == body_part }
+            body_parts.create(part_name: body_part)
+          end
+        end
       when 'Erector Spinae'
        bps = %w(Lower_Back Upper_Back Core Neck)
-       bps.each {|body_part| body_parts.create(part_name: body_part)}
+       bps.each do |body_part|
+         unless exercise && exercise.body_parts.any? { |part| part.part_name == body_part }
+          body_parts.create(part_name: body_part)
+         end
+       end
       when 'Gastrocnemius and Soleus'
        bps = %w(Legs Ankles Hips)
-       bps.each {|body_part| body_parts.create(part_name: body_part)}
+       bps.each do |body_part|
+         unless exercise && exercise.body_parts.any? { |part| part.part_name == body_part }
+          body_parts.create(part_name: body_part)
+         end
+       end
       when 'Glutes'
         bps = %w(Butt Hips Legs Ankles)
-        bps.each {|body_part| body_parts.create(part_name: body_part)}
+        bps.each do |body_part|
+          unless exercise && exercise.body_parts.any? { |part| part.part_name == body_part }
+            body_parts.create(part_name: body_part)
+          end
+        end
       when 'Hamstrings'
         bps = %w(Legs Ankles Butt)
-        bps.each {|body_part| body_parts.create(part_name: body_part)}
+        bps.each do |body_part|
+          unless exercise && exercise.body_parts.any? { |part| part.part_name == body_part }
+            body_parts.create(part_name: body_part)
+          end
+        end
       when 'Latissimus Dorsi'
         bps = %w(Upper_Back Lower_Back Neck Core)
-        bps.each {|body_part| body_parts.create(part_name: body_part)}
+        bps.each do |body_part|
+          unless exercise && exercise.body_parts.any? { |part| part.part_name == body_part }
+            body_parts.create(part_name: body_part)
+          end
+        end
       when 'Rhomboids'
         bps = %w(Neck Upper_Back Arms Wrists)
-        bps.each {|body_part| body_parts.create(part_name: body_part)}
+        bps.each do |body_part|
+          unless exercise && exercise.body_parts.any? { |part| part.part_name == body_part }
+            body_parts.create(part_name: body_part)
+          end
+        end
       when 'Obliques'
         bps = %w(Core Upper_Back Lower_Back)
-        bps.each {|body_part| body_parts.create(part_name: body_part)}
+        bps.each do |body_part|
+          unless exercise && exercise.body_parts.any? { |part| part.part_name == body_part }
+            body_parts.create(part_name: body_part)
+          end
+        end
       when 'Pectoralis'
         bps = %w(Arms Chest Upper_Back Shoulders)
-        bps.each {|body_part| body_parts.create(part_name: body_part)}
+        bps.each do |body_part|
+          unless exercise && exercise.body_parts.any? { |part| part.part_name == body_part }
+            body_parts.create(part_name: body_part)
+          end
+        end
       when 'Quadriceps'
         bps = %w(Legs Ankles Butt Hips)
-        bps.each {|body_part| body_parts.create(part_name: body_part)}
+        bps.each do |body_part|
+          unless exercise && exercise.body_parts.any? { |part| part.part_name == body_part }
+            body_parts.create(part_name: body_part)
+          end
+        end
       when 'Trapezius'
         bps = %w(Neck Upper_Back Arms Wrists)
-        bps.each {|body_part| body_parts.create(part_name: body_part)}
+        bps.each do |body_part|
+          unless exercise && exercise.body_parts.any? { |part| part.part_name == body_part }
+            body_parts.create(part_name: body_part)
+          end
+        end
       when 'Triceps'
         bps = %w(Arms Wrists Shoulders)
-        bps.each {|body_part| body_parts.create(part_name: body_part)}
+        bps.each do |body_part|
+          unless exercise && exercise.body_parts.any? { |part| part.part_name == body_part }
+            body_parts.create(part_name: body_part)
+          end
+        end
       else
         nil
     end
