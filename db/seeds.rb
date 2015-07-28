@@ -6,7 +6,14 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 puts 'DEFAULT USERS'
-["pushups", "situps", "body_weight_squats", "one_mile_run"].each {|s| Exercise.find_or_create_by(name: s) }
+["pushups", "situps", "body_weight_squats", "one_mile_run"]
+
+e1 = Exercise.create(name: 'pushups')
+e2 = Exercise.create(name: 'situps')
+e3 = Exercise.create(name: 'body_weight_squats')
+e4 = Exercise.create(name: 'one_mile_run')
+
+
 puts "Created initial 3 exercises"
 user = User.find_or_create_by_email :name => ENV['ADMIN_NAME'].dup, :email => ENV['ADMIN_EMAIL'].dup, :password => ENV['ADMIN_PASSWORD'].dup, :password_confirmation => ENV['ADMIN_PASSWORD'].dup
 puts 'user: ' << user.name

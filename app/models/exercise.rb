@@ -9,7 +9,7 @@ class Exercise < ActiveRecord::Base
 
 
 
-  # validates_presence_of :name, :reps, :sets, :unless => :is_run
+  # validates_presence_of :name, :reps, :sets, :unless => :cardio
   def core_muscle_group
     muscle_groups.max_by(&:weighted_score)
   end
@@ -22,7 +22,7 @@ class Exercise < ActiveRecord::Base
   def similar_exercises(muscle_group)
     lower_bound = muscle_group.weighted_score - 15
     upper_bound = muscle_group.weighted_score + 15
-    # MuscleGroup.where("body_parts LIKE ?", body_parts).where("weighted_score >= ? AND weighted_score <= ?", lower_bound, upper_bound).collect(&:exercise).compact!.uniq!  commenting this out in case I need it later
+    # if cardio
     MuscleGroup.joins(:body_parts).where(:body_parts => { part_name: muscle_group.body_parts.map(&:part_name) }).where("weighted_score >= ? AND weighted_score <= ?", lower_bound, upper_bound).collect(&:exercise).compact.uniq
   end
 

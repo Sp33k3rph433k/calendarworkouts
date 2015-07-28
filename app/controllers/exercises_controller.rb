@@ -43,7 +43,7 @@ class ExercisesController < ApplicationController
   private
 
   def detail_params
-    params.require(:exercise).permit(:name, :youtube_url, :proper_form_text, :mini_image_url, :muscle_group, :reps, :sets, :weight, :time, :is_run, :requires_gym, :muscle_groups => [])
+    params.require(:exercise).permit(:name, :youtube_url, :proper_form_text, :mini_image_url, :muscle_group, :reps, :sets, :weight, :time, :cardio, :requires_gym, :muscle_groups => [])
   end
 
 end

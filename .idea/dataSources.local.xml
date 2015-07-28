@@ -13,9 +13,6 @@
       <user-name>&lt;%= ENV['CW_PRODUCTION_DATABASE_USERNAME'] %&gt;</user-name>
       <user-password>df96df8fdf97df8adfefdfe4dffcdff1df8ddfe9dffddff5dffadff8dfe5dfeedfffdfe9dffedfe3dfe5dfe4dff5dfeedfebdffedfebdfe8dfebdff9dfefdff5dffadfebdff9dff9dffddfe5dff8dfeedf8ddff7df8adf8fdf94</user-password>
     </data-source>
-    <data-source name="Rails cwapp: cucumber" uuid="d86b4610-2876-45fd-9b5d-83d93a41c370">
-      <user-name>cw_user</user-name>
-      <user-password>dfdadfcbdfd9dfd9dfdddfc5dfd8dfcedf9b</user-password>
-    </data-source>
+    <data-source name="Rails cwapp: cucumber" uuid="d86b4610-2876-45fd-9b5d-83d93a41c370" />
   </component>
 </project>

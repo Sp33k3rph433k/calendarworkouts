@@ -1,5 +1,5 @@
 -for exercise in @workout.exercises
-  -if exercise.is_run?
+  -if exercise.cardio?
     %p= exercise.time
     %p Need to add "distance"
   -else

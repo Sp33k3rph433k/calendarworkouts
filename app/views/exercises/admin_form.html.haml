@@ -22,10 +22,10 @@
                     %i.fa.fa-youtube-play
                   = f.input_field :youtube_url, class: "form-control"
             .form-group
-              =f.label :is_run?, class: "col-lg-2 control-label", label: "Run?"
+              =f.label :cardio?, class: "col-lg-2 control-label", label: "Run?"
               .col-md-10
                 .input-group
-                  = f.input :is_run?, class: "form-control", :as => :select, :collection => [['No',false],['Yes',true]], label: false
+                  = f.input :cardio?, class: "form-control", :as => :select, :collection => [['No',false],['Yes',true]], label: false
             .form-group
               =f.label :requires_gym, class: "col-lg-2 control-label", label: "Requires a gym?"
               .col-md-10
