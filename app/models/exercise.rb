@@ -23,7 +23,7 @@ class Exercise < ActiveRecord::Base
     lower_bound = muscle_group.weighted_score - 15
     upper_bound = muscle_group.weighted_score + 15
     # MuscleGroup.where("body_parts LIKE ?", body_parts).where("weighted_score >= ? AND weighted_score <= ?", lower_bound, upper_bound).collect(&:exercise).compact!.uniq!  commenting this out in case I need it later
-    MuscleGroup.joins(:body_parts).where(:body_parts => { part_name: muscle_group.body_parts.map(&:part_name) }).collect(&:exercise).compact!.uniq
+    MuscleGroup.joins(:body_parts).where(:body_parts => { part_name: muscle_group.body_parts.map(&:part_name) }).where("weighted_score >= ? AND weighted_score <= ?", lower_bound, upper_bound).collect(&:exercise).compact.uniq
   end
 
 
