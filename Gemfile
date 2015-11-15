@@ -49,13 +49,14 @@ gem 'devise'
 # gem 'debugger', group: [:development, :test]
 
 group :development, :test do
-  gem 'rspec-rails', '~> 3.0.0.beta'
-  gem 'guard-rspec', require: false
   gem 'factory_girl_rails'
+  gem 'shoulda-matchers', '~> 3.0'
+  gem 'rspec-rails', '~> 3.0'
+  gem 'pry'
+  gem 'faker'
 end
 
 group :test do
-  gem 'faker'
   gem 'cucumber-rails', :require => false
   gem 'email_spec'
   gem 'database_cleaner'
@@ -87,3 +88,4 @@ gem 'wicked', github: "schneems/wicked"
 gem 'recommendable'
 gem 'rails-api'
 gem 'active_model_serializers'
+gem "responders"
